@@ -1,0 +1,76 @@
+m255
+K4
+z2
+!s11f vlog 2019.4 2019.10, Oct 15 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/REGISTER_ARRAY
+T_opt
+!s110 1612729177
+V<[n1AH>^6c7hEad;@1f841
+04 17 4 work register_array_tb fast 0
+=1-d0bf9c12149b-60204b59-c-ef0
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2019.4;69
+T_opt1
+!s110 1612728715
+V;A9F]VII24dVFAMh3if?`1
+04 14 4 work register_array fast 0
+=1-d0bf9c12149b-6020498b-c0-2e44
+R1
+R2
+n@_opt1
+R3
+R0
+vregister_array
+!s110 1612729158
+!i10b 1
+!s100 oJMbn:a?lDJ>5DiINbTnX1
+!s11b 8EThMC3=499f_O;ojXQWc0
+I4jKikSoHX[LT2hTlc46]A3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1612728306
+8REGISTER_ARRAY.v
+FREGISTER_ARRAY.v
+!i122 -1
+L0 1
+Z5 OL;L;2019.4;69
+r1
+!s85 0
+31
+Z6 !s108 1612729158.000000
+Z7 !s107 REGISTER_ARRAY_TB.v|REGISTER_ARRAY.v|
+Z8 !s90 -work|work|REGISTER_ARRAY.v|REGISTER_ARRAY_TB.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vregister_array_tb
+!s110 1612729159
+!i10b 1
+!s100 B>jU6QR^bS1j0[6^:m@iM1
+!s11b e[:Y:W=i;>hogBRIA9loB1
+I?WZ>_E@<mlLKLVazbRo1k2
+R4
+R0
+w1612729124
+8REGISTER_ARRAY_TB.v
+FREGISTER_ARRAY_TB.v
+!i122 -1
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R2
