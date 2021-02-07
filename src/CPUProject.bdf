@@ -210,7 +210,7 @@ applicable agreement for further details.
 (symbol
 	(rect 408 464 624 592)
 	(text "INSTRUCTION_MEMORY" (rect 33 0 210 16)(font "Arial" (font_size 10)))
-	(text "inst2" (rect 8 112 31 124)(font "Arial" ))
+	(text "inst3" (rect 8 112 31 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
