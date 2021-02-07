@@ -1,0 +1,32 @@
+# Reading E:/program files/ModelSim/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 2019.4 Oct 15 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -gui amghezi.instruction_interpretter -voptargs="+acc" 
+# Start time: 00:18:27 on Feb 08,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-13130) Failed to find design unit instruction_interpretter.
+#         Searched libraries:
+#             work
+#             amghezi
+# Optimization failed
+# Error loading design
+# End time: 00:18:28 on Feb 08,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vsim -voptargs=+acc amghezi.instruction_interpreter
+# vsim -voptargs="+acc" amghezi.instruction_interpreter 
+# Start time: 00:19:37 on Feb 08,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.instruction_interpreter(fast)
+# End time: 00:19:47 on Feb 08,2021, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 0
