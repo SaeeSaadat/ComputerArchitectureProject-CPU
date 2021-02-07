@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 0 0 216 128)
-	(text "instructionMemory" (rect 55 0 181 16)(font "Arial" (font_size 10)))
+	(text "INSTRUCTION_MEMORY" (rect 33 0 210 16)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)

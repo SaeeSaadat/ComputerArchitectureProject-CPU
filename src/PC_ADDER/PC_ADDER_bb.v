@@ -1,10 +1,10 @@
-// megafunction wizard: %LPM_ADD_SUB%
+// megafunction wizard: %LPM_ADD_SUB%VBB%
 // GENERATION: STANDARD
 // VERSION: WM1.0
 // MODULE: LPM_ADD_SUB 
 
 // ============================================================
-// File Name: adder.v
+// File Name: PC_ADDER.v
 // Megafunction Name(s):
 // 			LPM_ADD_SUB
 //
@@ -16,7 +16,6 @@
 //
 // 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 // ************************************************************
-
 
 //Copyright (C) 1991-2013 Altera Corporation
 //Your use of Altera Corporation's design tools, logic functions 
@@ -32,43 +31,12 @@
 //Altera or its authorized distributors.  Please refer to the 
 //applicable agreement for further details.
 
-
-// synopsys translate_off
-`timescale 1 ps / 1 ps
-// synopsys translate_on
-module adder (
+module PC_ADDER (
 	datab,
 	result);
 
 	input	[31:0]  datab;
 	output	[31:0]  result;
-
-	wire [31:0] sub_wire0;
-	wire [31:0] sub_wire1 = 32'h00000004;
-	wire [31:0] result = sub_wire0[31:0];
-
-	lpm_add_sub	LPM_ADD_SUB_component (
-				.dataa (sub_wire1),
-				.datab (datab),
-				.result (sub_wire0)
-				// synopsys translate_off
-				,
-				.aclr (),
-				.add_sub (),
-				.cin (),
-				.clken (),
-				.clock (),
-				.cout (),
-				.overflow ()
-				// synopsys translate_on
-				);
-	defparam
-		LPM_ADD_SUB_component.lpm_direction = "ADD",
-		LPM_ADD_SUB_component.lpm_hint = "ONE_INPUT_IS_CONSTANT=YES,CIN_USED=NO",
-		LPM_ADD_SUB_component.lpm_representation = "SIGNED",
-		LPM_ADD_SUB_component.lpm_type = "LPM_ADD_SUB",
-		LPM_ADD_SUB_component.lpm_width = 32;
-
 
 endmodule
 
@@ -81,7 +49,7 @@ endmodule
 // Retrieval info: PRIVATE: ConstantB NUMERIC "0"
 // Retrieval info: PRIVATE: Function NUMERIC "0"
 // Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone IV GX"
-// Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "1"
+// Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 // Retrieval info: PRIVATE: Latency NUMERIC "0"
 // Retrieval info: PRIVATE: Overflow NUMERIC "0"
 // Retrieval info: PRIVATE: RadixA NUMERIC "10"
@@ -106,10 +74,10 @@ endmodule
 // Retrieval info: CONNECT: @dataa 0 0 32 0 4 0 0 32 0
 // Retrieval info: CONNECT: @datab 0 0 32 0 datab 0 0 32 0
 // Retrieval info: CONNECT: result 0 0 32 0 @result 0 0 32 0
-// Retrieval info: GEN_FILE: TYPE_NORMAL adder.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL adder.inc FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL adder.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL adder.bsf TRUE FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL adder_inst.v FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL adder_bb.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PC_ADDER.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PC_ADDER.inc FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PC_ADDER.cmp FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PC_ADDER.bsf TRUE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PC_ADDER_inst.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PC_ADDER_bb.v TRUE
 // Retrieval info: LIB_FILE: lpm

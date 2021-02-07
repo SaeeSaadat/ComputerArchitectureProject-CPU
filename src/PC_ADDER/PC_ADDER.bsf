@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 0 0 160 96)
-	(text "adder" (rect 65 0 102 16)(font "Arial" (font_size 10)))
+	(text "PC_ADDER" (rect 46 0 128 16)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 72)

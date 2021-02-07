@@ -1,10 +1,10 @@
-// megafunction wizard: %ROM: 1-PORT%VBB%
+// megafunction wizard: %ROM: 1-PORT%
 // GENERATION: STANDARD
 // VERSION: WM1.0
 // MODULE: altsyncram 
 
 // ============================================================
-// File Name: instructionMemory.v
+// File Name: INSTRUCTION_MEMORY.v
 // Megafunction Name(s):
 // 			altsyncram
 //
@@ -16,6 +16,7 @@
 //
 // 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 // ************************************************************
+
 
 //Copyright (C) 1991-2013 Altera Corporation
 //Your use of Altera Corporation's design tools, logic functions 
@@ -31,7 +32,11 @@
 //Altera or its authorized distributors.  Please refer to the 
 //applicable agreement for further details.
 
-module instructionMemory (
+
+// synopsys translate_off
+`timescale 1 ps / 1 ps
+// synopsys translate_on
+module INSTRUCTION_MEMORY (
 	aclr,
 	address,
 	clock,
@@ -49,6 +54,54 @@ module instructionMemory (
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
 `endif
+
+	wire [31:0] sub_wire0;
+	wire [31:0] q = sub_wire0[31:0];
+
+	altsyncram	altsyncram_component (
+				.aclr0 (aclr),
+				.address_a (address),
+				.clock0 (clock),
+				.q_a (sub_wire0),
+				.aclr1 (1'b0),
+				.address_b (1'b1),
+				.addressstall_a (1'b0),
+				.addressstall_b (1'b0),
+				.byteena_a (1'b1),
+				.byteena_b (1'b1),
+				.clock1 (1'b1),
+				.clocken0 (1'b1),
+				.clocken1 (1'b1),
+				.clocken2 (1'b1),
+				.clocken3 (1'b1),
+				.data_a ({32{1'b1}}),
+				.data_b (1'b1),
+				.eccstatus (),
+				.q_b (),
+				.rden_a (1'b1),
+				.rden_b (1'b1),
+				.wren_a (1'b0),
+				.wren_b (1'b0));
+	defparam
+		altsyncram_component.address_aclr_a = "CLEAR0",
+		altsyncram_component.clock_enable_input_a = "BYPASS",
+		altsyncram_component.clock_enable_output_a = "BYPASS",
+`ifdef NO_PLI
+		altsyncram_component.init_file = "../instructionMemoryInstructions.rif"
+`else
+		altsyncram_component.init_file = "../instructionMemoryInstructions.hex"
+`endif
+,
+		altsyncram_component.intended_device_family = "Cyclone IV GX",
+		altsyncram_component.lpm_type = "altsyncram",
+		altsyncram_component.numwords_a = 256,
+		altsyncram_component.operation_mode = "ROM",
+		altsyncram_component.outdata_aclr_a = "CLEAR0",
+		altsyncram_component.outdata_reg_a = "UNREGISTERED",
+		altsyncram_component.widthad_a = 8,
+		altsyncram_component.width_a = 32,
+		altsyncram_component.width_byteena_a = 1;
+
 
 endmodule
 
@@ -72,7 +125,7 @@ endmodule
 // Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
 // Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
 // Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
-// Retrieval info: PRIVATE: MIFfilename STRING "instructionMemoryInstructions.hex"
+// Retrieval info: PRIVATE: MIFfilename STRING "../instructionMemoryInstructions.hex"
 // Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "256"
 // Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 // Retrieval info: PRIVATE: RegAddr NUMERIC "1"
@@ -87,7 +140,7 @@ endmodule
 // Retrieval info: CONSTANT: ADDRESS_ACLR_A STRING "CLEAR0"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "BYPASS"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
-// Retrieval info: CONSTANT: INIT_FILE STRING "instructionMemoryInstructions.hex"
+// Retrieval info: CONSTANT: INIT_FILE STRING "../instructionMemoryInstructions.hex"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone IV GX"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
 // Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "256"
@@ -105,10 +158,10 @@ endmodule
 // Retrieval info: CONNECT: @address_a 0 0 8 0 address 0 0 8 0
 // Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0
 // Retrieval info: CONNECT: q 0 0 32 0 @q_a 0 0 32 0
-// Retrieval info: GEN_FILE: TYPE_NORMAL instructionMemory.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL instructionMemory.inc FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL instructionMemory.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL instructionMemory.bsf TRUE FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL instructionMemory_inst.v FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL instructionMemory_bb.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL INSTRUCTION_MEMORY.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL INSTRUCTION_MEMORY.inc FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL INSTRUCTION_MEMORY.cmp FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL INSTRUCTION_MEMORY.bsf TRUE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL INSTRUCTION_MEMORY_inst.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL INSTRUCTION_MEMORY_bb.v TRUE
 // Retrieval info: LIB_FILE: altera_mf
