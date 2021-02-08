@@ -70,6 +70,8 @@ module instruction_interpreter (
                 4'b0111: begin
                     alu_opcode = 5'b01010;
                 end
+                default: begin
+                    alu_opcode = 5'b00000;
             endcase
 
         end
