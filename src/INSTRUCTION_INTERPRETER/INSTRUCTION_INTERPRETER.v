@@ -5,13 +5,14 @@ module instruction_interpreter (
     output reg [4:0]    reg2,
     output reg [4:0]    reg3,
     output reg [4:0]    s_r_amount,
-    output reg [15:0]   im_data,
+    output reg [31:0]   im_data,
     output reg          write_enable,
     output reg [4:0]    alu_opcode,
     output reg          jump_mux_signal,
     output reg          write_back_on_register_mux_signal,
     output reg          alu_input_mux_signal,
-    output              PC_enable
+    output              PC_enable,
+    output reg          memory_write_enable_signal
 );
 
     assign PC_enable = (instruction[31:26] == 0) ? 0 : 1;
@@ -32,17 +33,19 @@ module instruction_interpreter (
             jump_mux_signal = 0;
             write_back_on_register_mux_signal = 1;
             alu_input_mux_signal = 0;
+            memory_write_enable_signal = 0;
         end
         else if (instruction[31:26] >=16 && instruction[31:26] <=23) begin
             reg3 = instruction[25:21];
             reg1 = instruction[20:16];
             reg2 = 5'bz;
-            im_data = instruction[15:0];
+            im_data = {{16 {instruction[15]}}, instruction[15:0]};
             s_r_amount = 5'bz;
             
             jump_mux_signal = 0;
             write_back_on_register_mux_signal = 1;
             alu_input_mux_signal = 1;
+            memory_write_enable_signal = 0;
 
             case(instruction[29:26])
                 4'b0010: begin
@@ -81,6 +84,7 @@ module instruction_interpreter (
             write_back_on_register_mux_signal = 0;
             alu_input_mux_signal = 1;
             alu_opcode = 5'b00001;
+            memory_write_enable_signal = instruction[26];
         end 
         else begin
             reg1 = instruction[25:21];
@@ -91,6 +95,7 @@ module instruction_interpreter (
             jump_mux_signal = 1;
             write_back_on_register_mux_signal = 1;
             alu_input_mux_signal = 0;
+            memory_write_enable_signal = 0;
             case(instruction[29:26])
                 
                 4'b1110: begin
@@ -98,7 +103,7 @@ module instruction_interpreter (
                 end
 
                 4'b1111: begin
-                    alu_opcode = 5'b10001;
+                    alu_opcode = 5'b01111;
                 end
             endcase
         end

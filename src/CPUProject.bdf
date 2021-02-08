@@ -406,7 +406,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2072 488 2288 616)
+	(rect 2008 464 2224 592)
 	(text "MAIN_MEMORY" (rect 59 0 174 16)(font "Arial" (font_size 10)))
 	(text "inst9" (rect 8 112 31 124)(font "Arial" ))
 	(port
