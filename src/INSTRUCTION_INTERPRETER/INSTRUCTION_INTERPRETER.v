@@ -78,7 +78,7 @@ module instruction_interpreter (
             reg1 = instruction[25:21];
             reg3 = instruction[25:21];
             reg2 = instruction[20:16];
-            im_data = instruction[15:0];
+            im_data = {{16 {instruction[15]}}, instruction[15:0]};
             s_r_amount = 5'bz;
             jump_mux_signal = 0;
             write_back_on_register_mux_signal = 0;
@@ -90,7 +90,7 @@ module instruction_interpreter (
             reg1 = instruction[25:21];
             reg2 = instruction[20:16];
             reg3 = 5'bz;
-            im_data = instruction[15:0];
+            im_data = {{16 {instruction[15]}}, instruction[15:0]};
             s_r_amount = 5'bz;
             jump_mux_signal = 1;
             write_back_on_register_mux_signal = 1;
