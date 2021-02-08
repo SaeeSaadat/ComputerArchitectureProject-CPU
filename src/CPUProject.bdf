@@ -123,7 +123,7 @@ applicable agreement for further details.
 		(line (pt 16 80)(pt 24 88))
 		(line (pt 24 88)(pt 16 96))
 	)
-	(annotation_block (parameter)(rect 32 536 176 606))
+	(annotation_block (parameter)(rect -72 504 72 574))
 )
 (symbol
 	(rect 424 -96 536 -8)
@@ -675,7 +675,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1136 288 1312 368)
+	(rect 1112 288 1288 368)
 	(text "SHIFT2" (rect 67 0 117 16)(font "Arial" (font_size 10)))
 	(text "inst14" (rect 8 64 37 76)(font "Arial" ))
 	(port
@@ -988,16 +988,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 560 120)
-	(pt 584 120)
-	(bus)
-)
-(connector
-	(pt 584 120)
-	(pt 1104 120)
-	(bus)
-)
-(connector
 	(pt 1104 120)
 	(pt 1104 256)
 	(bus)
@@ -1018,13 +1008,18 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1608 288)
-	(pt 1592 288)
+	(pt 1104 256)
+	(pt 1608 256)
 	(bus)
 )
 (connector
 	(pt 1096 312)
-	(pt 1136 312)
+	(pt 1112 312)
+	(bus)
+)
+(connector
+	(pt 1016 328)
+	(pt 1112 328)
 	(bus)
 )
 (connector
@@ -1038,15 +1033,57 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1016 328)
-	(pt 1136 328)
+	(pt 1608 288)
+	(pt 1400 288)
 	(bus)
 )
 (connector
-	(pt 1104 256)
-	(pt 1608 256)
+	(pt 1288 312)
+	(pt 1400 312)
+	(bus)
+)
+(connector
+	(pt 1400 312)
+	(pt 1400 288)
+	(bus)
+)
+(connector
+	(pt 2336 648)
+	(pt 2360 648)
+	(bus)
+)
+(connector
+	(pt 2360 832)
+	(pt 2360 648)
+	(bus)
+)
+(connector
+	(pt 1144 832)
+	(pt 2360 832)
+	(bus)
+)
+(connector
+	(pt 1144 832)
+	(pt 1144 600)
+	(bus)
+)
+(connector
+	(pt 1144 600)
+	(pt 1160 600)
+	(bus)
+)
+(connector
+	(pt 584 120)
+	(pt 1104 120)
+	(bus)
+)
+(connector
+	(pt 560 120)
+	(pt 584 120)
 	(bus)
 )
 (junction (pt 368 432))
 (junction (pt 1096 560))
 (junction (pt 584 120))
+(text "   " (rect 2104 56 2114 70)(font "Arial" (font_size 8)))
+(text " " (rect 2032 -40 2035 -26)(font "Arial" (font_size 8)))
