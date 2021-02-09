@@ -1,25 +1,71 @@
--- Copyright (C) 1991-2013 Altera Corporation
--- Your use of Altera Corporation's design tools, logic functions 
--- and other software and tools, and its AMPP partner logic 
--- functions, and any output files from any of the foregoing 
--- (including device programming or simulation files), and any 
--- associated documentation or information are expressly subject 
--- to the terms and conditions of the Altera Program License 
--- Subscription Agreement, Altera MegaCore Function License 
--- Agreement, or other applicable license agreement, including, 
--- without limitation, that your use is for the sole purpose of 
--- programming logic devices manufactured by Altera and sold by 
--- Altera or its authorized distributors.  Please refer to the 
--- applicable agreement for further details.
-
--- Quartus II generated Memory Initialization File (.mif)
-
 WIDTH=32;
-DEPTH=256;
-
-ADDRESS_RADIX=UNS;
-DATA_RADIX=UNS;
-
+DEPTH=2048;
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
 CONTENT BEGIN
-	[0..255]  :   0;
+	000 : 00010000;
+	001 : 00010421;
+	002 : 00010842;
+	003 : 00010C63;
+	004 : 00011084;
+	005 : 000114A5;
+	006 : 000118C6;
+	007 : 00011CE7;
+	008 : 00012108;
+	009 : 00012529;
+	00A : 0001294A;
+	00B : 00012D6B;
+	00C : 0001318C;
+	00D : 000135AD;
+	00E : 000139CE;
+	00F : 00013DEF;
+	010 : 00014210;
+	011 : 00014631;
+	012 : 00014A52;
+	013 : 00014E73;
+	014 : 00015294;
+	015 : 000156B5;
+	016 : 00015AD6;
+	017 : 00015EF7;
+	018 : 00016318;
+	019 : 00016739;
+	01A : 00016B5A;
+	01B : 00016F7B;
+	01C : 0001739C;
+	01D : 000177BD;
+	01E : 00017BDE;
+	01F : 00017FFF;
+	020 : 4821000A;
+	021 : 48410002;
+	022 : 00008C22;
+	023 : 00019022;
+	024 : 00021462;
+	025 : 00029061;
+	026 : 00031022;
+	027 : 00039022;
+	028 : 0004102A;
+	029 : 00049022;
+	02A : 00051061;
+	02B : 0005B422;
+	02C : 000611A2;
+	02D : 00069022;
+	02E : 00071022;
+	02F : 00079022;
+	030 : 408A000A;
+	031 : 448A000A;
+	032 : 4C810006;
+	033 : 50840004;
+	034 : 54840004;
+	035 : 58840004;
+	036 : 5C820002;
+	037 : 60820004;
+	038 : 64820002;
+	039 : 68820004;
+	03A : 6C820002;
+	03B : 714A0002;
+	03C : 742A000A;
+	03D : 78820003;
+	03E : 7C820003;
+	03F : 014A000A;
+	[040..7FF] : 00000000;
 END;
