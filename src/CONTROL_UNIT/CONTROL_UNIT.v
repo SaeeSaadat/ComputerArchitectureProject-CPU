@@ -21,7 +21,8 @@ module control_unit (
     output              memread_enable_b  // BYTE  
 );
 
-    assign PC_enable = (instruction[31:26] == 0) ? 0 : 1;
+    // assign PC_enable = (instruction[31:26] == 0) ? 0 : 1;
+    assign PC_enable = 1;
     assign register_write_byte_enable = (instruction[31:26] == 6'b011010) ? 1 : 0;
     assign register_write_word_enable = (instruction[31:26] == 6'b011000 || 
                                         (instruction[31:26]>=1 && instruction[31:26] <=23) ) ? 1 : 0;
@@ -45,6 +46,7 @@ module control_unit (
         else begin
 
             if (instruction[31:26] == 0) begin
+                //seriously TO fucking DO!
                 //TODO: Stop the whole thing! maybe there's nothing else to do since PC_Enable is assigned but still ...!
             end
             else if (instruction[31:26]>=1 && instruction[31:26] <=15)

@@ -9,6 +9,7 @@ entity CPUProject_vlg_check_tst is
         jump_mux_option3_outpin: in     vl_logic_vector(31 downto 0);
         jump_mux_option4_outpin: in     vl_logic_vector(31 downto 0);
         jump_mux_select_outpin: in     vl_logic_vector(1 downto 0);
+        pc_enable_pin   : in     vl_logic;
         pc_input_pin    : in     vl_logic_vector(31 downto 0);
         pcpin2          : in     vl_logic_vector(31 downto 0);
         reg1_outpin     : in     vl_logic_vector(31 downto 0);

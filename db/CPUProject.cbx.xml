@@ -12,6 +12,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|PC_MUX:inst2|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_o0d.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|ALU:inst1|MULT:inst2|lpm_mult:lpm_mult_component|mult_bcn:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_33h1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|ALU:inst1|ROTATE:inst12|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_jhc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|INSTRUCTION_MEMORY_2:inst13|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_55b1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|JMP:inst4|SHIFT_5BIT:inst1|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_ukb.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|ALU:inst1|ADDER_SUB:inst|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_1lg.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|ALU:inst1|MULT:inst2|lpm_mult:lpm_mult_component|mult_bcn:auto_generated|alt_mac_out:mac_out6" CBX_FILE_NAME="mac_out_kv82.tdf"/>
@@ -27,7 +28,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|ALU:inst1|MULT:inst2|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_bcn.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|ALU:inst1|MULT:inst2|lpm_mult:lpm_mult_component|mult_bcn:auto_generated|alt_mac_mult:mac_mult5" CBX_FILE_NAME="mac_mult_68h1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|ALU:inst1|alu_small_mux:inst10|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_l0d.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|INSTRUCTION_MEMORY:inst9|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_55b1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|MULTIPLEXER:inst17|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_l0d.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|SHIFT2:inst14|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_rkb.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|lpm_constant2:inst16|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_6e6.tdf"/>

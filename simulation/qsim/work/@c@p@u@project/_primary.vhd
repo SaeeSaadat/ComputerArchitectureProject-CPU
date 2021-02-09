@@ -2,9 +2,10 @@ library verilog;
 use verilog.vl_types.all;
 entity CPUProject is
     port(
-        alupin          : out    vl_logic_vector(31 downto 0);
+        pc_enable_pin   : out    vl_logic;
         cpu_clk         : in     vl_logic;
         rest            : in     vl_logic;
+        alupin          : out    vl_logic_vector(31 downto 0);
         instruction_pin : out    vl_logic_vector(31 downto 0);
         jump_mux_option1_outpin: out    vl_logic_vector(31 downto 0);
         jump_mux_option2_outpin: out    vl_logic_vector(31 downto 0);
