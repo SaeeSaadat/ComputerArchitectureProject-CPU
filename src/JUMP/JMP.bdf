@@ -328,14 +328,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 352 144)
-	(pt 264 144)
-)
-(connector
-	(pt 352 144)
-	(pt 352 176)
-)
-(connector
 	(pt 624 176)
 	(pt 712 176)
 	(bus)
@@ -428,5 +420,15 @@ applicable agreement for further details.
 (connector
 	(pt 1160 136)
 	(pt 1224 136)
+	(bus)
+)
+(connector
+	(pt 264 144)
+	(pt 352 144)
+	(bus)
+)
+(connector
+	(pt 352 144)
+	(pt 352 176)
 	(bus)
 )

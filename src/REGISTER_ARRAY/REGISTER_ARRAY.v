@@ -11,10 +11,10 @@ module register_array #(
 
     input                                 write_word_enable,
     input                                 write_byte_enable,
-    input   [register_width - 1 : 0]      write_data,
+    input   [31 : 0]      write_data,
 
-    output  [register_width - 1 : 0]      reg1,
-    output  [register_width - 1 : 0]      reg2
+    output  [31 : 0]      reg1,
+    output  [31 : 0]      reg2
 );
 
 reg [register_width - 1 : 0] registers [register_num - 1: 0];

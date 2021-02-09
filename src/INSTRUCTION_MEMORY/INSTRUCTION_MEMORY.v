@@ -87,9 +87,9 @@ module INSTRUCTION_MEMORY (
 		altsyncram_component.clock_enable_input_a = "BYPASS",
 		altsyncram_component.clock_enable_output_a = "BYPASS",
 `ifdef NO_PLI
-		altsyncram_component.init_file = "../instructionMemoryInstructions.rif"
+		altsyncram_component.init_file = "instructionMemoryInstructions.rif"
 `else
-		altsyncram_component.init_file = "../instructionMemoryInstructions.hex"
+		altsyncram_component.init_file = "instructionMemoryInstructions.mif"
 `endif
 ,
 		altsyncram_component.intended_device_family = "Cyclone IV GX",

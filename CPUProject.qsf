@@ -84,6 +84,24 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QIP_FILE MULT.qip
+set_global_assignment -name QIP_FILE DIV.qip
+set_global_assignment -name QIP_FILE CMP.qip
+set_global_assignment -name QIP_FILE ADDER_SUB.qip
+set_global_assignment -name VERILOG_FILE SHIFT_bb.v
+set_global_assignment -name VERILOG_FILE SHIFT.v
+set_global_assignment -name VERILOG_FILE ROTATE_bb.v
+set_global_assignment -name VERILOG_FILE ROTATE.v
+set_global_assignment -name VERILOG_FILE MULT_bb.v
+set_global_assignment -name VERILOG_FILE MULT.v
+set_global_assignment -name VERILOG_FILE DIV_bb.v
+set_global_assignment -name VERILOG_FILE DIV.v
+set_global_assignment -name VERILOG_FILE CMP_bb.v
+set_global_assignment -name VERILOG_FILE CMP.v
+set_global_assignment -name VERILOG_FILE ADDER_SUB_bb.v
+set_global_assignment -name VERILOG_FILE ADDER_SUB.v
+set_global_assignment -name VERILOG_FILE src/PC_ADDER/PC_ADDER_bb.v
+set_global_assignment -name VERILOG_FILE src/PC_ADDER/PC_ADDER.v
 set_global_assignment -name VERILOG_FILE src/INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.v
 set_global_assignment -name VERILOG_FILE src/REGISTER_ARRAY/REGISTER_ARRAY.v
 set_global_assignment -name VERILOG_FILE src/INSTRUCTION_INTERPRETER/INSTRUCTION_INTERPRETER.v
@@ -103,4 +121,5 @@ set_global_assignment -name QIP_FILE src/JUMP/SHIFT/SHIFT_16BIT.qip
 set_global_assignment -name QIP_FILE src/JUMP/CONSTANT/CONSTANT_18.qip
 set_global_assignment -name QIP_FILE src/JUMP/ADD/ADD.qip
 set_global_assignment -name QIP_FILE src/JUMP/SHIFT/SHIFT_5BIT.qip
+set_global_assignment -name MIF_FILE src/INSTRUCTION_MEMORY/instructionMemoryInstructions.mif
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

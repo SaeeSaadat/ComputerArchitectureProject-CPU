@@ -1,0 +1,96 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 0 0 224 192)
+	(text "FP_INVERSE" (rect 72 -1 167 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "data[31..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "data[31..0]" (rect 4 34 53 47)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 64 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "clock" (rect 4 50 27 63)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 64 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "aclr" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "aclr" (rect 4 66 20 79)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 64 80))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "result[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "result[31..0]" (rect 164 34 219 47)(font "Arial" (font_size 8)))
+		(line (pt 224 48)(pt 128 48)(line_width 3))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "division_by_zero" (rect 0 0 96 14)(font "Arial" (font_size 8)))
+		(text "division_by_zero" (rect 139 50 219 63)(font "Arial" (font_size 8)))
+		(line (pt 224 64)(pt 128 64))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "nan" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "nan" (rect 203 66 219 79)(font "Arial" (font_size 8)))
+		(line (pt 224 80)(pt 128 80))
+	)
+	(port
+		(pt 224 96)
+		(output)
+		(text "underflow" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "underflow" (rect 171 82 219 95)(font "Arial" (font_size 8)))
+		(line (pt 224 96)(pt 128 96))
+	)
+	(port
+		(pt 224 112)
+		(output)
+		(text "zero" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "zero" (rect 199 98 219 111)(font "Arial" (font_size 8)))
+		(line (pt 224 112)(pt 128 112))
+	)
+	(drawing
+		(text "Clock cycles: 20 " (rect 150 129 371 269)(font "Arial" ))
+		(text "Single Precision " (rect 155 145 376 301)(font "Arial" ))
+		(text "Exponent width: 8 " (rect 147 161 368 333)(font "Arial" ))
+		(text "Mantissa width: 23 " (rect 144 177 365 365)(font "Arial" ))
+		(line (pt 64 32)(pt 128 32))
+		(line (pt 128 32)(pt 128 128))
+		(line (pt 64 128)(pt 128 128))
+		(line (pt 64 32)(pt 64 128))
+		(line (pt 0 0)(pt 224 0))
+		(line (pt 224 0)(pt 224 192))
+		(line (pt 0 192)(pt 224 192))
+		(line (pt 0 0)(pt 0 192))
+	)
+)
