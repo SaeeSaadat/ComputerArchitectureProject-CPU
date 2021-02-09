@@ -1,5 +1,5 @@
 Flow report for CPUProject
-Mon Feb 08 22:35:36 2021
+Tue Feb 09 12:36:46 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Mon Feb 08 22:35:36 2021          ;
+; Flow Status                        ; Flow Failed - Tue Feb 09 12:36:46 2021          ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CPUProject                                      ;
 ; Top-level Entity Name              ; CPUProject                                      ;
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/08/2021 22:35:36 ;
+; Start date & time ; 02/09/2021 12:36:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPUProject          ;
 +-------------------+---------------------+
@@ -77,13 +77,25 @@ applicable agreement for further details.
 +-------------------------------------+-----------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                         ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+-----------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 132098957275674.161285253509256               ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 229521375761563.161286160516136               ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; LPM_CLSHIFT                                   ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; LPM_CLSHIFT                                   ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; ALTFP_ADD_SUB                                 ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; ALTFP_MULT                                    ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; ALTFP_DIV                                     ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; LPM_MUX                                       ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; LPM_MUX                                       ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; LPM_CLSHIFT                                   ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                                  ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; LPM_CLSHIFT                                   ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                                  ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; LPM_ADD_SUB                                   ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
@@ -105,6 +117,18 @@ applicable agreement for further details.
 ; MISC_FILE                           ; src/FP_COPROCESSOR/FP_DIV/FP_DIV_bb.v         ; --            ; --          ; --         ;
 ; MISC_FILE                           ; src/FP_COPROCESSOR/MUX/FP_MUX.bsf             ; --            ; --          ; --         ;
 ; MISC_FILE                           ; src/FP_COPROCESSOR/MUX/FP_MUX_bb.v            ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/PC_MUX/PC_MUX.bsf                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/PC_MUX/PC_MUX_bb.v                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/JUMP/SHIFT/SHIFT.bsf                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/JUMP/SHIFT/SHIFT_bb.v                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/JUMP/CONSTANT/CONSTANT.bsf                ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/JUMP/CONSTANT/CONSTANT_bb.v               ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/JUMP/SHIFT/SHIFT_16BIT.bsf                ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/JUMP/SHIFT/SHIFT_16BIT_bb.v               ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/JUMP/CONSTANT/CONSTANT_18.bsf             ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/JUMP/CONSTANT/CONSTANT_18_bb.v            ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/JUMP/ADD/ADD.bsf                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/JUMP/ADD/ADD_bb.v                         ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; 16764057                                      ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                         ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                                        ; --            ; --          ; Top        ;
@@ -117,8 +141,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4625 MB             ; 00:00:02                           ;
-; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 4631 MB             ; 00:00:04                           ;
+; Total                ; 00:00:05     ; --                      ; --                  ; 00:00:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -127,7 +151,7 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-HBFHOA3  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-RQJU1BN  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 

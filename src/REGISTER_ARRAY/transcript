@@ -49,3 +49,5 @@ run
 # ** Note: $stop    : REGISTER_ARRAY_TB.v(118)
 #    Time: 185 ns  Iteration: 0  Instance: /register_array_tb
 # Break in Module register_array_tb at REGISTER_ARRAY_TB.v line 118
+# End time: 12:48:04 on Feb 09,2021, Elapsed time: 1:17:26
+# Errors: 1, Warnings: 0
