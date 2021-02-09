@@ -1,7 +1,7 @@
 module register_array #(
     parameter register_num = 32,
     parameter register_width = 32,
-    parameter register_num_length = $clog2(register_num)
+    parameter register_num_length = 5 //$clog2(register_num)
 ) (
     input                                 clk,
     input                                 rst,
