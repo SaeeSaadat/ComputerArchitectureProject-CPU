@@ -1,5 +1,5 @@
 Flow report for CPUProject
-Tue Feb 09 13:57:10 2021
+Tue Feb 09 15:17:26 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Tue Feb 09 13:57:10 2021          ;
+; Flow Status                        ; Flow Failed - Tue Feb 09 15:17:26 2021          ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CPUProject                                      ;
 ; Top-level Entity Name              ; CPUProject                                      ;
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/09/2021 13:57:09 ;
+; Start date & time ; 02/09/2021 15:17:22 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPUProject          ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ applicable agreement for further details.
 +-------------------------------------+-----------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                         ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+-----------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 229521375761563.161286642913428               ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 229521375761563.161287124209968               ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; LPM_MULT                                      ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; LPM_DIVIDE                                    ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; LPM_COMPARE                                   ; --            ; --          ; --         ;
@@ -94,6 +94,8 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                        ; LPM_CONSTANT                                  ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; LPM_ADD_SUB                                   ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; LPM_CLSHIFT                                   ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
@@ -145,6 +147,8 @@ applicable agreement for further details.
 ; MISC_FILE                           ; src/JUMP/ADD/ADD_bb.v                         ; --            ; --          ; --         ;
 ; MISC_FILE                           ; src/JUMP/SHIFT/SHIFT_5BIT.bsf                 ; --            ; --          ; --         ;
 ; MISC_FILE                           ; src/JUMP/SHIFT/SHIFT_5BIT_bb.v                ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/SHIFT2/lpm_constant2.bsf                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/SHIFT2/lpm_constant2_inst.v               ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; 16764057                                      ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                         ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                                        ; --            ; --          ; Top        ;
@@ -157,8 +161,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 4631 MB             ; 00:00:05                           ;
-; Total                ; 00:00:05     ; --                      ; --                  ; 00:00:05                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4651 MB             ; 00:00:07                           ;
+; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:07                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

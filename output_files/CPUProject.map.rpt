@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPUProject
-Tue Feb 09 13:57:10 2021
+Tue Feb 09 15:17:26 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,8 +10,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
-  6. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis IP Cores Summary
+  6. Analysis & Synthesis Messages
+  7. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -37,7 +38,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Feb 09 13:57:10 2021               ;
+; Analysis & Synthesis Status        ; Failed - Tue Feb 09 15:17:26 2021               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CPUProject                                      ;
 ; Top-level Entity Name              ; CPUProject                                      ;
@@ -155,17 +156,44 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                        ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------+----------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                         ; IP Include File                                                                                    ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------+----------------------------------------------------------------------------------------------------+
+; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |CPUProject|PC_ADDER:inst               ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/PC_ADDER/PC_ADDER.v                     ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |CPUProject|PC_MUX:inst2                ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/PC_MUX/PC_MUX.v                         ;
+; Altera ; LPM_CLSHIFT  ; 13.0    ; N/A          ; N/A          ; |CPUProject|JMP:inst4|SHIFT_5BIT:inst1  ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/JUMP/SHIFT/SHIFT_5BIT.v                 ;
+; Altera ; LPM_CLSHIFT  ; 13.0    ; N/A          ; N/A          ; |CPUProject|JMP:inst4|SHIFT_5BIT:inst2  ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/JUMP/SHIFT/SHIFT_5BIT.v                 ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |CPUProject|JMP:inst4|CONSTANT:inst7    ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/JUMP/CONSTANT/CONSTANT.v                ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |CPUProject|JMP:inst4|CONSTANT_18:inst8 ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/JUMP/CONSTANT/CONSTANT_18.v             ;
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |CPUProject|JMP:inst4|ADD:inst10        ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/JUMP/ADD/ADD.v                          ;
+; Altera ; LPM_MUX      ; N/A     ; N/A          ; N/A          ; |CPUProject|MULTIPLEXER:inst7           ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/MUX/MULTIPLEXER.v                       ;
+; Altera ; ROM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |CPUProject|INSTRUCTION_MEMORY:inst9    ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.v ;
+; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |CPUProject|JUMP_ADDER:inst11           ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/PC_ADDER/JUMP_ADDER.v                   ;
+; Altera ; LPM_CLSHIFT  ; N/A     ; N/A          ; N/A          ; |CPUProject|SHIFT2:inst14               ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/SHIFT2/SHIFT2.v                         ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |CPUProject|lpm_constant2:inst16        ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/SHIFT2/lpm_constant2.v                  ;
+; Altera ; LPM_MUX      ; N/A     ; N/A          ; N/A          ; |CPUProject|MULTIPLEXER:inst17          ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/MUX/MULTIPLEXER.v                       ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------+----------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Feb 09 13:57:05 2021
+    Info: Processing started: Tue Feb 09 15:17:18 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPUProject -c CPUProject
 Warning (125092): Tcl Script File src/JUMP/SHIFT/SHIFT.qip not found
     Info (125063): set_global_assignment -name QIP_FILE src/JUMP/SHIFT/SHIFT.qip
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file src/mux/multiplexer.v
+    Info (12023): Found entity 1: MULTIPLEXER
+Info (12021): Found 1 design units, including 1 entities, in source file src/shift2/shift2.v
+    Info (12023): Found entity 1: SHIFT2
+Info (12021): Found 1 design units, including 1 entities, in source file src/pc_adder/jump_adder.v
+    Info (12023): Found entity 1: JUMP_ADDER
 Info (12021): Found 1 design units, including 1 entities, in source file mult.v
     Info (12023): Found entity 1: MULT
 Info (12021): Found 1 design units, including 1 entities, in source file div.v
@@ -174,33 +202,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file cmp.v
     Info (12023): Found entity 1: CMP
 Info (12021): Found 1 design units, including 1 entities, in source file adder_sub.v
     Info (12023): Found entity 1: ADDER_SUB
-Info (12021): Found 1 design units, including 1 entities, in source file shift_bb.v
+Info (12021): Found 1 design units, including 1 entities, in source file shift.v
     Info (12023): Found entity 1: SHIFT
-Error (10228): Verilog HDL error at SHIFT.v(39): module "SHIFT" cannot be declared more than once File: C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/SHIFT.v Line: 39
-Info (10499): HDL info at SHIFT_bb.v(34): see declaration for object "SHIFT"
-Info (12021): Found 0 design units, including 0 entities, in source file shift.v
-Info (12021): Found 1 design units, including 1 entities, in source file rotate_bb.v
+Info (12021): Found 1 design units, including 1 entities, in source file rotate.v
     Info (12023): Found entity 1: ROTATE
-Error (10228): Verilog HDL error at ROTATE.v(39): module "ROTATE" cannot be declared more than once File: C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/ROTATE.v Line: 39
-Info (10499): HDL info at ROTATE_bb.v(34): see declaration for object "ROTATE"
-Info (12021): Found 0 design units, including 0 entities, in source file rotate.v
-Error (10228): Verilog HDL error at MULT_bb.v(34): module "MULT" cannot be declared more than once File: C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/MULT_bb.v Line: 34
-Info (10499): HDL info at MULT.v(39): see declaration for object "MULT"
-Info (12021): Found 0 design units, including 0 entities, in source file mult_bb.v
-Error (10228): Verilog HDL error at DIV_bb.v(34): module "DIV" cannot be declared more than once File: C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/DIV_bb.v Line: 34
-Info (10499): HDL info at DIV.v(39): see declaration for object "DIV"
-Info (12021): Found 0 design units, including 0 entities, in source file div_bb.v
-Error (10228): Verilog HDL error at CMP_bb.v(34): module "CMP" cannot be declared more than once File: C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/CMP_bb.v Line: 34
-Info (10499): HDL info at CMP.v(39): see declaration for object "CMP"
-Info (12021): Found 0 design units, including 0 entities, in source file cmp_bb.v
-Error (10228): Verilog HDL error at ADDER_SUB_bb.v(34): module "ADDER_SUB" cannot be declared more than once File: C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/ADDER_SUB_bb.v Line: 34
-Info (10499): HDL info at ADDER_SUB.v(39): see declaration for object "ADDER_SUB"
-Info (12021): Found 0 design units, including 0 entities, in source file adder_sub_bb.v
-Info (12021): Found 1 design units, including 1 entities, in source file src/pc_adder/pc_adder_bb.v
+Info (12021): Found 1 design units, including 1 entities, in source file src/pc_adder/pc_adder.v
     Info (12023): Found entity 1: PC_ADDER
-Error (10228): Verilog HDL error at PC_ADDER.v(39): module "PC_ADDER" cannot be declared more than once File: C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/PC_ADDER/PC_ADDER.v Line: 39
-Info (10499): HDL info at PC_ADDER_bb.v(34): see declaration for object "PC_ADDER"
-Info (12021): Found 0 design units, including 0 entities, in source file src/pc_adder/pc_adder.v
 Info (12021): Found 1 design units, including 1 entities, in source file src/instruction_memory/instruction_memory.v
     Info (12023): Found entity 1: INSTRUCTION_MEMORY
 Info (12021): Found 1 design units, including 1 entities, in source file src/register_array/register_array.v
@@ -257,12 +264,230 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/jum
     Info (12023): Found entity 1: ADD
 Info (12021): Found 1 design units, including 1 entities, in source file src/jump/shift/shift_5bit.v
     Info (12023): Found entity 1: SHIFT_5BIT
+Info (12021): Found 1 design units, including 1 entities, in source file src/shift2/lpm_constant2.v
+    Info (12023): Found entity 1: lpm_constant2
+Info (12127): Elaborating entity "CPUProject" for the top level hierarchy
+Info (12128): Elaborating entity "PC_ADDER" for hierarchy "PC_ADDER:inst"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "PC_ADDER:inst|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12130): Elaborated megafunction instantiation "PC_ADDER:inst|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12133): Instantiated megafunction "PC_ADDER:inst|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "ADD"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "SIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mqh.tdf
+    Info (12023): Found entity 1: add_sub_mqh
+Info (12128): Elaborating entity "add_sub_mqh" for hierarchy "PC_ADDER:inst|lpm_add_sub:LPM_ADD_SUB_component|add_sub_mqh:auto_generated"
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:PC"
+Info (12130): Elaborated megafunction instantiation "LPM_FF:PC"
+Info (12133): Instantiated megafunction "LPM_FF:PC" with the following parameter:
+    Info (12134): Parameter "LPM_FFTYPE" = "DFF"
+    Info (12134): Parameter "LPM_WIDTH" = "32"
+Info (12128): Elaborating entity "instruction_interpreter" for hierarchy "instruction_interpreter:inst6"
+Warning (10230): Verilog HDL assignment warning at INSTRUCTION_INTERPRETER.v(28): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at INSTRUCTION_INTERPRETER.v(29): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at INSTRUCTION_INTERPRETER.v(30): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at INSTRUCTION_INTERPRETER.v(33): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at INSTRUCTION_INTERPRETER.v(34): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at INSTRUCTION_INTERPRETER.v(35): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at INSTRUCTION_INTERPRETER.v(36): truncated value with size 32 to match size of target (1)
+Warning (10270): Verilog HDL Case Statement warning at INSTRUCTION_INTERPRETER.v(123): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at INSTRUCTION_INTERPRETER.v(38): inferring latch(es) for variable "reg3", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at INSTRUCTION_INTERPRETER.v(38): inferring latch(es) for variable "reg1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at INSTRUCTION_INTERPRETER.v(38): inferring latch(es) for variable "reg2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at INSTRUCTION_INTERPRETER.v(38): inferring latch(es) for variable "s_r_amount", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at INSTRUCTION_INTERPRETER.v(38): inferring latch(es) for variable "alu_opcode", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at INSTRUCTION_INTERPRETER.v(38): inferring latch(es) for variable "jump_mux_signal", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at INSTRUCTION_INTERPRETER.v(38): inferring latch(es) for variable "write_back_on_register_mux_signal", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at INSTRUCTION_INTERPRETER.v(38): inferring latch(es) for variable "alu_input_mux_signal", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at INSTRUCTION_INTERPRETER.v(38): inferring latch(es) for variable "im_data", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "im_data[0]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[1]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[2]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[3]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[4]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[5]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[6]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[7]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[8]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[9]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[10]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[11]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[12]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[13]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[14]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[15]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[16]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[17]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[18]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[19]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[20]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[21]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[22]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[23]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[24]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[25]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[26]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[27]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[28]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[29]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[30]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "im_data[31]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "alu_input_mux_signal" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "write_back_on_register_mux_signal" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "jump_mux_signal[0]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "jump_mux_signal[1]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "alu_opcode[0]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "alu_opcode[1]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "alu_opcode[2]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "alu_opcode[3]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "alu_opcode[4]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "s_r_amount[0]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "s_r_amount[1]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "s_r_amount[2]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "s_r_amount[3]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "s_r_amount[4]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg2[0]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg2[1]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg2[2]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg2[3]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg2[4]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg1[0]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg1[1]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg1[2]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg1[3]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg1[4]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg3[0]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg3[1]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg3[2]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg3[3]" at INSTRUCTION_INTERPRETER.v(43)
+Info (10041): Inferred latch for "reg3[4]" at INSTRUCTION_INTERPRETER.v(43)
+Info (12128): Elaborating entity "INSTRUCTION_MEMORY" for hierarchy "INSTRUCTION_MEMORY:inst9"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "INSTRUCTION_MEMORY:inst9|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "INSTRUCTION_MEMORY:inst9|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "INSTRUCTION_MEMORY:inst9|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_aclr_a" = "CLEAR0"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "instructionMemoryInstructions.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV GX"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "CLEAR0"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_55b1.tdf
+    Info (12023): Found entity 1: altsyncram_55b1
+Info (12128): Elaborating entity "altsyncram_55b1" for hierarchy "INSTRUCTION_MEMORY:inst9|altsyncram:altsyncram_component|altsyncram_55b1:auto_generated"
+Info (12128): Elaborating entity "PC_MUX" for hierarchy "PC_MUX:inst2"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "PC_MUX:inst2|lpm_mux:LPM_MUX_component"
+Info (12130): Elaborated megafunction instantiation "PC_MUX:inst2|lpm_mux:LPM_MUX_component"
+Info (12133): Instantiated megafunction "PC_MUX:inst2|lpm_mux:LPM_MUX_component" with the following parameter:
+    Info (12134): Parameter "lpm_size" = "4"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "32"
+    Info (12134): Parameter "lpm_widths" = "2"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_o0d.tdf
+    Info (12023): Found entity 1: mux_o0d
+Info (12128): Elaborating entity "mux_o0d" for hierarchy "PC_MUX:inst2|lpm_mux:LPM_MUX_component|mux_o0d:auto_generated"
+Info (12128): Elaborating entity "JUMP_ADDER" for hierarchy "JUMP_ADDER:inst11"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "JUMP_ADDER:inst11|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12130): Elaborated megafunction instantiation "JUMP_ADDER:inst11|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12133): Instantiated megafunction "JUMP_ADDER:inst11|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "ADD"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "SIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_2nh.tdf
+    Info (12023): Found entity 1: add_sub_2nh
+Info (12128): Elaborating entity "add_sub_2nh" for hierarchy "JUMP_ADDER:inst11|lpm_add_sub:LPM_ADD_SUB_component|add_sub_2nh:auto_generated"
+Info (12128): Elaborating entity "SHIFT2" for hierarchy "SHIFT2:inst14"
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "SHIFT2:inst14|lpm_clshift:LPM_CLSHIFT_component"
+Info (12130): Elaborated megafunction instantiation "SHIFT2:inst14|lpm_clshift:LPM_CLSHIFT_component"
+Info (12133): Instantiated megafunction "SHIFT2:inst14|lpm_clshift:LPM_CLSHIFT_component" with the following parameter:
+    Info (12134): Parameter "lpm_shifttype" = "LOGICAL"
+    Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
+    Info (12134): Parameter "lpm_width" = "32"
+    Info (12134): Parameter "lpm_widthdist" = "2"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_rkb.tdf
+    Info (12023): Found entity 1: lpm_clshift_rkb
+Info (12128): Elaborating entity "lpm_clshift_rkb" for hierarchy "SHIFT2:inst14|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_rkb:auto_generated"
+Info (12128): Elaborating entity "lpm_constant2" for hierarchy "lpm_constant2:inst16"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant2:inst16|lpm_constant:LPM_CONSTANT_component"
+Info (12130): Elaborated megafunction instantiation "lpm_constant2:inst16|lpm_constant:LPM_CONSTANT_component"
+Info (12133): Instantiated megafunction "lpm_constant2:inst16|lpm_constant:LPM_CONSTANT_component" with the following parameter:
+    Info (12134): Parameter "lpm_cvalue" = "2"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "2"
+Info (12128): Elaborating entity "register_array" for hierarchy "register_array:inst5"
+Warning (10240): Verilog HDL Always Construct warning at REGISTER_ARRAY.v(26): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct
+Info (12128): Elaborating entity "MULTIPLEXER" for hierarchy "MULTIPLEXER:inst17"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "MULTIPLEXER:inst17|lpm_mux:LPM_MUX_component"
+Info (12130): Elaborated megafunction instantiation "MULTIPLEXER:inst17|lpm_mux:LPM_MUX_component"
+Info (12133): Instantiated megafunction "MULTIPLEXER:inst17|lpm_mux:LPM_MUX_component" with the following parameter:
+    Info (12134): Parameter "lpm_size" = "2"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "32"
+    Info (12134): Parameter "lpm_widths" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_l0d.tdf
+    Info (12023): Found entity 1: mux_l0d
+Info (12128): Elaborating entity "mux_l0d" for hierarchy "MULTIPLEXER:inst17|lpm_mux:LPM_MUX_component|mux_l0d:auto_generated"
+Info (12128): Elaborating entity "JMP" for hierarchy "JMP:inst4"
+Info (12128): Elaborating entity "ADD" for hierarchy "JMP:inst4|ADD:inst10"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "JMP:inst4|ADD:inst10|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12130): Elaborated megafunction instantiation "JMP:inst4|ADD:inst10|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12133): Instantiated megafunction "JMP:inst4|ADD:inst10|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "ADD"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_5uh.tdf
+    Info (12023): Found entity 1: add_sub_5uh
+Info (12128): Elaborating entity "add_sub_5uh" for hierarchy "JMP:inst4|ADD:inst10|lpm_add_sub:LPM_ADD_SUB_component|add_sub_5uh:auto_generated"
+Info (12128): Elaborating entity "SHIFT_5BIT" for hierarchy "JMP:inst4|SHIFT_5BIT:inst1"
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "JMP:inst4|SHIFT_5BIT:inst1|lpm_clshift:LPM_CLSHIFT_component"
+Info (12130): Elaborated megafunction instantiation "JMP:inst4|SHIFT_5BIT:inst1|lpm_clshift:LPM_CLSHIFT_component"
+Info (12133): Instantiated megafunction "JMP:inst4|SHIFT_5BIT:inst1|lpm_clshift:LPM_CLSHIFT_component" with the following parameter:
+    Info (12134): Parameter "lpm_shifttype" = "LOGICAL"
+    Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
+    Info (12134): Parameter "lpm_width" = "32"
+    Info (12134): Parameter "lpm_widthdist" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_ukb.tdf
+    Info (12023): Found entity 1: lpm_clshift_ukb
+Info (12128): Elaborating entity "lpm_clshift_ukb" for hierarchy "JMP:inst4|SHIFT_5BIT:inst1|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_ukb:auto_generated"
+Info (12128): Elaborating entity "CONSTANT_18" for hierarchy "JMP:inst4|CONSTANT_18:inst8"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "JMP:inst4|CONSTANT_18:inst8|lpm_constant:LPM_CONSTANT_component"
+Info (12130): Elaborated megafunction instantiation "JMP:inst4|CONSTANT_18:inst8|lpm_constant:LPM_CONSTANT_component"
+Info (12133): Instantiated megafunction "JMP:inst4|CONSTANT_18:inst8|lpm_constant:LPM_CONSTANT_component" with the following parameter:
+    Info (12134): Parameter "lpm_cvalue" = "18"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "5"
+Info (12128): Elaborating entity "CONSTANT" for hierarchy "JMP:inst4|CONSTANT:inst7"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "JMP:inst4|CONSTANT:inst7|lpm_constant:LPM_CONSTANT_component"
+Info (12130): Elaborated megafunction instantiation "JMP:inst4|CONSTANT:inst7|lpm_constant:LPM_CONSTANT_component"
+Info (12133): Instantiated megafunction "JMP:inst4|CONSTANT:inst7|lpm_constant:LPM_CONSTANT_component" with the following parameter:
+    Info (12134): Parameter "lpm_cvalue" = "2"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "5"
+Error (12006): Node instance "inst1" instantiates undefined entity "ALU"
+Error (12006): Node instance "inst19" instantiates undefined entity "MAIN_MEMORY"
+Error (12006): Node instance "inst" instantiates undefined entity "zero_extender"
+Error (12006): Node instance "16" instantiates undefined entity "zero_extender"
 Info (144001): Generated suppressed messages file C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/output_files/CPUProject.map.smsg
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 7 errors, 2 warnings
-    Error: Peak virtual memory: 4631 megabytes
-    Error: Processing ended: Tue Feb 09 13:57:11 2021
-    Error: Elapsed time: 00:00:06
-    Error: Total CPU time (on all processors): 00:00:05
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 4 errors, 20 warnings
+    Error: Peak virtual memory: 4652 megabytes
+    Error: Processing ended: Tue Feb 09 15:17:27 2021
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:07
 
 
 +------------------------------------------+

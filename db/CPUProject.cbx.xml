@@ -1,5 +1,18 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CPUProject">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|JMP:inst4|ADD:inst10|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_5uh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|JMP:inst4|CONSTANT_18:inst8|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_qf6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|JUMP_ADDER:inst11|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_2nh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|MULTIPLEXER:inst7|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_l0d.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|PC_ADDER:inst|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_mqh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|PC_MUX:inst2|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_o0d.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|INSTRUCTION_MEMORY:inst9|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_55b1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|JMP:inst4|SHIFT_5BIT:inst1|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_ukb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|MULTIPLEXER:inst17|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_l0d.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|SHIFT2:inst14|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_rkb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|lpm_constant2:inst16|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_6e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|JMP:inst4|CONSTANT:inst7|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_pf6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPUProject|JMP:inst4|SHIFT_5BIT:inst2|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_ukb.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
