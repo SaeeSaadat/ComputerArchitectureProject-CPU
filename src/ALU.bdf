@@ -288,84 +288,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 464 264 584 320)
-	(text "LPM_XOR" (rect 30 0 100 16)(font "Arial" (font_size 10)))
-	(text "inst7" (rect 3 45 30 59)(font "Arial" (font_size 8)))
-	(port
-		(pt 0 32)
-		(input)
-		(text "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" (rect 5 17 220 31)(font "Arial" (font_size 8)))
-		(text "data[][]" (rect 5 17 43 31)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 45 32)(line_width 3))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "result[LPM_WIDTH-1..0]" (rect 82 17 215 31)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 82 17 120 31)(font "Arial" (font_size 8)))
-		(line (pt 80 32)(pt 120 32)(line_width 3))
-	)
-	(parameter
-		"LPM_SIZE"
-		"2"
-		"Number of inputs per gate, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"LPM_WIDTH"
-		"32"
-		"Number of gates, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(line (pt 46 21)(pt 57 21))
-		(line (pt 46 43)(pt 57 43))
-		(arc (pt 81 32)(pt 57 21)(rect 26 21 89 84))
-		(arc (pt 57 43)(pt 81 32)(rect 26 -19 89 44))
-		(arc (pt 40 44)(pt 40 20)(rect 11 15 46 50))
-		(arc (pt 39 37)(pt 39 27)(rect 18 16 51 49))
-	)
-	(annotation_block (parameter)(rect 40 184 228 226))
-)
-(symbol
-	(rect 464 368 584 424)
-	(text "LPM_AND" (rect 25 0 96 16)(font "Arial" (font_size 10)))
-	(text "inst9" (rect 3 45 30 59)(font "Arial" (font_size 8)))
-	(port
-		(pt 0 32)
-		(input)
-		(text "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" (rect 6 19 221 33)(font "Arial" (font_size 8)))
-		(text "data[][]" (rect 6 19 44 33)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 46 32)(line_width 3))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "result[LPM_WIDTH-1..0]" (rect 83 19 216 33)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 83 19 121 33)(font "Arial" (font_size 8)))
-		(line (pt 74 32)(pt 120 32)(line_width 3))
-	)
-	(parameter
-		"LPM_SIZE"
-		"2"
-		"Number of inputs per gate, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
-	)
-	(parameter
-		"LPM_WIDTH"
-		"32"
-		"Number of gates, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
-	)
-	(drawing
-		(line (pt 46 44)(pt 63 44))
-		(line (pt 46 20)(pt 64 20))
-		(line (pt 46 44)(pt 46 20))
-		(arc (pt 63 45)(pt 62 20)(rect 50 20 75 45))
-	)
-	(annotation_block (parameter)(rect 144 336 278 378))
-)
-(symbol
 	(rect 752 152 896 232)
 	(text "alu_small_mux" (rect 30 0 132 16)(font "Arial" (font_size 10)))
 	(text "inst10" (rect 8 64 37 76)(font "Arial" ))
@@ -615,7 +537,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 440 432 616 528)
+	(rect 456 576 632 672)
 	(text "SHIFT" (rect 70 0 112 16)(font "Arial" (font_size 10)))
 	(text "inst11" (rect 8 80 37 92)(font "Arial" ))
 	(port
@@ -664,7 +586,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 440 536 616 632)
+	(rect 456 680 632 776)
 	(text "ROTATE" (rect 63 0 123 16)(font "Arial" (font_size 10)))
 	(text "inst12" (rect 8 80 37 92)(font "Arial" ))
 	(port
@@ -744,6 +666,76 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 216 64))
 	)
 	(annotation_block (parameter)(rect 1064 -192 1248 -144))
+)
+(symbol
+	(rect 416 232 608 312)
+	(text "xor_two" (rect 5 0 42 12)(font "Arial" ))
+	(text "inst5" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "input1[31..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "input1[31..0]" (rect 21 27 82 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "input2[31..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "input2[31..0]" (rect 21 43 82 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "result[31..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "result[31..0]" (rect 122 27 181 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32)(line_width 3))
+	)
+	(parameter
+		"width"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 176 64))
+	)
+	(annotation_block (parameter)(rect 416 312 600 344))
+)
+(symbol
+	(rect 424 392 616 472)
+	(text "and_two" (rect 5 0 45 12)(font "Arial" ))
+	(text "inst6" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "input1[31..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "input1[31..0]" (rect 21 27 82 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "input2[31..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "input2[31..0]" (rect 21 43 82 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "result[31..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "result[31..0]" (rect 122 27 181 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32)(line_width 3))
+	)
+	(parameter
+		"width"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 176 64))
+	)
+	(annotation_block (parameter)(rect 424 472 608 504))
 )
 (connector
 	(text "opcode[0]" (rect 290 -240 338 -228)(font "Arial" ))
@@ -829,40 +821,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "in1[31..0]" (rect 402 544 448 556)(font "Arial" ))
-	(pt 440 560)
-	(pt 392 560)
-	(bus)
-)
-(connector
-	(text "in1[31..0]" (rect 410 440 456 452)(font "Arial" ))
-	(pt 440 456)
-	(pt 400 456)
-	(bus)
-)
-(connector
-	(text "opcode[0]" (rect 402 576 450 588)(font "Arial" ))
-	(pt 440 592)
-	(pt 392 592)
-)
-(connector
-	(text "sr_amount[4..0]" (rect 392 560 469 572)(font "Arial" ))
-	(pt 440 576)
-	(pt 392 576)
-	(bus)
-)
-(connector
-	(text "sr_amount[4..0]" (rect 400 456 477 468)(font "Arial" ))
-	(pt 440 472)
-	(pt 400 472)
-	(bus)
-)
-(connector
-	(text "opcode[0]" (rect 400 472 448 484)(font "Arial" ))
-	(pt 440 488)
-	(pt 400 488)
-)
-(connector
 	(text "a_less_than_b" (rect 808 202 820 272)(font "Arial" )(vertical))
 	(pt 824 232)
 	(pt 824 272)
@@ -934,24 +892,6 @@ applicable agreement for further details.
 	(text "max_res[31..0]" (rect 906 184 980 196)(font "Arial" ))
 	(pt 896 200)
 	(pt 960 200)
-	(bus)
-)
-(connector
-	(text "nand_res[31..0]" (rect 594 384 670 396)(font "Arial" ))
-	(pt 584 400)
-	(pt 704 400)
-	(bus)
-)
-(connector
-	(text "shift_res[31..0]" (rect 626 440 701 452)(font "Arial" ))
-	(pt 616 456)
-	(pt 720 456)
-	(bus)
-)
-(connector
-	(text "rotate_res[31..0]" (rect 626 544 707 556)(font "Arial" ))
-	(pt 616 560)
-	(pt 720 560)
 	(bus)
 )
 (connector
@@ -1116,60 +1056,91 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "xnor_res[31..0]" (rect 602 280 676 292)(font "Arial" ))
-	(pt 584 296)
-	(pt 704 296)
-	(bus)
-)
-(connector
-	(text "in1[31..0]" (rect 304 407 316 453)(font "Arial" )(vertical))
-	(pt 320 456)
-	(pt 320 400)
-	(bus)
-)
-(connector
-	(text "in2[31..0]" (rect 344 407 356 453)(font "Arial" )(vertical))
-	(pt 368 456)
-	(pt 368 400)
-	(bus)
-)
-(connector
-	(pt 320 400)
-	(pt 368 400)
-	(bus)
-)
-(connector
-	(text "<<__$DEF_ALIAS1298>>" (rect 370 376 493 388)(font "Arial" )(invisible))
-	(pt 368 400)
-	(pt 464 400)
-	(bus)
-)
-(connector
-	(text "in2[31..0]" (rect 352 303 364 349)(font "Arial" )(vertical))
-	(pt 376 344)
-	(pt 376 296)
-	(bus)
-)
-(connector
-	(pt 328 296)
-	(pt 376 296)
-	(bus)
-)
-(connector
-	(pt 376 296)
-	(pt 464 296)
-	(bus)
-)
-(connector
-	(text "in1[31..0]" (rect 312 295 324 341)(font "Arial" )(vertical))
-	(pt 328 344)
-	(pt 328 296)
-	(bus)
-)
-(connector
 	(text "a_less_than_b" (rect 592 152 662 164)(font "Arial" ))
 	(pt 584 152)
 	(pt 664 152)
+)
+(connector
+	(text "in1[31..0]" (rect 418 688 464 700)(font "Arial" ))
+	(pt 456 704)
+	(pt 408 704)
+	(bus)
+)
+(connector
+	(text "in1[31..0]" (rect 426 584 472 596)(font "Arial" ))
+	(pt 456 600)
+	(pt 416 600)
+	(bus)
+)
+(connector
+	(text "opcode[0]" (rect 418 720 466 732)(font "Arial" ))
+	(pt 456 736)
+	(pt 408 736)
+)
+(connector
+	(text "sr_amount[4..0]" (rect 408 704 485 716)(font "Arial" ))
+	(pt 456 720)
+	(pt 408 720)
+	(bus)
+)
+(connector
+	(text "sr_amount[4..0]" (rect 416 600 493 612)(font "Arial" ))
+	(pt 456 616)
+	(pt 416 616)
+	(bus)
+)
+(connector
+	(text "opcode[0]" (rect 416 616 464 628)(font "Arial" ))
+	(pt 456 632)
+	(pt 416 632)
+)
+(connector
+	(text "shift_res[31..0]" (rect 642 584 717 596)(font "Arial" ))
+	(pt 632 600)
+	(pt 736 600)
+	(bus)
+)
+(connector
+	(text "rotate_res[31..0]" (rect 642 688 723 700)(font "Arial" ))
+	(pt 632 704)
+	(pt 736 704)
+	(bus)
+)
+(connector
+	(text "in1[31..0]" (rect 362 248 408 260)(font "Arial" ))
+	(pt 352 264)
+	(pt 416 264)
+	(bus)
+)
+(connector
+	(text "in2[31..0]" (rect 362 264 408 276)(font "Arial" ))
+	(pt 352 280)
+	(pt 416 280)
+	(bus)
+)
+(connector
+	(text "in1[31..0]" (rect 370 408 416 420)(font "Arial" ))
+	(pt 360 424)
+	(pt 424 424)
+	(bus)
+)
+(connector
+	(text "in2[31..0]" (rect 370 424 416 436)(font "Arial" ))
+	(pt 360 440)
+	(pt 424 440)
+	(bus)
+)
+(connector
+	(text "nand_res[31..0]" (rect 642 408 718 420)(font "Arial" ))
+	(pt 616 424)
+	(pt 752 424)
+	(bus)
+)
+(connector
+	(text "xnor_res[31..0]" (rect 618 248 692 260)(font "Arial" ))
+	(pt 672 264)
+	(pt 608 264)
+	(bus)
 )
 (junction (pt 216 560))
 (junction (pt 256 592))
@@ -1177,5 +1148,3 @@ applicable agreement for further details.
 (junction (pt 1328 112))
 (junction (pt 184 752))
 (junction (pt 256 560))
-(junction (pt 368 400))
-(junction (pt 376 296))
