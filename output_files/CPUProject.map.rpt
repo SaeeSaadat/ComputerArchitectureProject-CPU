@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPUProject
-Tue Feb 09 12:36:46 2021
+Tue Feb 09 13:21:34 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Feb 09 12:36:46 2021               ;
+; Analysis & Synthesis Status        ; Failed - Tue Feb 09 13:21:34 2021               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CPUProject                                      ;
 ; Top-level Entity Name              ; CPUProject                                      ;
@@ -161,8 +161,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Feb 09 12:36:41 2021
+    Info: Processing started: Tue Feb 09 13:21:32 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPUProject -c CPUProject
+Warning (125092): Tcl Script File src/JUMP/SHIFT/SHIFT.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE src/JUMP/SHIFT/SHIFT.qip
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file src/instruction_memory/instruction_memory.v
     Info (12023): Found entity 1: INSTRUCTION_MEMORY
@@ -214,9 +216,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/pc_
     Info (12023): Found entity 1: PC_MUX
 Info (12021): Found 1 design units, including 1 entities, in source file src/jump/jmp.bdf
     Info (12023): Found entity 1: JMP
-Error (10228): Verilog HDL error at SHIFT.v(39): module "SHIFT" cannot be declared more than once File: C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/JUMP/SHIFT/SHIFT.v Line: 39
-Info (10499): HDL info at SHIFT.v(39): see declaration for object "SHIFT"
-Info (12021): Found 0 design units, including 0 entities, in source file src/jump/shift/shift.v
 Info (12021): Found 1 design units, including 1 entities, in source file src/jump/constant/constant.v
     Info (12023): Found entity 1: CONSTANT
 Info (12021): Found 1 design units, including 1 entities, in source file src/jump/shift/shift_16bit.v
@@ -225,17 +224,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/jum
     Info (12023): Found entity 1: CONSTANT_18
 Info (12021): Found 1 design units, including 1 entities, in source file src/jump/add/add.v
     Info (12023): Found entity 1: ADD
-Info (144001): Generated suppressed messages file C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/output_files/CPUProject.map.smsg
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4631 megabytes
-    Error: Processing ended: Tue Feb 09 12:36:46 2021
-    Error: Elapsed time: 00:00:05
-    Error: Total CPU time (on all processors): 00:00:04
+Info (12021): Found 1 design units, including 1 entities, in source file src/jump/shift/shift_5bit.v
+    Info (12023): Found entity 1: SHIFT_5BIT
+Info (12127): Elaborating entity "CPUProject" for the top level hierarchy
+Error (275051): Bus range for signal "port "reg1_address[register_num_length-1..0]" (ID register_array:inst9)" must be a number
+Error (275051): Bus range for signal "port "reg2_address[register_num_length-1..0]" (ID register_array:inst9)" must be a number
+Error (275051): Bus range for signal "port "write_reg_address[register_num_length-1..0]" (ID register_array:inst9)" must be a number
+Error (12153): Can't elaborate top-level user hierarchy
+Info (144001): Generated suppressed messages file C:/Users/Mahdi/Documents/GitHub/ComputerArchitectureProject-CPU/output_files/CPUProject.map.smsg
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 4 errors, 2 warnings
+    Error: Peak virtual memory: 4628 megabytes
+    Error: Processing ended: Tue Feb 09 13:21:34 2021
+    Error: Elapsed time: 00:00:02
+    Error: Total CPU time (on all processors): 00:00:02
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/output_files/CPUProject.map.smsg.
+The suppressed messages can be found in C:/Users/Mahdi/Documents/GitHub/ComputerArchitectureProject-CPU/output_files/CPUProject.map.smsg.
 
 

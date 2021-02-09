@@ -1,13 +1,13 @@
 module register_array #(
     parameter register_num = 32,
     parameter register_width = 32,
-    parameter register_num_length = 5 //$clog2(register_num)
+    parameter register_num_length = $clog2(register_num)
 ) (
     input                                 clk,
     input                                 rst,
-    input   [4 : 0] reg1_address,
-    input   [4 : 0] reg2_address,
-    input   [4 : 0] write_reg_address,
+    input   [register_num_length - 1 : 0] reg1_address,
+    input   [register_num_length - 1 : 0] reg2_address,
+    input   [register_num_length - 1 : 0] write_reg_address,
 
     input                                 write_word_enable,
     input                                 write_byte_enable,

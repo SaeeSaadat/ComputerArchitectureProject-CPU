@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 0 0 176 80)
-	(text "SHIFT" (rect 70 0 112 16)(font "Arial" (font_size 10)))
+	(text "SHIFT_5BIT" (rect 54 0 135 16)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 64 25 76)(font "Arial" ))
 	(port
 		(pt 0 24)
