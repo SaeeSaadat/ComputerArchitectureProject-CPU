@@ -1591,6 +1591,11 @@ applicable agreement for further details.
 	(pt 3016 648)
 	(bus)
 )
+(connector
+	(text "sclk" (rect 42 416 62 428)(font "Arial" ))
+	(pt 128 432)
+	(pt 32 432)
+)
 (junction (pt 1096 560))
 (junction (pt 2104 416))
 (junction (pt 1712 432))
