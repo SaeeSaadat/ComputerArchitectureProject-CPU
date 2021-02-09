@@ -10,7 +10,8 @@ reg  [4 : 0]       r1_address;
 reg  [4 : 0]       r2_address;
 reg  [4 : 0]       r3_address;
 
-reg                write_enable;
+reg                write_word_enable;
+reg                write_byte_enable;
 reg  [31 : 0]      write_data;
 
 wire [31 : 0] r1_out;
@@ -26,7 +27,8 @@ register_array #(
     .reg1_address(r1_address),
     .reg2_address(r2_address),
     .write_reg_address(r3_address),
-    .write_enable(write_enable),
+    .write_byte_enable(write_byte_enable),
+    .write_word_enable(write_word_enable),
     .write_data(write_data),
     .reg1(r1_out),
     .reg2(r2_out)
@@ -40,14 +42,14 @@ initial begin
 
     rst = 1;
     #clock_period rst = 0;
-    #clock_period write_enable = 1;
+    #clock_period write_word_enable = 1;
 
     r3_address = 0;
     write_data = 10;
     #clock_period
 
     r3_address = 1;
-    write_data = 20;
+    write_data = 2048;
     #clock_period
     
     r3_address = 2;
@@ -63,8 +65,21 @@ initial begin
     
     #clock_period
 
-    write_enable = 0;
+    write_word_enable = 0;
+    write_byte_enable = 1;
 
+    #clock_period
+
+    r3_address = 4;
+    write_data = 12;
+
+    #clock_period
+
+    r3_address = 1;
+    write_data = 12;
+
+    #clock_period
+    
     #clock_period
 
 
@@ -74,7 +89,7 @@ initial begin
     #clock_period
 
     r1_address = 1;
-    r2_address = 2;
+    r2_address = 4;
 
     #clock_period
 
@@ -82,6 +97,11 @@ initial begin
     r2_address = 9;
     
     #clock_period
+
+
+    
+
+
     #clock_period
 
     #clock_half_period
