@@ -712,6 +712,39 @@ applicable agreement for further details.
 		(line (pt 0 0)(pt 0 0))
 	)
 )
+(symbol
+	(rect 832 -112 1064 -32)
+	(text "sign_extender" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst1" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "in[in_width-1..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "in[in_width-1..0]" (rect 21 27 97 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "out[out_width-1..0]" (rect 0 0 90 12)(font "Arial" ))
+		(text "out[out_width-1..0]" (rect 135 27 225 39)(font "Arial" ))
+		(line (pt 232 32)(pt 216 32)(line_width 3))
+	)
+	(parameter
+		"in_width"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"out_width"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 216 64))
+	)
+	(annotation_block (parameter)(rect 1064 -160 1246 -118))
+)
 (connector
 	(text "opcode[0]" (rect 290 -240 338 -228)(font "Arial" ))
 	(pt 288 -224)
@@ -1083,12 +1116,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "a_less_than_b" (rect 1026 -16 1096 -4)(font "Arial" ))
-	(pt 1088 0)
-	(pt 1016 0)
-	(bus)
-)
-(connector
 	(pt 1336 112)
 	(pt 1328 112)
 	(bus)
@@ -1096,6 +1123,24 @@ applicable agreement for further details.
 (connector
 	(pt 1328 112)
 	(pt 1232 112)
+	(bus)
+)
+(connector
+	(text "a_less_than_b" (rect 792 -96 862 -84)(font "Arial" ))
+	(pt 832 -80)
+	(pt 792 -80)
+	(bus)
+)
+(connector
+	(text "a_less_than_b32[31..0]" (rect 1064 -96 1178 -84)(font "Arial" ))
+	(pt 1064 -80)
+	(pt 1104 -80)
+	(bus)
+)
+(connector
+	(text "a_less_than_b32[31..0]" (rect 1024 -16 1138 -4)(font "Arial" ))
+	(pt 1088 0)
+	(pt 1024 0)
 	(bus)
 )
 (junction (pt 216 560))

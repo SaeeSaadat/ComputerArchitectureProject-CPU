@@ -1,5 +1,5 @@
-Analysis & Synthesis report for CPUProject
-Mon Feb 08 22:03:16 2021
+Analysis & Synthesis report for mg5d7
+Mon Feb 08 21:48:54 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,10 +36,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Feb 08 22:03:16 2021               ;
+; Analysis & Synthesis Status        ; Failed - Mon Feb 08 21:48:54 2021               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; CPUProject                                      ;
-; Top-level Entity Name              ; CPUProject                                      ;
+; Revision Name                      ; mg5d7                                           ;
+; Top-level Entity Name              ; mg5d7                                           ;
 ; Family                             ; Cyclone IV GX                                   ;
 ; Total logic elements               ; N/A until Partition Merge                       ;
 ;     Total combinational functions  ; N/A until Partition Merge                       ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; CPUProject         ; CPUProject         ;
+; Top-level entity name                                                      ; mg5d7              ; mg5d7              ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -157,65 +157,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
-Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Feb 08 22:03:15 2021
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPUProject -c CPUProject
-Warning (125092): Tcl Script File adder.qip not found
-    Info (125063): set_global_assignment -name QIP_FILE adder.qip
-Warning (125092): Tcl Script File instructionMemory.qip not found
-    Info (125063): set_global_assignment -name QIP_FILE instructionMemory.qip
-Warning (125092): Tcl Script File src/adder/adder.qip not found
-    Info (125063): set_global_assignment -name QIP_FILE src/adder/adder.qip
-Warning (125092): Tcl Script File src/instruction_memory/instructionMemory.qip not found
-    Info (125063): set_global_assignment -name QIP_FILE src/instruction_memory/instructionMemory.qip
-Warning (20028): Parallel compilation is not licensed and has been disabled
-Warning (12019): Can't analyze file -- file code_interpreter.v is missing
-Warning (12019): Can't analyze file -- file CPUProject.bdf is missing
-Info (12021): Found 1 design units, including 1 entities, in source file shift.v
-    Info (12023): Found entity 1: SHIFT
-Info (12021): Found 1 design units, including 1 entities, in source file rotate.v
-    Info (12023): Found entity 1: ROTATE
-Info (12021): Found 1 design units, including 1 entities, in source file src/fp_coprocessor/fp_coprocessor.bdf
-    Info (12023): Found entity 1: FP_COPROCESSOR
-Info (12021): Found 22 design units, including 22 entities, in source file src/fp_coprocessor/fp_add_sub/fp_add_sub.v
-    Info (12023): Found entity 1: FP_ADD_SUB_altbarrel_shift_t8e
-    Info (12023): Found entity 2: FP_ADD_SUB_altbarrel_shift_3cg
-    Info (12023): Found entity 3: FP_ADD_SUB_altpriority_encoder_3e8
-    Info (12023): Found entity 4: FP_ADD_SUB_altpriority_encoder_6e8
-    Info (12023): Found entity 5: FP_ADD_SUB_altpriority_encoder_be8
-    Info (12023): Found entity 6: FP_ADD_SUB_altpriority_encoder_3v7
-    Info (12023): Found entity 7: FP_ADD_SUB_altpriority_encoder_6v7
-    Info (12023): Found entity 8: FP_ADD_SUB_altpriority_encoder_bv7
-    Info (12023): Found entity 9: FP_ADD_SUB_altpriority_encoder_uv8
-    Info (12023): Found entity 10: FP_ADD_SUB_altpriority_encoder_ue9
-    Info (12023): Found entity 11: FP_ADD_SUB_altpriority_encoder_ou8
-    Info (12023): Found entity 12: FP_ADD_SUB_altpriority_encoder_nh8
-    Info (12023): Found entity 13: FP_ADD_SUB_altpriority_encoder_qh8
-    Info (12023): Found entity 14: FP_ADD_SUB_altpriority_encoder_vh8
-    Info (12023): Found entity 15: FP_ADD_SUB_altpriority_encoder_ii9
-    Info (12023): Found entity 16: FP_ADD_SUB_altpriority_encoder_n28
-    Info (12023): Found entity 17: FP_ADD_SUB_altpriority_encoder_q28
-    Info (12023): Found entity 18: FP_ADD_SUB_altpriority_encoder_v28
-    Info (12023): Found entity 19: FP_ADD_SUB_altpriority_encoder_i39
-    Info (12023): Found entity 20: FP_ADD_SUB_altpriority_encoder_cna
-    Info (12023): Found entity 21: FP_ADD_SUB_altfp_add_sub_39n
-    Info (12023): Found entity 22: FP_ADD_SUB
-Info (12021): Found 2 design units, including 2 entities, in source file src/fp_coprocessor/fp_mult/fp_mult.v
-    Info (12023): Found entity 1: FP_MULT_altfp_mult_bnq
-    Info (12023): Found entity 2: FP_MULT
-Info (12021): Found 3 design units, including 3 entities, in source file src/fp_coprocessor/fp_div/fp_div.v
-    Info (12023): Found entity 1: FP_DIV_altfp_div_pst_39j
-    Info (12023): Found entity 2: FP_DIV_altfp_div_oul
-    Info (12023): Found entity 3: FP_DIV
-Info (12021): Found 1 design units, including 1 entities, in source file src/fp_coprocessor/mux/fp_mux.v
-    Info (12023): Found entity 1: FP_MUX
-Error (12007): Top-level design entity "CPUProject" is undefined
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 7 warnings
-    Error: Peak virtual memory: 4628 megabytes
-    Error: Processing ended: Mon Feb 08 22:03:16 2021
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:02
+Can't read Quartus II 64-Bit message file C:/Users/Mahdi/Documents/GitHub/ComputerArchitectureProject-CPU/src/FP_COPROCESSOR/FP_DIV/greybox_tmp/greybox_tmp/db/mg5d7.map.qmsg.
+Make sure the file exists and is up to date, and you have permission to read and write the file.
 
 

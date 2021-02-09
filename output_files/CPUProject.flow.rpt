@@ -1,5 +1,5 @@
 Flow report for CPUProject
-Sun Feb 07 20:47:46 2021
+Mon Feb 08 22:03:16 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Sun Feb 07 20:47:46 2021          ;
+; Flow Status                        ; Flow Failed - Mon Feb 08 22:03:16 2021          ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CPUProject                                      ;
 ; Top-level Entity Name              ; CPUProject                                      ;
@@ -66,31 +66,50 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/07/2021 20:47:45 ;
+; Start date & time ; 02/08/2021 22:03:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPUProject          ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                 ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 229521375761563.161271826502536 ; --            ; --          ; --         ;
-; IP_TOOL_NAME                        ; LPM_ADD_SUB                     ; --            ; --          ; --         ;
-; IP_TOOL_NAME                        ; ROM: 1-PORT                     ; --            ; --          ; --         ;
-; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --          ; --         ;
-; IP_TOOL_VERSION                     ; 13.0                            ; --            ; --          ; --         ;
-; MISC_FILE                           ; adder.bsf                       ; --            ; --          ; --         ;
-; MISC_FILE                           ; adder_bb.v                      ; --            ; --          ; --         ;
-; MISC_FILE                           ; instructionMemory.bsf           ; --            ; --          ; --         ;
-; MISC_FILE                           ; instructionMemory_bb.v          ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --         ;
-+-------------------------------------+---------------------------------+---------------+-------------+------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                               ;
++-------------------------------------+-----------------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                         ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+-----------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 132098957275674.161285059514364               ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; LPM_CLSHIFT                                   ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; LPM_CLSHIFT                                   ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; ALTFP_ADD_SUB                                 ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; ALTFP_MULT                                    ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; ALTFP_DIV                                     ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; LPM_MUX                                       ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; SHIFT.bsf                                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; SHIFT_bb.v                                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROTATE.bsf                                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROTATE_bb.v                                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/FP_COPROCESSOR/FP_ADD_SUB/FP_ADD_SUB.bsf  ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/FP_COPROCESSOR/FP_ADD_SUB/FP_ADD_SUB_bb.v ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/FP_COPROCESSOR/FP_MULT/FP_MULT.bsf        ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/FP_COPROCESSOR/FP_MULT/FP_MULT_inst.v     ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/FP_COPROCESSOR/FP_MULT/FP_MULT_bb.v       ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/FP_COPROCESSOR/FP_MULT/FP_MULT.inc        ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/FP_COPROCESSOR/FP_MULT/FP_MULT.cmp        ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/FP_COPROCESSOR/FP_DIV/FP_DIV.bsf          ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/FP_COPROCESSOR/FP_DIV/FP_DIV_bb.v         ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/FP_COPROCESSOR/MUX/FP_MUX.bsf             ; --            ; --          ; --         ;
+; MISC_FILE                           ; src/FP_COPROCESSOR/MUX/FP_MUX_bb.v            ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                                      ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                         ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                        ; --            ; --          ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                  ; --            ; --          ; --         ;
++-------------------------------------+-----------------------------------------------+---------------+-------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -98,8 +117,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:04     ; 1.0                     ; 4616 MB             ; 00:00:04                           ;
-; Total                ; 00:00:04     ; --                      ; --                  ; 00:00:04                           ;
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4628 MB             ; 00:00:02                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:02                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,7 +127,7 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-RQJU1BN  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-HBFHOA3  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
