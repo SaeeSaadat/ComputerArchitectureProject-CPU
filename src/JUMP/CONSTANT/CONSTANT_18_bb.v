@@ -1,12 +1,12 @@
-// megafunction wizard: %LPM_MUX%VBB%
+// megafunction wizard: %LPM_CONSTANT%VBB%
 // GENERATION: STANDARD
 // VERSION: WM1.0
-// MODULE: LPM_MUX 
+// MODULE: LPM_CONSTANT 
 
 // ============================================================
-// File Name: PC_MUX.v
+// File Name: CONSTANT_18.v
 // Megafunction Name(s):
-// 			LPM_MUX
+// 			LPM_CONSTANT
 //
 // Simulation Library Files(s):
 // 			lpm
@@ -31,20 +31,10 @@
 //Altera or its authorized distributors.  Please refer to the 
 //applicable agreement for further details.
 
-module PC_MUX (
-	data0x,
-	data1x,
-	data2x,
-	data3x,
-	sel,
+module CONSTANT_18 (
 	result);
 
-	input	[31:0]  data0x;
-	input	[31:0]  data1x;
-	input	[31:0]  data2x;
-	input	[31:0]  data3x;
-	input	[1:0]  sel;
-	output	[31:0]  result;
+	output	[4:0]  result;
 
 endmodule
 
@@ -52,29 +42,24 @@ endmodule
 // CNX file retrieval info
 // ============================================================
 // Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone IV GX"
+// Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
+// Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
+// Retrieval info: PRIVATE: Radix NUMERIC "10"
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
+// Retrieval info: PRIVATE: Value NUMERIC "18"
+// Retrieval info: PRIVATE: nBit NUMERIC "5"
 // Retrieval info: PRIVATE: new_diagram STRING "1"
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all
-// Retrieval info: CONSTANT: LPM_SIZE NUMERIC "4"
-// Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_MUX"
-// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "32"
-// Retrieval info: CONSTANT: LPM_WIDTHS NUMERIC "2"
-// Retrieval info: USED_PORT: data0x 0 0 32 0 INPUT NODEFVAL "data0x[31..0]"
-// Retrieval info: USED_PORT: data1x 0 0 32 0 INPUT NODEFVAL "data1x[31..0]"
-// Retrieval info: USED_PORT: data2x 0 0 32 0 INPUT NODEFVAL "data2x[31..0]"
-// Retrieval info: USED_PORT: data3x 0 0 32 0 INPUT NODEFVAL "data3x[31..0]"
-// Retrieval info: USED_PORT: result 0 0 32 0 OUTPUT NODEFVAL "result[31..0]"
-// Retrieval info: USED_PORT: sel 0 0 2 0 INPUT NODEFVAL "sel[1..0]"
-// Retrieval info: CONNECT: @data 0 0 32 0 data0x 0 0 32 0
-// Retrieval info: CONNECT: @data 0 0 32 32 data1x 0 0 32 0
-// Retrieval info: CONNECT: @data 0 0 32 64 data2x 0 0 32 0
-// Retrieval info: CONNECT: @data 0 0 32 96 data3x 0 0 32 0
-// Retrieval info: CONNECT: @sel 0 0 2 0 sel 0 0 2 0
-// Retrieval info: CONNECT: result 0 0 32 0 @result 0 0 32 0
-// Retrieval info: GEN_FILE: TYPE_NORMAL PC_MUX.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL PC_MUX.inc FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL PC_MUX.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL PC_MUX.bsf TRUE FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL PC_MUX_inst.v FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL PC_MUX_bb.v TRUE
+// Retrieval info: CONSTANT: LPM_CVALUE NUMERIC "18"
+// Retrieval info: CONSTANT: LPM_HINT STRING "ENABLE_RUNTIME_MOD=NO"
+// Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_CONSTANT"
+// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "5"
+// Retrieval info: USED_PORT: result 0 0 5 0 OUTPUT NODEFVAL "result[4..0]"
+// Retrieval info: CONNECT: result 0 0 5 0 @result 0 0 5 0
+// Retrieval info: GEN_FILE: TYPE_NORMAL CONSTANT_18.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL CONSTANT_18.inc FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL CONSTANT_18.cmp FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL CONSTANT_18.bsf TRUE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL CONSTANT_18_inst.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL CONSTANT_18_bb.v TRUE
 // Retrieval info: LIB_FILE: lpm

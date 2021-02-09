@@ -1,8 +1,9 @@
-LPM_SIZE=3
+LPM_SIZE=4
 LPM_TYPE=LPM_MUX
 LPM_WIDTH=32
 LPM_WIDTHS=2
 DEVICE_FAMILY="Cyclone IV GX"
+data
 data
 data
 data
