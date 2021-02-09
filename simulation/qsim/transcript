@@ -23,9 +23,6 @@
 # Loading altera_ver.dffeas
 # Loading cycloneiv_ver.cycloneiv_io_obuf
 # Loading cycloneiv_ver.cycloneiv_io_ibuf
-# Loading cycloneiv_ver.cycloneiv_clkctrl
-# Loading cycloneiv_ver.cycloneiv_mux41
-# Loading cycloneiv_ver.cycloneiv_ena_reg
 # Loading work.CPUProject_vlg_sample_tst
 # Loading work.CPUProject_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
@@ -33,5 +30,5 @@
 # This may because you are loading cell libraries which are not recommended with
 # the ModelSim Altera version. Expect performance to be adversely affected.
 # Simulation passed !
-# ** Note: $finish    : CPUProject.vt(3921)
+# ** Note: $finish    : CPUProject.vt(6301)
 #    Time: 30 us  Iteration: 0  Instance: /CPUProject_vlg_vec_tst/tb_out

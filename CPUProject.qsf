@@ -84,6 +84,11 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE src/CONTROL_UNIT/CONTROL_UNIT.v
 set_global_assignment -name VERILOG_FILE src/AND_TWO_IN/AND_TWO_IN.v
 set_global_assignment -name VERILOG_FILE src/XOR_TWO_IN/XOR_TWO_IN.v
 set_global_assignment -name VERILOG_FILE src/alu_small_mux.v
@@ -107,7 +112,6 @@ set_global_assignment -name VERILOG_FILE ADDER_SUB.v
 set_global_assignment -name VERILOG_FILE src/PC_ADDER/PC_ADDER.v
 set_global_assignment -name VERILOG_FILE src/INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.v
 set_global_assignment -name VERILOG_FILE src/REGISTER_ARRAY/REGISTER_ARRAY.v
-set_global_assignment -name VERILOG_FILE src/INSTRUCTION_INTERPRETER/INSTRUCTION_INTERPRETER.v
 set_global_assignment -name BDF_FILE CPUProject.bdf
 set_global_assignment -name QIP_FILE SHIFT.qip
 set_global_assignment -name QIP_FILE ROTATE.qip
@@ -128,9 +132,5 @@ set_global_assignment -name MIF_FILE src/INSTRUCTION_MEMORY/instructionMemoryIns
 set_global_assignment -name QIP_FILE src/SHIFT2/lpm_constant2.qip
 set_global_assignment -name MIF_FILE src/MEMORY/mainMemoryInitial.mif
 set_global_assignment -name VECTOR_WAVEFORM_FILE src/synthesis/Waveform.vwf
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/synthesis/Waveform.vwf"

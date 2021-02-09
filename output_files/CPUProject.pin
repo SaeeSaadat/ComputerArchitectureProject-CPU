@@ -71,491 +71,679 @@
  ---------------------------------------------------------------------------------
 
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-CHIP  "CPUProject"  ASSIGNED TO AN: EP4CGX30CF23C6
+CHIP  "CPUProject"  ASSIGNED TO AN: EP4CGX110DF27C7
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-RESERVED_INPUT_WITH_WEAK_PULLUP : A1        :        :                   :         : 8         :                
-reg2_outpin[5]               : A2        : output : 2.5 V             :         : 8         : N              
-instruction_pin[1]           : A3        : output : 2.5 V             :         : 8         : N              
-reg2_outpin[8]               : A4        : output : 2.5 V             :         : 8         : N              
-reg2_outpin[11]              : A5        : output : 2.5 V             :         : 8         : N              
-instruction_pin[22]          : A6        : output : 2.5 V             :         : 8         : N              
-instruction_pin[25]          : A7        : output : 2.5 V             :         : 8         : N              
-reg2_outpin[1]               : A8        : output : 2.5 V             :         : 8         : N              
-GND+                         : A9        :        :                   :         : 7         :                
-instruction_pin[15]          : A10       : output : 2.5 V             :         : 7         : N              
-reg3address_outpin[1]        : A11       : output : 2.5 V             :         : 7         : N              
-instruction_pin[5]           : A12       : output : 2.5 V             :         : 7         : N              
-alupin[21]                   : A13       : output : 2.5 V             :         : 7         : N              
-alupin[20]                   : A14       : output : 2.5 V             :         : 7         : N              
-instruction_pin[27]          : A15       : output : 2.5 V             :         : 7         : N              
-reg2_outpin[15]              : A16       : output : 2.5 V             :         : 7         : N              
-reg2_outpin[0]               : A17       : output : 2.5 V             :         : 7         : N              
-pcpin2[28]                   : A18       : output : 2.5 V             :         : 7         : N              
-pcpin2[20]                   : A19       : output : 2.5 V             :         : 7         : N              
-pc_input_pin[17]             : A20       : output : 2.5 V             :         : 6         : N              
-pc_input_pin[4]              : A21       : output : 2.5 V             :         : 6         : N              
-pc_input_pin[28]             : A22       : output : 2.5 V             :         : 6         : N              
-GND                          : AA1       : gnd    :                   :         :           :                
-GND                          : AA2       : gnd    :                   :         :           :                
-NC                           : AA3       :        :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA4       :        :                   :         : 3         :                
-GND                          : AA5       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   :         : 3         :                
-reg2_outpin[13]              : AA7       : output : 2.5 V             :         : 3         : N              
-GND                          : AA8       : gnd    :                   :         :           :                
-reg2_outpin[31]              : AA9       : output : 2.5 V             :         : 3         : N              
-reg2_outpin[27]              : AA10      : output : 2.5 V             :         : 3         : N              
-GND                          : AA11      : gnd    :                   :         :           :                
-GND+                         : AA12      :        :                   :         : 4         :                
-reg1_outpin[30]              : AA13      : output : 2.5 V             :         : 4         : N              
-GND                          : AA14      : gnd    :                   :         :           :                
-reg2_outpin[30]              : AA15      : output : 2.5 V             :         : 4         : N              
-alupin[17]                   : AA16      : output : 2.5 V             :         : 4         : N              
-GND                          : AA17      : gnd    :                   :         :           :                
-instruction_pin[29]          : AA18      : output : 2.5 V             :         : 4         : N              
-reg1_outpin[28]              : AA19      : output : 2.5 V             :         : 4         : N              
-instruction_pin[28]          : AA20      : output : 2.5 V             :         : 4         : N              
-pcpin2[2]                    : AA21      : output : 2.5 V             :         : 4         : N              
-pcpin2[15]                   : AA22      : output : 2.5 V             :         : 4         : N              
-RREF                         : AB1       :        :                   :         :           :                
+instruction_pin[8]           : A2        : output : 2.5 V             :         : 8         : N              
+alupin[10]                   : A3        : output : 2.5 V             :         : 8         : N              
+jump_mux_option2_outpin[19]  : A4        : output : 2.5 V             :         : 8         : N              
+instruction_pin[12]          : A5        : output : 2.5 V             :         : 8         : N              
+jump_mux_option2_outpin[3]   : A6        : output : 2.5 V             :         : 8         : N              
+reg1_outpin[3]               : A7        : output : 2.5 V             :         : 8         : N              
+jump_mux_option2_outpin[30]  : A8        : output : 2.5 V             :         : 8         : N              
+instruction_pin[9]           : A9        : output : 2.5 V             :         : 8         : N              
+jump_mux_select_outpin[1]    : A10       : output : 2.5 V             :         : 8         : N              
+reg2_outpin[6]               : A11       : output : 2.5 V             :         : 8         : N              
+jump_mux_option1_outpin[16]  : A12       : output : 2.5 V             :         : 8         : N              
+reg2address_outpin[2]        : A13       : output : 2.5 V             :         : 8         : N              
+GND+                         : A14       :        :                   :         : 7         :                
+alupin[3]                    : A15       : output : 2.5 V             :         : 7         : N              
+reg1_outpin[5]               : A16       : output : 2.5 V             :         : 7         : N              
+reg1address_outpin[4]        : A17       : output : 2.5 V             :         : 7         : N              
+jump_mux_option2_outpin[6]   : A18       : output : 2.5 V             :         : 7         : N              
+reg2_outpin[17]              : A19       : output : 2.5 V             :         : 7         : N              
+reg1_outpin[15]              : A20       : output : 2.5 V             :         : 7         : N              
+jump_mux_option2_outpin[9]   : A21       : output : 2.5 V             :         : 7         : N              
+jump_mux_option2_outpin[14]  : A22       : output : 2.5 V             :         : 7         : N              
+jump_mux_option4_outpin[25]  : A23       : output : 2.5 V             :         : 7         : N              
+pcpin2[9]                    : A24       : output : 2.5 V             :         : 7         : N              
+jump_mux_option4_outpin[11]  : A25       : output : 2.5 V             :         : 7         : N              
+GXB_GND*                     : AA1       :        :                   :         : QL0       :                
+GXB_GND*                     : AA2       :        :                   :         : QL0       :                
+VCCL_GXB                     : AA3       : power  :                   : 1.2V    :           :                
+VCCL_GXB                     : AA4       : power  :                   : 1.2V    :           :                
+nSTATUS                      : AA5       :        :                   :         : 3         :                
+MSEL0                        : AA6       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA8       :        :                   :         : 3         :                
+jump_mux_option1_outpin[10]  : AA9       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AA10      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AA12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AA13      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AA14      : power  :                   : 2.5V    : 3         :                
+reg1address_outpin[3]        : AA15      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AA16      : power  :                   : 2.5V    : 4         :                
+jump_mux_option2_outpin[23]  : AA17      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AA19      : power  :                   : 2.5V    : 4         :                
+jump_mux_option4_outpin[15]  : AA20      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA22      :        :                   :         : 4         :                
+jump_mux_option1_outpin[30]  : AA23      : output : 2.5 V             :         : 5         : N              
+pc_input_pin[27]             : AA24      : output : 2.5 V             :         : 5         : N              
+instruction_pin[19]          : AA25      : output : 2.5 V             :         : 5         : N              
+pcpin2[19]                   : AA26      : output : 2.5 V             :         : 5         : N              
+GND                          : AB1       : gnd    :                   :         :           :                
 GND                          : AB2       : gnd    :                   :         :           :                
-~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AB3       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   :         : 3         :                
+NC                           : AB3       :        :                   :         :           :                
+NC                           : AB4       :        :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 3         :                
-alupin[15]                   : AB6       : output : 2.5 V             :         : 3         : N              
-instruction_pin[8]           : AB7       : output : 2.5 V             :         : 3         : N              
-reg2_outpin[7]               : AB8       : output : 2.5 V             :         : 3         : N              
-pcpin2[1]                    : AB9       : output : 2.5 V             :         : 3         : N              
-pcpin2[6]                    : AB10      : output : 2.5 V             :         : 3         : N              
-pcpin2[3]                    : AB11      : output : 2.5 V             :         : 3         : N              
-GND+                         : AB12      :        :                   :         : 4         :                
-reg2address_outpin[4]        : AB13      : output : 2.5 V             :         : 4         : N              
-reg1_outpin[2]               : AB14      : output : 2.5 V             :         : 4         : N              
-reg1_outpin[31]              : AB15      : output : 2.5 V             :         : 4         : N              
-reg2_outpin[20]              : AB16      : output : 2.5 V             :         : 4         : N              
-reg2_outpin[21]              : AB17      : output : 2.5 V             :         : 4         : N              
-reg1_outpin[13]              : AB18      : output : 2.5 V             :         : 4         : N              
-pc_input_pin[14]             : AB19      : output : 2.5 V             :         : 4         : N              
-reg2_outpin[29]              : AB20      : output : 2.5 V             :         : 4         : N              
-pcpin2[18]                   : AB21      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB22      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B1        :        :                   :         : 8         :                
-GND                          : B2        : gnd    :                   :         :           :                
-instruction_pin[18]          : B3        : output : 2.5 V             :         : 8         : N              
-instruction_pin[14]          : B4        : output : 2.5 V             :         : 8         : N              
-GND                          : B5        : gnd    :                   :         :           :                
-instruction_pin[9]           : B6        : output : 2.5 V             :         : 8         : N              
-instruction_pin[0]           : B7        : output : 2.5 V             :         : 8         : N              
+CONF_DONE                    : AB6       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB7       :        :                   :         : 3         :                
+alupin[30]                   : AB8       : output : 2.5 V             :         : 3         : N              
+alupin[20]                   : AB9       : output : 2.5 V             :         : 3         : N              
+GND                          : AB10      : gnd    :                   :         :           :                
+instruction_pin[21]          : AB11      : output : 2.5 V             :         : 3         : N              
+instruction_pin[28]          : AB12      : output : 2.5 V             :         : 3         : N              
+GND                          : AB13      : gnd    :                   :         :           :                
+alupin[5]                    : AB14      : output : 2.5 V             :         : 4         : N              
+reg2_outpin[2]               : AB15      : output : 2.5 V             :         : 4         : N              
+GND                          : AB16      : gnd    :                   :         :           :                
+VCCIO4                       : AB17      : power  :                   : 2.5V    : 4         :                
+reg1_outpin[20]              : AB18      : output : 2.5 V             :         : 4         : N              
+GND                          : AB19      : gnd    :                   :         :           :                
+jump_mux_option4_outpin[27]  : AB20      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB21      :        :                   :         : 4         :                
+GND                          : AB22      : gnd    :                   :         :           :                
+jump_mux_option1_outpin[27]  : AB23      : output : 2.5 V             :         : 5         : N              
+jump_mux_option4_outpin[9]   : AB24      : output : 2.5 V             :         : 5         : N              
+GND                          : AB25      : gnd    :                   :         :           :                
+jump_mux_option4_outpin[20]  : AB26      : output : 2.5 V             :         : 5         : N              
+RREF                         : AC1       :        :                   :         :           :                
+GND                          : AC2       : gnd    :                   :         :           :                
+VCCA_GXB                     : AC3       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC6       :        :                   :         : 3         :                
+~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AC7       : output : 2.5 V             :         : 3         : N              
+instruction_pin[4]           : AC8       : output : 2.5 V             :         : 3         : N              
+pcpin2[1]                    : AC9       : output : 2.5 V             :         : 3         : N              
+alupin[26]                   : AC10      : output : 2.5 V             :         : 3         : N              
+instruction_pin[31]          : AC11      : output : 2.5 V             :         : 3         : N              
+reg2_outpin[9]               : AC12      : output : 2.5 V             :         : 3         : N              
+reg2_outpin[12]              : AC13      : output : 2.5 V             :         : 3         : N              
+reg1_outpin[23]              : AC14      : output : 2.5 V             :         : 4         : N              
+reg2_outpin[29]              : AC15      : output : 2.5 V             :         : 4         : N              
+alupin[24]                   : AC16      : output : 2.5 V             :         : 4         : N              
+reg2_outpin[11]              : AC17      : output : 2.5 V             :         : 4         : N              
+jump_mux_option1_outpin[12]  : AC18      : output : 2.5 V             :         : 4         : N              
+jump_mux_option2_outpin[24]  : AC19      : output : 2.5 V             :         : 4         : N              
+jump_mux_option4_outpin[21]  : AC20      : output : 2.5 V             :         : 4         : N              
+jump_mux_option1_outpin[20]  : AC21      : output : 2.5 V             :         : 4         : N              
+jump_mux_option4_outpin[12]  : AC22      : output : 2.5 V             :         : 4         : N              
+pcpin2[30]                   : AC23      : output : 2.5 V             :         : 5         : N              
+pc_input_pin[9]              : AC24      : output : 2.5 V             :         : 5         : N              
+jump_mux_option1_outpin[18]  : AC25      : output : 2.5 V             :         : 5         : N              
+jump_mux_option4_outpin[22]  : AC26      : output : 2.5 V             :         : 5         : N              
+GND                          : AD1       : gnd    :                   :         :           :                
+VCCL_GXB                     : AD2       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD3       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD4       :        :                   :         : 3         :                
+instruction_pin[1]           : AD5       : output : 2.5 V             :         : 3         : N              
+reg2_outpin[3]               : AD6       : output : 2.5 V             :         : 3         : N              
+jump_mux_option3_outpin[1]   : AD7       : output : 2.5 V             :         : 3         : N              
+alupin[14]                   : AD8       : output : 2.5 V             :         : 3         : N              
+alupin[16]                   : AD9       : output : 2.5 V             :         : 3         : N              
+alupin[27]                   : AD10      : output : 2.5 V             :         : 3         : N              
+reg2_outpin[15]              : AD11      : output : 2.5 V             :         : 3         : N              
+instruction_pin[6]           : AD12      : output : 2.5 V             :         : 3         : N              
+instruction_pin[7]           : AD13      : output : 2.5 V             :         : 3         : N              
+reg1address_outpin[1]        : AD14      : output : 2.5 V             :         : 4         : N              
+alupin[23]                   : AD15      : output : 2.5 V             :         : 4         : N              
+reg2_outpin[25]              : AD16      : output : 2.5 V             :         : 4         : N              
+reg2_outpin[19]              : AD17      : output : 2.5 V             :         : 4         : N              
+jump_mux_option2_outpin[28]  : AD18      : output : 2.5 V             :         : 4         : N              
+pc_input_pin[1]              : AD19      : output : 2.5 V             :         : 4         : N              
+jump_mux_option2_outpin[20]  : AD20      : output : 2.5 V             :         : 4         : N              
+pcpin2[21]                   : AD21      : output : 2.5 V             :         : 4         : N              
+jump_mux_option1_outpin[22]  : AD22      : output : 2.5 V             :         : 4         : N              
+pcpin2[18]                   : AD23      : output : 2.5 V             :         : 4         : N              
+jump_mux_option4_outpin[18]  : AD24      : output : 2.5 V             :         : 4         : N              
+pcpin2[3]                    : AD25      : output : 2.5 V             :         : 5         : N              
+jump_mux_option2_outpin[13]  : AD26      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE1       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE2       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 3         :                
+GND                          : AE4       : gnd    :                   :         :           :                
+alupin[21]                   : AE5       : output : 2.5 V             :         : 3         : N              
+instruction_pin[22]          : AE6       : output : 2.5 V             :         : 3         : N              
+instruction_pin[14]          : AE7       : output : 2.5 V             :         : 3         : N              
+GND                          : AE8       : gnd    :                   :         :           :                
+reg3address_outpin[3]        : AE9       : output : 2.5 V             :         : 3         : N              
+reg3address_outpin[1]        : AE10      : output : 2.5 V             :         : 3         : N              
+alupin[1]                    : AE11      : output : 2.5 V             :         : 3         : N              
+GND                          : AE12      : gnd    :                   :         :           :                
+reg2_outpin[27]              : AE13      : output : 2.5 V             :         : 3         : N              
+reg2_outpin[1]               : AE14      : output : 2.5 V             :         : 4         : N              
+reg1address_outpin[2]        : AE15      : output : 2.5 V             :         : 4         : N              
+GND                          : AE16      : gnd    :                   :         :           :                
+reg2_outpin[7]               : AE17      : output : 2.5 V             :         : 4         : N              
+jump_mux_option1_outpin[14]  : AE18      : output : 2.5 V             :         : 4         : N              
+jump_mux_option2_outpin[31]  : AE19      : output : 2.5 V             :         : 4         : N              
+GND                          : AE20      : gnd    :                   :         :           :                
+jump_mux_option2_outpin[17]  : AE21      : output : 2.5 V             :         : 4         : N              
+jump_mux_option1_outpin[6]   : AE22      : output : 2.5 V             :         : 4         : N              
+jump_mux_option4_outpin[24]  : AE23      : output : 2.5 V             :         : 4         : N              
+GND                          : AE24      : gnd    :                   :         :           :                
+pc_input_pin[26]             : AE25      : output : 2.5 V             :         : 5         : N              
+jump_mux_option1_outpin[29]  : AE26      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF2       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF3       :        :                   :         : 3         :                
+instruction_pin[23]          : AF4       : output : 2.5 V             :         : 3         : N              
+alupin[13]                   : AF5       : output : 2.5 V             :         : 3         : N              
+reg2_outpin[0]               : AF6       : output : 2.5 V             :         : 3         : N              
+reg2_outpin[18]              : AF7       : output : 2.5 V             :         : 3         : N              
+reg2_outpin[23]              : AF8       : output : 2.5 V             :         : 3         : N              
+instruction_pin[29]          : AF9       : output : 2.5 V             :         : 3         : N              
+reg3address_outpin[0]        : AF10      : output : 2.5 V             :         : 3         : N              
+reg3address_outpin[2]        : AF11      : output : 2.5 V             :         : 3         : N              
+reg3address_outpin[4]        : AF12      : output : 2.5 V             :         : 3         : N              
+GND+                         : AF13      :        :                   :         : 4         :                
+GND+                         : AF14      :        :                   :         : 4         :                
+alupin[6]                    : AF15      : output : 2.5 V             :         : 4         : N              
+alupin[28]                   : AF16      : output : 2.5 V             :         : 4         : N              
+reg1_outpin[26]              : AF17      : output : 2.5 V             :         : 4         : N              
+jump_mux_option2_outpin[11]  : AF18      : output : 2.5 V             :         : 4         : N              
+reg1_outpin[31]              : AF19      : output : 2.5 V             :         : 4         : N              
+reg1_outpin[2]               : AF20      : output : 2.5 V             :         : 4         : N              
+jump_mux_option2_outpin[21]  : AF21      : output : 2.5 V             :         : 4         : N              
+jump_mux_option2_outpin[2]   : AF22      : output : 2.5 V             :         : 4         : N              
+pc_input_pin[7]              : AF23      : output : 2.5 V             :         : 4         : N              
+pc_input_pin[28]             : AF24      : output : 2.5 V             :         : 4         : N              
+jump_mux_option4_outpin[28]  : AF25      : output : 2.5 V             :         : 4         : N              
+reg1_outpin[8]               : B1        : output : 2.5 V             :         : 8         : N              
+jump_mux_option2_outpin[8]   : B2        : output : 2.5 V             :         : 8         : N              
+GND                          : B3        : gnd    :                   :         :           :                
+instruction_pin[2]           : B4        : output : 2.5 V             :         : 8         : N              
+reg1_outpin[4]               : B5        : output : 2.5 V             :         : 8         : N              
+reg1_outpin[19]              : B6        : output : 2.5 V             :         : 8         : N              
+instruction_pin[20]          : B7        : output : 2.5 V             :         : 8         : N              
 GND                          : B8        : gnd    :                   :         :           :                
-GND+                         : B9        :        :                   :         : 7         :                
-instruction_pin[6]           : B10       : output : 2.5 V             :         : 7         : N              
-GND                          : B11       : gnd    :                   :         :           :                
-reg2_outpin[23]              : B12       : output : 2.5 V             :         : 7         : N              
-alupin[23]                   : B13       : output : 2.5 V             :         : 7         : N              
-GND                          : B14       : gnd    :                   :         :           :                
-alupin[10]                   : B15       : output : 2.5 V             :         : 7         : N              
-reg1_outpin[1]               : B16       : output : 2.5 V             :         : 7         : N              
-GND                          : B17       : gnd    :                   :         :           :                
-pcpin2[9]                    : B18       : output : 2.5 V             :         : 7         : N              
-pcpin2[12]                   : B19       : output : 2.5 V             :         : 6         : N              
-pc_input_pin[12]             : B20       : output : 2.5 V             :         : 6         : N              
-pc_input_pin[2]              : B21       : output : 2.5 V             :         : 6         : N              
-pc_input_pin[16]             : B22       : output : 2.5 V             :         : 6         : N              
+reg2_outpin[4]               : B9        : output : 2.5 V             :         : 8         : N              
+reg2_outpin[26]              : B10       : output : 2.5 V             :         : 8         : N              
+alupin[8]                    : B11       : output : 2.5 V             :         : 8         : N              
+GND                          : B12       : gnd    :                   :         :           :                
+reg2address_outpin[3]        : B13       : output : 2.5 V             :         : 8         : N              
+GND+                         : B14       :        :                   :         : 7         :                
+alupin[7]                    : B15       : output : 2.5 V             :         : 7         : N              
+GND                          : B16       : gnd    :                   :         :           :                
+reg2address_outpin[4]        : B17       : output : 2.5 V             :         : 7         : N              
+reg2_outpin[5]               : B18       : output : 2.5 V             :         : 7         : N              
+jump_mux_option2_outpin[12]  : B19       : output : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+jump_mux_option2_outpin[15]  : B21       : output : 2.5 V             :         : 7         : N              
+jump_mux_option4_outpin[17]  : B22       : output : 2.5 V             :         : 7         : N              
+jump_mux_option4_outpin[14]  : B23       : output : 2.5 V             :         : 7         : N              
+GND                          : B24       : gnd    :                   :         :           :                
+pcpin2[22]                   : B25       : output : 2.5 V             :         : 6         : N              
+pc_input_pin[20]             : B26       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C1        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 8         :                
+alupin[17]                   : C2        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
-reg2_outpin[3]               : C6        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8         :                
+alupin[11]                   : C4        : output : 2.5 V             :         : 8         : N              
+pcpin2[7]                    : C5        : output : 2.5 V             :         : 8         : N              
+alupin[18]                   : C6        : output : 2.5 V             :         : 8         : N              
+reg2_outpin[8]               : C7        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 8         :                
-instruction_pin[24]          : C10       : output : 2.5 V             :         : 7         : N              
-instruction_pin[16]          : C11       : output : 2.5 V             :         : 7         : N              
-reg2_outpin[19]              : C12       : output : 2.5 V             :         : 7         : N              
-alupin[31]                   : C13       : output : 2.5 V             :         : 7         : N              
-alupin[7]                    : C14       : output : 2.5 V             :         : 7         : N              
-reg2_outpin[25]              : C15       : output : 2.5 V             :         : 7         : N              
-pc_input_pin[6]              : C16       : output : 2.5 V             :         : 7         : N              
-pc_input_pin[19]             : C17       : output : 2.5 V             :         : 7         : N              
-pc_input_pin[1]              : C18       : output : 2.5 V             :         : 7         : N              
-pcpin2[13]                   : C19       : output : 2.5 V             :         : 6         : N              
-pc_input_pin[26]             : C20       : output : 2.5 V             :         : 6         : N              
-GND                          : C21       : gnd    :                   :         :           :                
-pc_input_pin[3]              : C22       : output : 2.5 V             :         : 6         : N              
-~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D1        : input  : 2.5 V             :         : 9         : N              
-nCE                          : D2        :        :                   :         : 9         :                
-~ALTERA_DCLK~                : D3        : output : 2.5 V             :         : 9         : N              
+instruction_pin[3]           : C10       : output : 2.5 V             :         : 8         : N              
+alupin[19]                   : C11       : output : 2.5 V             :         : 8         : N              
+jump_mux_option2_outpin[4]   : C12       : output : 2.5 V             :         : 8         : N              
+reg1address_outpin[0]        : C13       : output : 2.5 V             :         : 8         : N              
+reg2address_outpin[0]        : C14       : output : 2.5 V             :         : 7         : N              
+reg2address_outpin[1]        : C15       : output : 2.5 V             :         : 7         : N              
+alupin[2]                    : C16       : output : 2.5 V             :         : 7         : N              
+reg1_outpin[14]              : C17       : output : 2.5 V             :         : 7         : N              
+reg1_outpin[12]              : C18       : output : 2.5 V             :         : 7         : N              
+jump_mux_option2_outpin[5]   : C19       : output : 2.5 V             :         : 7         : N              
+pc_input_pin[15]             : C20       : output : 2.5 V             :         : 7         : N              
+jump_mux_option4_outpin[8]   : C21       : output : 2.5 V             :         : 7         : N              
+jump_mux_option4_outpin[7]   : C22       : output : 2.5 V             :         : 7         : N              
+jump_mux_option1_outpin[19]  : C23       : output : 2.5 V             :         : 7         : N              
+pcpin2[17]                   : C24       : output : 2.5 V             :         : 6         : N              
+jump_mux_option2_outpin[16]  : C25       : output : 2.5 V             :         : 6         : N              
+reg1_outpin[16]              : C26       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D3        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D4        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 8         :                
-alupin[28]                   : D12       : output : 2.5 V             :         : 8         : N              
-alupin[30]                   : D13       : output : 2.5 V             :         : 7         : N              
-alupin[16]                   : D14       : output : 2.5 V             :         : 7         : N              
-reg2_outpin[14]              : D15       : output : 2.5 V             :         : 7         : N              
-pc_input_pin[5]              : D16       : output : 2.5 V             :         : 7         : N              
-pc_input_pin[15]             : D17       : output : 2.5 V             :         : 7         : N              
-GND                          : D18       : gnd    :                   :         :           :                
-pcpin2[16]                   : D19       : output : 2.5 V             :         : 6         : N              
-reg3address_outpin[0]        : D20       : output : 2.5 V             :         : 6         : N              
-alupin[8]                    : D21       : output : 2.5 V             :         : 6         : N              
-pcpin2[22]                   : D22       : output : 2.5 V             :         : 6         : N              
-GND                          : E1        : gnd    :                   :         :           :                
-GND                          : E2        : gnd    :                   :         :           :                
-TDO                          : E3        : output :                   :         : 9         :                
-TCK                          : E4        : input  :                   :         : 9         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E5        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :         : 8         :                
-GND                          : E7        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E8        :        :                   :         : 8         :                
-VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
+~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D5        : input  : 2.5 V             :         : 9         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D6        : input  : 2.5 V             :         : 9         : N              
+jump_mux_option1_outpin[0]   : D7        : output : 2.5 V             :         : 8         : N              
+pcpin2[0]                    : D8        : output : 2.5 V             :         : 8         : N              
+pc_input_pin[5]              : D9        : output : 2.5 V             :         : 8         : N              
+instruction_pin[0]           : D10       : output : 2.5 V             :         : 8         : N              
+instruction_pin[26]          : D11       : output : 2.5 V             :         : 8         : N              
+instruction_pin[30]          : D12       : output : 2.5 V             :         : 8         : N              
+instruction_pin[11]          : D13       : output : 2.5 V             :         : 8         : N              
+reg1_outpin[30]              : D14       : output : 2.5 V             :         : 8         : N              
+jump_mux_option1_outpin[11]  : D15       : output : 2.5 V             :         : 7         : N              
+reg1_outpin[29]              : D16       : output : 2.5 V             :         : 7         : N              
+reg1_outpin[25]              : D17       : output : 2.5 V             :         : 7         : N              
+reg2_outpin[31]              : D18       : output : 2.5 V             :         : 7         : N              
+pc_input_pin[3]              : D19       : output : 2.5 V             :         : 7         : N              
+jump_mux_option4_outpin[10]  : D20       : output : 2.5 V             :         : 7         : N              
+pcpin2[14]                   : D21       : output : 2.5 V             :         : 7         : N              
+jump_mux_option4_outpin[2]   : D22       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D23       :        :                   :         : 7         :                
+pcpin2[28]                   : D24       : output : 2.5 V             :         : 6         : N              
+pcpin2[12]                   : D25       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[8]   : D26       : output : 2.5 V             :         : 6         : N              
+jump_mux_option1_outpin[1]   : E1        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E2        :        :                   :         : 8         :                
+GND                          : E3        : gnd    :                   :         :           :                
+GND                          : E4        : gnd    :                   :         :           :                
+nCONFIG                      : E5        :        :                   :         : 9         :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E6        : input  : 2.5 V             :         : 9         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E7        :        :                   :         : 8         :                
+jump_mux_option3_outpin[0]   : E8        : output : 2.5 V             :         : 8         : N              
+instruction_pin[17]          : E9        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E10       : power  :                   : 2.5V    : 8         :                
-VCCIO8                       : E11       : power  :                   : 2.5V    : 8         :                
-VCCIO8                       : E12       : power  :                   : 2.5V    : 8         :                
-VCCIO7                       : E13       : power  :                   : 2.5V    : 7         :                
-VCCIO7                       : E14       : power  :                   : 2.5V    : 7         :                
-VCCIO7                       : E15       : power  :                   : 2.5V    : 7         :                
-VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
-pcpin2[21]                   : E17       : output : 2.5 V             :         : 7         : N              
-VCCD_PLL                     : E18       : power  :                   : 1.2V    :           :                
-GND                          : E19       : gnd    :                   :         :           :                
-instruction_pin[7]           : E20       : output : 2.5 V             :         : 6         : N              
-alupin[6]                    : E21       : output : 2.5 V             :         : 6         : N              
-pcpin2[23]                   : E22       : output : 2.5 V             :         : 6         : N              
-GXB_NC                       : F1        :        :                   :         : QL0       :                
-GXB_NC                       : F2        :        :                   :         : QL0       :                
-GND                          : F3        : gnd    :                   :         :           :                
-VCCA                         : F4        : power  :                   : 2.5V    :           :                
-TDI                          : F5        : input  :                   :         : 9         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F6        :        :                   :         : 8         :                
-VCCINT                       : F7        : power  :                   : 1.2V    :           :                
+jump_mux_option2_outpin[22]  : E11       : output : 2.5 V             :         : 8         : N              
+reg2_outpin[10]              : E12       : output : 2.5 V             :         : 8         : N              
+instruction_pin[15]          : E13       : output : 2.5 V             :         : 8         : N              
+alupin[9]                    : E14       : output : 2.5 V             :         : 8         : N              
+alupin[4]                    : E15       : output : 2.5 V             :         : 7         : N              
+jump_mux_option2_outpin[25]  : E16       : output : 2.5 V             :         : 7         : N              
+jump_mux_option2_outpin[29]  : E17       : output : 2.5 V             :         : 7         : N              
+pc_input_pin[0]              : E18       : output : 2.5 V             :         : 7         : N              
+pc_input_pin[10]             : E19       : output : 2.5 V             :         : 7         : N              
+pcpin2[20]                   : E20       : output : 2.5 V             :         : 7         : N              
+pc_input_pin[19]             : E21       : output : 2.5 V             :         : 7         : N              
+pcpin2[10]                   : E22       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E23       :        :                   :         : 7         :                
+jump_mux_option4_outpin[6]   : E24       : output : 2.5 V             :         : 6         : N              
+pc_input_pin[8]              : E25       : output : 2.5 V             :         : 6         : N              
+jump_mux_option1_outpin[31]  : E26       : output : 2.5 V             :         : 6         : N              
+GND                          : F1        : gnd    :                   :         :           :                
+GND                          : F2        : gnd    :                   :         :           :                
+GXB_NC                       : F3        :        :                   :         : QL1       :                
+GXB_NC                       : F4        :        :                   :         : QL1       :                
+TMS                          : F5        : input  :                   :         : 9         :                
+~ALTERA_DCLK~                : F6        : output : 2.5 V             :         : 9         : N              
+GND                          : F7        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
-GND                          : F9        : gnd    :                   :         :           :                
-VCCIO8                       : F10       : power  :                   : 2.5V    : 8         :                
-GND                          : F11       : gnd    :                   :         :           :                
-reg3address_outpin[2]        : F12       : output : 2.5 V             :         : 7         : N              
-GND                          : F13       : gnd    :                   :         :           :                
-VCCIO7                       : F14       : power  :                   : 2.5V    : 7         :                
-GND                          : F15       : gnd    :                   :         :           :                
-pc_input_pin[22]             : F16       : output : 2.5 V             :         : 7         : N              
-pcpin2[10]                   : F17       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 6         :                
-VCCA                         : F19       : power  :                   : 2.5V    :           :                
-pc_input_pin[0]              : F20       : output : 2.5 V             :         : 6         : N              
-GND                          : F21       : gnd    :                   :         :           :                
-instruction_pin[10]          : F22       : output : 2.5 V             :         : 6         : N              
-GND                          : G1        : gnd    :                   :         :           :                
-GND                          : G2        : gnd    :                   :         :           :                
-VCCD_PLL                     : G3        : power  :                   : 1.2V    :           :                
-VCCIO9                       : G4        : power  :                   : 2.5V    : 9         :                
-TMS                          : G5        : input  :                   :         : 9         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
-VCCINT                       : G9        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G11       :        :                   :         : 8         :                
-reg1_outpin[8]               : G12       : output : 2.5 V             :         : 7         : N              
-VCCINT                       : G13       : power  :                   : 1.2V    :           :                
-reg1address_outpin[0]        : G14       : output : 2.5 V             :         : 7         : N              
-reg1address_outpin[1]        : G15       : output : 2.5 V             :         : 7         : N              
-alupin[25]                   : G16       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G17       :        :                   :         : 6         :                
-instruction_pin[20]          : G18       : output : 2.5 V             :         : 6         : N              
-pc_input_pin[27]             : G19       : output : 2.5 V             :         : 6         : N              
-reg2_outpin[16]              : G20       : output : 2.5 V             :         : 6         : N              
-reg2_outpin[26]              : G21       : output : 2.5 V             :         : 6         : N              
-reg2_outpin[10]              : G22       : output : 2.5 V             :         : 6         : N              
-GXB_GND*                     : H1        :        :                   :         : QL0       :                
-GXB_GND*                     : H2        :        :                   :         : QL0       :                
-VCCH_GXB                     : H3        : power  :                   : 2.5V    :           :                
-nCONFIG                      : H4        :        :                   :         : 9         :                
-GND                          : H5        : gnd    :                   :         :           :                
-VCCINT                       : H6        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H8        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H9        :        :                   :         : 8         :                
-VCC_CLKIN8A                  : H10       : power  :                   : 2.5V    : 8A        :                
-GND                          : H11       : gnd    :                   :         :           :                
-instruction_pin[17]          : H12       : output : 2.5 V             :         : 7         : N              
-reg3address_outpin[4]        : H13       : output : 2.5 V             :         : 7         : N              
-reg2_outpin[22]              : H14       : output : 2.5 V             :         : 7         : N              
-pc_input_pin[10]             : H15       : output : 2.5 V             :         : 6         : N              
-alupin[11]                   : H16       : output : 2.5 V             :         : 6         : N              
-pc_input_pin[21]             : H17       : output : 2.5 V             :         : 6         : N              
-GND                          : H18       : gnd    :                   :         :           :                
-VCCIO6                       : H19       : power  :                   : 2.5V    : 6         :                
-alupin[9]                    : H20       : output : 2.5 V             :         : 6         : N              
-pc_input_pin[11]             : H21       : output : 2.5 V             :         : 6         : N              
-alupin[3]                    : H22       : output : 2.5 V             :         : 6         : N              
-GND                          : J1        : gnd    :                   :         :           :                
-GND                          : J2        : gnd    :                   :         :           :                
-VCCA_GXB                     : J3        : power  :                   : 2.5V    :           :                
-~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : J4        : input  : 2.5 V             :         : 9         : N              
-VCCINT                       : J5        : power  :                   : 1.2V    :           :                
-GND                          : J6        : gnd    :                   :         :           :                
-VCCINT                       : J7        : power  :                   : 1.2V    :           :                
+VCCIO8                       : F9        : power  :                   : 2.5V    : 8         :                
+GND                          : F10       : gnd    :                   :         :           :                
+VCCIO8                       : F11       : power  :                   : 2.5V    : 8         :                
+GND                          : F12       : gnd    :                   :         :           :                
+VCCIO8                       : F13       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : F14       : power  :                   : 2.5V    : 8         :                
+reg1_outpin[6]               : F15       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : F16       : power  :                   : 2.5V    : 7         :                
+GND                          : F17       : gnd    :                   :         :           :                
+VCCIO7                       : F18       : power  :                   : 2.5V    : 7         :                
+GND                          : F19       : gnd    :                   :         :           :                
+VCCIO7                       : F20       : power  :                   : 2.5V    : 7         :                
+pc_input_pin[29]             : F21       : output : 2.5 V             :         : 6         : N              
+GND                          : F22       : gnd    :                   :         :           :                
+pcpin2[24]                   : F23       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[12]  : F24       : output : 2.5 V             :         : 6         : N              
+GND                          : F25       : gnd    :                   :         :           :                
+pcpin2[13]                   : F26       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : G1        :        :                   :         : QL1       :                
+GXB_GND*                     : G2        :        :                   :         : QL1       :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+VCCL_GXB                     : G5        : power  :                   : 1.2V    :           :                
+TDI                          : G6        : input  :                   :         : 9         :                
+VCCIO9                       : G7        : power  :                   : 2.5V    : 9         :                
+TCK                          : G8        : input  :                   :         : 9         :                
+alupin[31]                   : G9        : output : 2.5 V             :         : 8         : N              
+instruction_pin[10]          : G10       : output : 2.5 V             :         : 8         : N              
+jump_mux_option2_outpin[18]  : G11       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : G12       : power  :                   : 2.5V    : 8         :                
+GND                          : G13       : gnd    :                   :         :           :                
+jump_mux_option1_outpin[15]  : G14       : output : 2.5 V             :         : 7         : N              
+pc_input_pin[13]             : G15       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : G16       : power  :                   : 2.5V    : 7         :                
+pcpin2[16]                   : G17       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : G18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
+GND                          : G20       : gnd    :                   :         :           :                
+VCCD_PLL                     : G21       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G22       :        :                   :         : 6         :                
+jump_mux_option4_outpin[19]  : G23       : output : 2.5 V             :         : 6         : N              
+pc_input_pin[22]             : G24       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[5]   : G25       : output : 2.5 V             :         : 6         : N              
+jump_mux_option4_outpin[4]   : G26       : output : 2.5 V             :         : 6         : N              
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : QL1       :                
+GXB_NC                       : H4        :        :                   :         : QL1       :                
+VCCL_GXB                     : H5        : power  :                   : 1.2V    :           :                
+VCCA                         : H6        : power  :                   : 2.5V    :           :                
+nCE                          : H7        :        :                   :         : 9         :                
+TDO                          : H8        : output :                   :         : 9         :                
+jump_mux_option4_outpin[0]   : H9        : output : 2.5 V             :         : 8         : N              
+pc_input_pin[11]             : H10       : output : 2.5 V             :         : 8         : N              
+reg1_outpin[18]              : H11       : output : 2.5 V             :         : 8         : N              
+instruction_pin[5]           : H12       : output : 2.5 V             :         : 8         : N              
+reg2_outpin[22]              : H13       : output : 2.5 V             :         : 8         : N              
+reg1_outpin[9]               : H14       : output : 2.5 V             :         : 7         : N              
+jump_mux_option4_outpin[3]   : H15       : output : 2.5 V             :         : 7         : N              
+pc_input_pin[2]              : H16       : output : 2.5 V             :         : 7         : N              
+pc_input_pin[6]              : H17       : output : 2.5 V             :         : 7         : N              
+jump_mux_option1_outpin[23]  : H18       : output : 2.5 V             :         : 7         : N              
+GND                          : H19       : gnd    :                   :         :           :                
+VCCA                         : H20       : power  :                   : 2.5V    :           :                
+VCCIO6                       : H21       : power  :                   : 2.5V    : 6         :                
+pcpin2[11]                   : H22       : output : 2.5 V             :         : 6         : N              
+pc_input_pin[12]             : H23       : output : 2.5 V             :         : 6         : N              
+jump_mux_option4_outpin[16]  : H24       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[21]  : H25       : output : 2.5 V             :         : 6         : N              
+pc_input_pin[17]             : H26       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : J1        :        :                   :         : QL1       :                
+GXB_GND*                     : J2        :        :                   :         : QL1       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+VCCH_GXB                     : J5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : J6        : power  :                   : 1.2V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
 GND                          : J8        : gnd    :                   :         :           :                
-VCCINT                       : J9        : power  :                   : 1.2V    :           :                
-GXB_GND*                     : J10       :        :                   :         : 8A        :                
-VCCINT                       : J11       : power  :                   : 1.2V    :           :                
-instruction_pin[19]          : J12       : output : 2.5 V             :         : 7         : N              
-reg3address_outpin[3]        : J13       : output : 2.5 V             :         : 7         : N              
-reg1_outpin[4]               : J14       : output : 2.5 V             :         : 7         : N              
-instruction_pin[11]          : J15       : output : 2.5 V             :         : 6         : N              
-pc_input_pin[9]              : J16       : output : 2.5 V             :         : 6         : N              
-VCCINT                       : J17       : power  :                   : 1.2V    :           :                
-VCCIO6                       : J18       : power  :                   : 2.5V    : 6         :                
-instruction_pin[31]          : J19       : output : 2.5 V             :         : 6         : N              
-instruction_pin[21]          : J20       : output : 2.5 V             :         : 6         : N              
-pc_input_pin[20]             : J21       : output : 2.5 V             :         : 6         : N              
-reg2_outpin[2]               : J22       : output : 2.5 V             :         : 6         : N              
-GXB_NC                       : K1        :        :                   :         : QL0       :                
-GXB_NC                       : K2        :        :                   :         : QL0       :                
-VCCL_GXB                     : K3        : power  :                   : 1.2V    :           :                
-~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : K4        : input  : 2.5 V             :         : 9         : N              
-GND                          : K5        : gnd    :                   :         :           :                
-VCCINT                       : K6        : power  :                   : 1.2V    :           :                
-GND                          : K7        : gnd    :                   :         :           :                
+VCC_CLKIN8B                  : J9        : power  :                   : 2.5V    : 8B        :                
+VCCINT                       : J10       : power  :                   : 1.2V    :           :                
+instruction_pin[25]          : J11       : output : 2.5 V             :         : 8         : N              
+reg1_outpin[22]              : J12       : output : 2.5 V             :         : 8         : N              
+instruction_pin[13]          : J13       : output : 2.5 V             :         : 8         : N              
+alupin[12]                   : J14       : output : 2.5 V             :         : 8         : N              
+jump_mux_option1_outpin[7]   : J15       : output : 2.5 V             :         : 7         : N              
+pc_input_pin[14]             : J16       : output : 2.5 V             :         : 7         : N              
+jump_mux_option4_outpin[13]  : J17       : output : 2.5 V             :         : 7         : N              
+pcpin2[8]                    : J18       : output : 2.5 V             :         : 7         : N              
+pc_input_pin[4]              : J19       : output : 2.5 V             :         : 7         : N              
+jump_mux_option3_outpin[9]   : J20       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : J21       : power  :                   : 2.5V    : 6         :                
+GND                          : J22       : gnd    :                   :         :           :                
+pc_input_pin[21]             : J23       : output : 2.5 V             :         : 6         : N              
+jump_mux_option4_outpin[31]  : J24       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[15]  : J25       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[10]  : J26       : output : 2.5 V             :         : 6         : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : QL1       :                
+GXB_NC                       : K4        :        :                   :         : QL1       :                
+VCCA_GXB                     : K5        : power  :                   : 2.5V    :           :                
+GND                          : K6        : gnd    :                   :         :           :                
+VCCA                         : K7        : power  :                   : 2.5V    :           :                
 VCCINT                       : K8        : power  :                   : 1.2V    :           :                
-GND                          : K9        : gnd    :                   :         :           :                
-GXB_GND*                     : K10       :        :                   :         : 8A        :                
+GXB_GND*                     : K9        :        :                   :         : 8B        :                
+GXB_GND*                     : K10       :        :                   :         : 8B        :                
 GND                          : K11       : gnd    :                   :         :           :                
-instruction_pin[2]           : K12       : output : 2.5 V             :         : 7         : N              
-pcpin2[14]                   : K13       : output : 2.5 V             :         : 6         : N              
-alupin[12]                   : K14       : output : 2.5 V             :         : 6         : N              
+alupin[0]                    : K12       : output : 2.5 V             :         : 8         : N              
+pcpin2[2]                    : K13       : output : 2.5 V             :         : 8         : N              
+VCC_CLKIN8A                  : K14       : power  :                   : 2.5V    : 8A        :                
 GND                          : K15       : gnd    :                   :         :           :                
 VCCINT                       : K16       : power  :                   : 1.2V    :           :                
-pc_input_pin[18]             : K17       : output : 2.5 V             :         : 6         : N              
-VCCIO6                       : K18       : power  :                   : 2.5V    : 6         :                
-reg2_outpin[6]               : K19       : output : 2.5 V             :         : 6         : N              
-reg1address_outpin[2]        : K20       : output : 2.5 V             :         : 6         : N              
-GND                          : K21       : gnd    :                   :         :           :                
-reg1address_outpin[3]        : K22       : output : 2.5 V             :         : 6         : N              
-GND                          : L1        : gnd    :                   :         :           :                
-GND                          : L2        : gnd    :                   :         :           :                
-VCCL_GXB                     : L3        : power  :                   : 1.2V    :           :                
-VCCA                         : L4        : power  :                   : 2.5V    :           :                
-VCCINT                       : L5        : power  :                   : 1.2V    :           :                
-GND                          : L6        : gnd    :                   :         :           :                
+GND                          : K17       : gnd    :                   :         :           :                
+VCCINT                       : K18       : power  :                   : 1.2V    :           :                
+jump_mux_option1_outpin[28]  : K19       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[22]  : K20       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[16]  : K21       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[13]  : K22       : output : 2.5 V             :         : 6         : N              
+jump_mux_option4_outpin[5]   : K23       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[14]  : K24       : output : 2.5 V             :         : 6         : N              
+GND                          : K25       : gnd    :                   :         :           :                
+jump_mux_option3_outpin[7]   : K26       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : L1        :        :                   :         : QL1       :                
+GXB_GND*                     : L2        :        :                   :         : QL1       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+VCCL_GXB                     : L5        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : L6        : power  :                   : 1.2V    :           :                
 VCCINT                       : L7        : power  :                   : 1.2V    :           :                
 GND                          : L8        : gnd    :                   :         :           :                
-VCCINT                       : L9        : power  :                   : 1.2V    :           :                
-GND                          : L10       : gnd    :                   :         :           :                
+GXB_GND*                     : L9        :        :                   :         : 8B        :                
+GXB_GND*                     : L10       :        :                   :         : 8B        :                
 VCCINT                       : L11       : power  :                   : 1.2V    :           :                
 GND                          : L12       : gnd    :                   :         :           :                
-reg1_outpin[3]               : L13       : output : 2.5 V             :         : 5         : N              
-pcpin2[29]                   : L14       : output : 2.5 V             :         : 5         : N              
-pcpin2[26]                   : L15       : output : 2.5 V             :         : 5         : N              
-reg1_outpin[26]              : L16       : output : 2.5 V             :         : 5         : N              
+VCCINT                       : L13       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : L14       :        :                   :         : 8A        :                
+GXB_GND*                     : L15       :        :                   :         : 8A        :                
+GND                          : L16       : gnd    :                   :         :           :                
 VCCINT                       : L17       : power  :                   : 1.2V    :           :                
 GND                          : L18       : gnd    :                   :         :           :                
-alupin[1]                    : L19       : output : 2.5 V             :         : 6         : N              
-instruction_pin[30]          : L20       : output : 2.5 V             :         : 6         : N              
-GND+                         : L21       :        :                   :         : 6         :                
-GND+                         : L22       :        :                   :         : 6         :                
-GXB_GND*                     : M1        :        :                   :         : QL0       :                
-GXB_GND*                     : M2        :        :                   :         : QL0       :                
-GND                          : M3        : gnd    :                   :         :           :                
-VCCD_PLL                     : M4        : power  :                   : 1.2V    :           :                
-GND                          : M5        : gnd    :                   :         :           :                
-VCCINT                       : M6        : power  :                   : 1.2V    :           :                
-GXB_GND*                     : M7        :        :                   :         : 3B        :                
-GXB_GND*                     : M8        :        :                   :         : 3B        :                
+pcpin2[23]                   : L19       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : L20       : power  :                   : 2.5V    : 6         :                
+pcpin2[31]                   : L21       : output : 2.5 V             :         : 6         : N              
+jump_mux_option1_outpin[13]  : L22       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[3]   : L23       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[31]  : L24       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[6]   : L25       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[25]  : L26       : output : 2.5 V             :         : 6         : N              
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : QL1       :                
+GXB_NC                       : M4        :        :                   :         : QL1       :                
+VCCH_GXB                     : M5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : M6        : power  :                   : 1.2V    :           :                
+GND                          : M7        : gnd    :                   :         :           :                
+VCCINT                       : M8        : power  :                   : 1.2V    :           :                
 GND                          : M9        : gnd    :                   :         :           :                
 VCCINT                       : M10       : power  :                   : 1.2V    :           :                
-rest                         : M11       : input  : 2.5 V             :         : 3A        : N              
+GND                          : M11       : gnd    :                   :         :           :                
 VCCINT                       : M12       : power  :                   : 1.2V    :           :                
-reg1_outpin[6]               : M13       : output : 2.5 V             :         : 5         : N              
-pcpin2[4]                    : M14       : output : 2.5 V             :         : 5         : N              
-instruction_pin[26]          : M15       : output : 2.5 V             :         : 5         : N              
-reg1_outpin[10]              : M16       : output : 2.5 V             :         : 5         : N              
-reg1_outpin[27]              : M17       : output : 2.5 V             :         : 5         : N              
-reg1_outpin[23]              : M18       : output : 2.5 V             :         : 5         : N              
-reg1_outpin[20]              : M19       : output : 2.5 V             :         : 5         : N              
-reg1_outpin[19]              : M20       : output : 2.5 V             :         : 5         : N              
-GND+                         : M21       :        :                   :         : 5         :                
-GND+                         : M22       :        :                   :         : 5         :                
-GND                          : N1        : gnd    :                   :         :           :                
-GND                          : N2        : gnd    :                   :         :           :                
-VCCL_GXB                     : N3        : power  :                   : 1.2V    :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCINT                       : M14       : power  :                   : 1.2V    :           :                
+GND                          : M15       : gnd    :                   :         :           :                
+VCCINT                       : M16       : power  :                   : 1.2V    :           :                
+GND                          : M17       : gnd    :                   :         :           :                
+VCCINT                       : M18       : power  :                   : 1.2V    :           :                
+jump_mux_option3_outpin[29]  : M19       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : M20       : power  :                   : 2.5V    : 6         :                
+GND                          : M21       : gnd    :                   :         :           :                
+jump_mux_option1_outpin[5]   : M22       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[17]  : M23       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[11]  : M24       : output : 2.5 V             :         : 6         : N              
+jump_mux_option4_outpin[23]  : M25       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[4]   : M26       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : N1        :        :                   :         : QL1       :                
+GXB_GND*                     : N2        :        :                   :         : QL1       :                
+GND                          : N3        : gnd    :                   :         :           :                
 GND                          : N4        : gnd    :                   :         :           :                
-VCCINT                       : N5        : power  :                   : 1.2V    :           :                
+VCCA_GXB                     : N5        : power  :                   : 2.5V    :           :                
 GND                          : N6        : gnd    :                   :         :           :                
-GXB_GND*                     : N7        :        :                   :         : 3B        :                
-GXB_GND*                     : N8        :        :                   :         : 3B        :                
+VCCA                         : N7        : power  :                   : 2.5V    :           :                
+GND                          : N8        : gnd    :                   :         :           :                
 VCCINT                       : N9        : power  :                   : 1.2V    :           :                
 GND                          : N10       : gnd    :                   :         :           :                
-cpu_clk                      : N11       : input  : 2.5 V             :         : 3A        : N              
-VCC_CLKIN3A                  : N12       : power  :                   : 2.5V    : 3A        :                
-reg2_outpin[12]              : N13       : output : 2.5 V             :         : 5         : N              
-reg2_outpin[24]              : N14       : output : 2.5 V             :         : 5         : N              
-pcpin2[17]                   : N15       : output : 2.5 V             :         : 5         : N              
-VCCINT                       : N16       : power  :                   : 1.2V    :           :                
-reg1_outpin[11]              : N17       : output : 2.5 V             :         : 5         : N              
-VCCIO5                       : N18       : power  :                   : 2.5V    : 5         :                
-reg1_outpin[12]              : N19       : output : 2.5 V             :         : 5         : N              
-reg1_outpin[7]               : N20       : output : 2.5 V             :         : 5         : N              
-reg1_outpin[0]               : N21       : output : 2.5 V             :         : 5         : N              
-reg1_outpin[9]               : N22       : output : 2.5 V             :         : 5         : N              
-GXB_NC                       : P1        :        :                   :         : QL0       :                
-GXB_NC                       : P2        :        :                   :         : QL0       :                
-VCCH_GXB                     : P3        : power  :                   : 2.5V    :           :                
-MSEL3                        : P4        :        :                   :         : 3         :                
-MSEL1                        : P5        :        :                   :         : 3         :                
-VCCINT                       : P6        : power  :                   : 1.2V    :           :                
-VCC_CLKIN3B                  : P7        : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : N11       : power  :                   : 1.2V    :           :                
+GND                          : N12       : gnd    :                   :         :           :                
+VCCINT                       : N13       : power  :                   : 1.2V    :           :                
+GND                          : N14       : gnd    :                   :         :           :                
+VCCINT                       : N15       : power  :                   : 1.2V    :           :                
+GND                          : N16       : gnd    :                   :         :           :                
+VCCINT                       : N17       : power  :                   : 1.2V    :           :                
+GND                          : N18       : gnd    :                   :         :           :                
+jump_mux_select_outpin[0]    : N19       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[28]  : N20       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : N21       : power  :                   : 2.5V    : 6         :                
+jump_mux_option3_outpin[26]  : N22       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[18]  : N23       : output : 2.5 V             :         : 6         : N              
+jump_mux_option3_outpin[2]   : N24       : output : 2.5 V             :         : 6         : N              
+GND+                         : N25       :        :                   :         : 6         :                
+GND+                         : N26       :        :                   :         : 6         :                
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : QL0       :                
+GXB_NC                       : P4        :        :                   :         : QL0       :                
+VCCL_GXB                     : P5        : power  :                   : 1.2V    :           :                
+GND                          : P6        : gnd    :                   :         :           :                
+VCCA                         : P7        : power  :                   : 2.5V    :           :                
 VCCINT                       : P8        : power  :                   : 1.2V    :           :                
 GND                          : P9        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P10       :        :                   :         : 3         :                
+VCCINT                       : P10       : power  :                   : 1.2V    :           :                
 GND                          : P11       : gnd    :                   :         :           :                
 VCCINT                       : P12       : power  :                   : 1.2V    :           :                
-pcpin2[19]                   : P13       : output : 2.5 V             :         : 5         : N              
-alupin[2]                    : P14       : output : 2.5 V             :         : 5         : N              
-pcpin2[30]                   : P15       : output : 2.5 V             :         : 5         : N              
-GND                          : P16       : gnd    :                   :         :           :                
-VCCINT                       : P17       : power  :                   : 1.2V    :           :                
-GND                          : P18       : gnd    :                   :         :           :                
-VCCIO5                       : P19       : power  :                   : 2.5V    : 5         :                
-pc_input_pin[30]             : P20       : output : 2.5 V             :         : 5         : N              
-GND                          : P21       : gnd    :                   :         :           :                
-reg1_outpin[29]              : P22       : output : 2.5 V             :         : 5         : N              
-GND                          : R1        : gnd    :                   :         :           :                
-GND                          : R2        : gnd    :                   :         :           :                
-VCCA_GXB                     : R3        : power  :                   : 2.5V    :           :                
-VCCD_PLL                     : R4        : power  :                   : 1.2V    :           :                
-MSEL2                        : R5        :        :                   :         : 3         :                
-GND                          : R6        : gnd    :                   :         :           :                
+GND                          : P13       : gnd    :                   :         :           :                
+VCCINT                       : P14       : power  :                   : 1.2V    :           :                
+GND                          : P15       : gnd    :                   :         :           :                
+VCCINT                       : P16       : power  :                   : 1.2V    :           :                
+GND                          : P17       : gnd    :                   :         :           :                
+VCCINT                       : P18       : power  :                   : 1.2V    :           :                
+reg2_outpin[30]              : P19       : output : 2.5 V             :         : 5         : N              
+jump_mux_option3_outpin[20]  : P20       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : P21       : power  :                   : 2.5V    : 5         :                
+GND                          : P22       : gnd    :                   :         :           :                
+jump_mux_option1_outpin[9]   : P23       : output : 2.5 V             :         : 5         : N              
+jump_mux_option1_outpin[4]   : P24       : output : 2.5 V             :         : 5         : N              
+GND                          : P25       : gnd    :                   :         :           :                
+GND+                         : P26       :        :                   :         : 5         :                
+GXB_GND*                     : R1        :        :                   :         : QL0       :                
+GXB_GND*                     : R2        :        :                   :         : QL0       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+VCCH_GXB                     : R5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : R6        : power  :                   : 1.2V    :           :                
 VCCINT                       : R7        : power  :                   : 1.2V    :           :                
-nSTATUS                      : R8        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :         : 3         :                
+GND                          : R8        : gnd    :                   :         :           :                
+VCCINT                       : R9        : power  :                   : 1.2V    :           :                
+GND                          : R10       : gnd    :                   :         :           :                
+VCCINT                       : R11       : power  :                   : 1.2V    :           :                
 GND                          : R12       : gnd    :                   :         :           :                
-reg1_outpin[14]              : R13       : output : 2.5 V             :         : 4         : N              
-reg1address_outpin[4]        : R14       : output : 2.5 V             :         : 4         : N              
-alupin[0]                    : R15       : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R17       :        :                   :         : 5         :                
-VCCIO5                       : R18       : power  :                   : 2.5V    : 5         :                
-reg2_outpin[18]              : R19       : output : 2.5 V             :         : 5         : N              
-pcpin2[24]                   : R20       : output : 2.5 V             :         : 5         : N              
-pcpin2[7]                    : R21       : output : 2.5 V             :         : 5         : N              
-reg1_outpin[25]              : R22       : output : 2.5 V             :         : 5         : N              
-GXB_GND*                     : T1        :        :                   :         : QL0       :                
-GXB_GND*                     : T2        :        :                   :         : QL0       :                
-VCCL_GXB                     : T3        : power  :                   : 1.2V    :           :                
-GND                          : T4        : gnd    :                   :         :           :                
-VCCA                         : T5        : power  :                   : 2.5V    :           :                
-MSEL0                        : T6        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3         :                
-VCCINT                       : T10       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T11       :        :                   :         : 3         :                
+VCCINT                       : R13       : power  :                   : 1.2V    :           :                
+GND                          : R14       : gnd    :                   :         :           :                
+VCCINT                       : R15       : power  :                   : 1.2V    :           :                
+GND                          : R16       : gnd    :                   :         :           :                
+VCCINT                       : R17       : power  :                   : 1.2V    :           :                
+GND                          : R18       : gnd    :                   :         :           :                
+jump_mux_option1_outpin[17]  : R19       : output : 2.5 V             :         : 5         : N              
+reg2_outpin[24]              : R20       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : R21       : power  :                   : 2.5V    : 5         :                
+reg1_outpin[7]               : R22       : output : 2.5 V             :         : 5         : N              
+jump_mux_option3_outpin[24]  : R23       : output : 2.5 V             :         : 5         : N              
+jump_mux_option2_outpin[7]   : R24       : output : 2.5 V             :         : 5         : N              
+jump_mux_option3_outpin[27]  : R25       : output : 2.5 V             :         : 5         : N              
+GND+                         : R26       :        :                   :         : 5         :                
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : QL0       :                
+GXB_NC                       : T4        :        :                   :         : QL0       :                
+VCCA_GXB                     : T5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : T6        : power  :                   : 1.2V    :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+VCCINT                       : T8        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : T9        :        :                   :         : 3B        :                
+GXB_GND*                     : T10       :        :                   :         : 3B        :                
+GND                          : T11       : gnd    :                   :         :           :                
 VCCINT                       : T12       : power  :                   : 1.2V    :           :                
-reg1_outpin[15]              : T13       : output : 2.5 V             :         : 4         : N              
-reg2address_outpin[0]        : T14       : output : 2.5 V             :         : 4         : N              
-reg1_outpin[21]              : T15       : output : 2.5 V             :         : 4         : N              
-pcpin2[5]                    : T16       : output : 2.5 V             :         : 4         : N              
-alupin[24]                   : T17       : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : T18       :        :                   :         : 5         :                
-pc_input_pin[24]             : T19       : output : 2.5 V             :         : 5         : N              
-pcpin2[25]                   : T20       : output : 2.5 V             :         : 5         : N              
-pcpin2[31]                   : T21       : output : 2.5 V             :         : 5         : N              
-alupin[4]                    : T22       : output : 2.5 V             :         : 5         : N              
-GND                          : U1        : gnd    :                   :         :           :                
-GND                          : U2        : gnd    :                   :         :           :                
+GND                          : T13       : gnd    :                   :         :           :                
+rest                         : T14       : input  : 2.5 V             :         : 3A        : N              
+cpu_clk                      : T15       : input  : 2.5 V             :         : 3A        : N              
+VCCINT                       : T16       : power  :                   : 1.2V    :           :                
+GND                          : T17       : gnd    :                   :         :           :                
+VCCINT                       : T18       : power  :                   : 1.2V    :           :                
+pcpin2[29]                   : T19       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : T20       : power  :                   : 2.5V    : 5         :                
+jump_mux_option2_outpin[10]  : T21       : output : 2.5 V             :         : 5         : N              
+pcpin2[5]                    : T22       : output : 2.5 V             :         : 5         : N              
+jump_mux_option4_outpin[30]  : T23       : output : 2.5 V             :         : 5         : N              
+jump_mux_option1_outpin[8]   : T24       : output : 2.5 V             :         : 5         : N              
+pcpin2[6]                    : T25       : output : 2.5 V             :         : 5         : N              
+jump_mux_option1_outpin[2]   : T26       : output : 2.5 V             :         : 5         : N              
+GXB_GND*                     : U1        :        :                   :         : QL0       :                
+GXB_GND*                     : U2        :        :                   :         : QL0       :                
 GND                          : U3        : gnd    :                   :         :           :                
-VCCD_PLL                     : U4        : power  :                   : 1.2V    :           :                
-CONF_DONE                    : U5        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U6        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :         : 3         :                
-VCCIO3                       : U8        : power  :                   : 2.5V    : 3         :                
-VCCIO3                       : U9        : power  :                   : 2.5V    : 3         :                
-GND                          : U10       : gnd    :                   :         :           :                
-VCCIO3                       : U11       : power  :                   : 2.5V    : 3         :                
-instruction_pin[3]           : U12       : output : 2.5 V             :         : 3         : N              
-VCCIO4                       : U13       : power  :                   : 2.5V    : 4         :                
-reg2address_outpin[2]        : U14       : output : 2.5 V             :         : 4         : N              
-reg2_outpin[9]               : U15       : output : 2.5 V             :         : 4         : N              
-VCCINT                       : U16       : power  :                   : 1.2V    :           :                
-GND                          : U17       : gnd    :                   :         :           :                
-alupin[14]                   : U18       : output : 2.5 V             :         : 5         : N              
-VCCA                         : U19       : power  :                   : 2.5V    :           :                
-pc_input_pin[31]             : U20       : output : 2.5 V             :         : 5         : N              
+GND                          : U4        : gnd    :                   :         :           :                
+VCCL_GXB                     : U5        : power  :                   : 1.2V    :           :                
+GND                          : U6        : gnd    :                   :         :           :                
+VCCA                         : U7        : power  :                   : 2.5V    :           :                
+GND                          : U8        : gnd    :                   :         :           :                
+GXB_GND*                     : U9        :        :                   :         : 3B        :                
+GXB_GND*                     : U10       :        :                   :         : 3B        :                
+VCCINT                       : U11       : power  :                   : 1.2V    :           :                
+jump_mux_option2_outpin[27]  : U12       : output : 2.5 V             :         : 3         : N              
+VCCINT                       : U13       : power  :                   : 1.2V    :           :                
+VCC_CLKIN3A                  : U14       : power  :                   : 2.5V    : 3A        :                
+VCCINT                       : U15       : power  :                   : 1.2V    :           :                
+reg1_outpin[21]              : U16       : output : 2.5 V             :         : 4         : N              
+VCCINT                       : U17       : power  :                   : 1.2V    :           :                
+pcpin2[15]                   : U18       : output : 2.5 V             :         : 4         : N              
+pc_input_pin[18]             : U19       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : U20       : power  :                   : 2.5V    : 5         :                
 GND                          : U21       : gnd    :                   :         :           :                
-pc_input_pin[23]             : U22       : output : 2.5 V             :         : 5         : N              
-GXB_NC                       : V1        :        :                   :         : QL0       :                
-GXB_NC                       : V2        :        :                   :         : QL0       :                
-VCCL_GXB                     : V3        : power  :                   : 1.2V    :           :                
-VCCA                         : V4        : power  :                   : 2.5V    :           :                
-GND                          : V5        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 3         :                
-GND                          : V8        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3         :                
-VCCIO3                       : V10       : power  :                   : 2.5V    : 3         :                
-GND                          : V11       : gnd    :                   :         :           :                
-VCCIO3                       : V12       : power  :                   : 2.5V    : 3         :                
-reg1_outpin[24]              : V13       : output : 2.5 V             :         : 4         : N              
-GND                          : V14       : gnd    :                   :         :           :                
-VCCIO4                       : V15       : power  :                   : 2.5V    : 4         :                
-VCCIO4                       : V16       : power  :                   : 2.5V    : 4         :                
-VCCIO4                       : V17       : power  :                   : 2.5V    : 4         :                
-VCCD_PLL                     : V18       : power  :                   : 1.2V    :           :                
-GND                          : V19       : gnd    :                   :         :           :                
-pc_input_pin[8]              : V20       : output : 2.5 V             :         : 5         : N              
-pc_input_pin[29]             : V21       : output : 2.5 V             :         : 5         : N              
-pcpin2[27]                   : V22       : output : 2.5 V             :         : 5         : N              
-GND                          : W1        : gnd    :                   :         :           :                
-GND                          : W2        : gnd    :                   :         :           :                
-VCCA_GXB                     : W3        : power  :                   : 2.5V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W4        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W5        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W6        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W7        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W8        :        :                   :         : 3         :                
-instruction_pin[13]          : W9        : output : 2.5 V             :         : 3         : N              
+reg1_outpin[10]              : U22       : output : 2.5 V             :         : 5         : N              
+pc_input_pin[25]             : U23       : output : 2.5 V             :         : 5         : N              
+pcpin2[25]                   : U24       : output : 2.5 V             :         : 5         : N              
+jump_mux_option3_outpin[30]  : U25       : output : 2.5 V             :         : 5         : N              
+jump_mux_option3_outpin[19]  : U26       : output : 2.5 V             :         : 5         : N              
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : QL0       :                
+GXB_NC                       : V4        :        :                   :         : QL0       :                
+VCCH_GXB                     : V5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : V6        : power  :                   : 1.2V    :           :                
+GND                          : V7        : gnd    :                   :         :           :                
+VCCINT                       : V8        : power  :                   : 1.2V    :           :                
+VCC_CLKIN3B                  : V9        : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : V10       : power  :                   : 1.2V    :           :                
+instruction_pin[16]          : V11       : output : 2.5 V             :         : 3         : N              
+reg1_outpin[27]              : V12       : output : 2.5 V             :         : 3         : N              
+reg2_outpin[13]              : V13       : output : 2.5 V             :         : 3         : N              
+reg2_outpin[14]              : V14       : output : 2.5 V             :         : 3         : N              
+reg2_outpin[28]              : V15       : output : 2.5 V             :         : 4         : N              
+reg1_outpin[28]              : V16       : output : 2.5 V             :         : 4         : N              
+jump_mux_option2_outpin[26]  : V17       : output : 2.5 V             :         : 4         : N              
+jump_mux_option1_outpin[26]  : V18       : output : 2.5 V             :         : 4         : N              
+pc_input_pin[23]             : V19       : output : 2.5 V             :         : 4         : N              
+VCCIO5                       : V20       : power  :                   : 2.5V    : 5         :                
+pcpin2[27]                   : V21       : output : 2.5 V             :         : 5         : N              
+jump_mux_option1_outpin[21]  : V22       : output : 2.5 V             :         : 5         : N              
+pc_input_pin[30]             : V23       : output : 2.5 V             :         : 5         : N              
+jump_mux_option4_outpin[29]  : V24       : output : 2.5 V             :         : 5         : N              
+GND                          : V25       : gnd    :                   :         :           :                
+jump_mux_option3_outpin[23]  : V26       : output : 2.5 V             :         : 5         : N              
+GXB_GND*                     : W1        :        :                   :         : QL0       :                
+GXB_GND*                     : W2        :        :                   :         : QL0       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+VCCA_GXB                     : W5        : power  :                   : 2.5V    :           :                
+VCCA                         : W6        : power  :                   : 2.5V    :           :                
+MSEL3                        : W7        :        :                   :         : 3         :                
+VCCIO3                       : W8        : power  :                   : 2.5V    : 3         :                
+jump_mux_option4_outpin[1]   : W9        : output : 2.5 V             :         : 3         : N              
 alupin[29]                   : W10       : output : 2.5 V             :         : 3         : N              
-instruction_pin[4]           : W11       : output : 2.5 V             :         : 3         : N              
-reg2_outpin[4]               : W12       : output : 2.5 V             :         : 3         : N              
-reg1_outpin[22]              : W13       : output : 2.5 V             :         : 4         : N              
-reg2_outpin[17]              : W14       : output : 2.5 V             :         : 4         : N              
-reg2address_outpin[3]        : W15       : output : 2.5 V             :         : 4         : N              
-reg1_outpin[17]              : W16       : output : 2.5 V             :         : 4         : N              
-alupin[19]                   : W17       : output : 2.5 V             :         : 4         : N              
-pc_input_pin[7]              : W18       : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : W19       :        :                   :         : 4         :                
-pcpin2[11]                   : W20       : output : 2.5 V             :         : 5         : N              
-alupin[27]                   : W21       : output : 2.5 V             :         : 5         : N              
-alupin[13]                   : W22       : output : 2.5 V             :         : 5         : N              
-GXB_GND*                     : Y1        :        :                   :         : QL0       :                
-GXB_GND*                     : Y2        :        :                   :         : QL0       :                
-NC                           : Y3        :        :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y4        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y5        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   :         : 3         :                
-alupin[26]                   : Y7        : output : 2.5 V             :         : 3         : N              
-reg2_outpin[28]              : Y8        : output : 2.5 V             :         : 3         : N              
-instruction_pin[12]          : Y9        : output : 2.5 V             :         : 3         : N              
-instruction_pin[23]          : Y10       : output : 2.5 V             :         : 3         : N              
-alupin[18]                   : Y11       : output : 2.5 V             :         : 3         : N              
-pcpin2[0]                    : Y12       : output : 2.5 V             :         : 3         : N              
-reg1_outpin[18]              : Y13       : output : 2.5 V             :         : 4         : N              
-reg1_outpin[16]              : Y14       : output : 2.5 V             :         : 4         : N              
-reg2address_outpin[1]        : Y15       : output : 2.5 V             :         : 4         : N              
-reg1_outpin[5]               : Y16       : output : 2.5 V             :         : 4         : N              
-alupin[5]                    : Y17       : output : 2.5 V             :         : 4         : N              
-alupin[22]                   : Y18       : output : 2.5 V             :         : 4         : N              
-pcpin2[8]                    : Y19       : output : 2.5 V             :         : 4         : N              
-pc_input_pin[13]             : Y20       : output : 2.5 V             :         : 4         : N              
-GND                          : Y21       : gnd    :                   :         :           :                
-pc_input_pin[25]             : Y22       : output : 2.5 V             :         : 5         : N              
+reg2_outpin[20]              : W11       : output : 2.5 V             :         : 3         : N              
+reg1_outpin[1]               : W12       : output : 2.5 V             :         : 3         : N              
+alupin[25]                   : W13       : output : 2.5 V             :         : 3         : N              
+instruction_pin[24]          : W14       : output : 2.5 V             :         : 3         : N              
+reg2_outpin[21]              : W15       : output : 2.5 V             :         : 4         : N              
+reg1_outpin[11]              : W16       : output : 2.5 V             :         : 4         : N              
+reg1_outpin[17]              : W17       : output : 2.5 V             :         : 4         : N              
+reg1_outpin[24]              : W18       : output : 2.5 V             :         : 4         : N              
+pc_input_pin[31]             : W19       : output : 2.5 V             :         : 4         : N              
+GND                          : W20       : gnd    :                   :         :           :                
+VCCA                         : W21       : power  :                   : 2.5V    :           :                
+pcpin2[26]                   : W22       : output : 2.5 V             :         : 5         : N              
+reg1_outpin[13]              : W23       : output : 2.5 V             :         : 5         : N              
+reg1_outpin[0]               : W24       : output : 2.5 V             :         : 5         : N              
+pcpin2[4]                    : W25       : output : 2.5 V             :         : 5         : N              
+jump_mux_option2_outpin[0]   : W26       : output : 2.5 V             :         : 5         : N              
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : QL0       :                
+GXB_NC                       : Y4        :        :                   :         : QL0       :                
+VCCL_GXB                     : Y5        : power  :                   : 1.2V    :           :                
+MSEL2                        : Y6        :        :                   :         : 3         :                
+MSEL1                        : Y7        :        :                   :         : 3         :                
+GND                          : Y8        : gnd    :                   :         :           :                
+instruction_pin[18]          : Y9        : output : 2.5 V             :         : 3         : N              
+alupin[22]                   : Y10       : output : 2.5 V             :         : 3         : N              
+alupin[15]                   : Y11       : output : 2.5 V             :         : 3         : N              
+jump_mux_option2_outpin[1]   : Y12       : output : 2.5 V             :         : 3         : N              
+reg2_outpin[16]              : Y13       : output : 2.5 V             :         : 3         : N              
+instruction_pin[27]          : Y14       : output : 2.5 V             :         : 3         : N              
+VCCIO4                       : Y15       : power  :                   : 2.5V    : 4         :                
+GND                          : Y16       : gnd    :                   :         :           :                
+jump_mux_option1_outpin[3]   : Y17       : output : 2.5 V             :         : 4         : N              
+GND                          : Y18       : gnd    :                   :         :           :                
+VCCIO4                       : Y19       : power  :                   : 2.5V    : 4         :                
+VCCD_PLL                     : Y20       : power  :                   : 1.2V    :           :                
+jump_mux_option1_outpin[24]  : Y21       : output : 2.5 V             :         : 4         : N              
+pc_input_pin[16]             : Y22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y23       :        :                   :         : 5         :                
+jump_mux_option1_outpin[25]  : Y24       : output : 2.5 V             :         : 5         : N              
+pc_input_pin[24]             : Y25       : output : 2.5 V             :         : 5         : N              
+jump_mux_option4_outpin[26]  : Y26       : output : 2.5 V             :         : 5         : N              
