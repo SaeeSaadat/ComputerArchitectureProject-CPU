@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 392 192)
+	(rect 16 16 328 192)
 	(text "register_array" (rect 5 0 62 12)(font "Arial" ))
 	(text "inst" (rect 8 160 20 172)(font "Arial" ))
 	(port
@@ -40,22 +40,22 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "reg1_address[register_num_length-1..0]" (rect 0 0 156 12)(font "Arial" ))
-		(text "reg1_address[register_num_length-1..0]" (rect 21 59 177 71)(font "Arial" ))
+		(text "reg1_address[4..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "reg1_address[4..0]" (rect 21 59 96 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "reg2_address[register_num_length-1..0]" (rect 0 0 158 12)(font "Arial" ))
-		(text "reg2_address[register_num_length-1..0]" (rect 21 75 179 87)(font "Arial" ))
+		(text "reg2_address[4..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "reg2_address[4..0]" (rect 21 75 97 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 0 96)
 		(input)
-		(text "write_reg_address[register_num_length-1..0]" (rect 0 0 177 12)(font "Arial" ))
-		(text "write_reg_address[register_num_length-1..0]" (rect 21 91 198 103)(font "Arial" ))
+		(text "write_reg_address[4..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "write_reg_address[4..0]" (rect 21 91 116 103)(font "Arial" ))
 		(line (pt 0 96)(pt 16 96)(line_width 3))
 	)
 	(port
@@ -80,18 +80,18 @@ applicable agreement for further details.
 		(line (pt 0 144)(pt 16 144)(line_width 3))
 	)
 	(port
-		(pt 376 32)
+		(pt 312 32)
 		(output)
 		(text "reg1[register_width-1..0]" (rect 0 0 92 12)(font "Arial" ))
-		(text "reg1[register_width-1..0]" (rect 263 27 355 39)(font "Arial" ))
-		(line (pt 376 32)(pt 360 32)(line_width 3))
+		(text "reg1[register_width-1..0]" (rect 199 27 291 39)(font "Arial" ))
+		(line (pt 312 32)(pt 296 32)(line_width 3))
 	)
 	(port
-		(pt 376 48)
+		(pt 312 48)
 		(output)
 		(text "reg2[register_width-1..0]" (rect 0 0 93 12)(font "Arial" ))
-		(text "reg2[register_width-1..0]" (rect 262 43 355 55)(font "Arial" ))
-		(line (pt 376 48)(pt 360 48)(line_width 3))
+		(text "reg2[register_width-1..0]" (rect 198 43 291 55)(font "Arial" ))
+		(line (pt 312 48)(pt 296 48)(line_width 3))
 	)
 	(parameter
 		"register_num"
@@ -105,11 +105,11 @@ applicable agreement for further details.
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"register_num_length"
-		""
+		"5"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 360 160)(line_width 1))
+		(rectangle (rect 16 16 296 160)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 392 -64 492 16))
+	(annotation_block (parameter)(rect 328 -64 428 16))
 )

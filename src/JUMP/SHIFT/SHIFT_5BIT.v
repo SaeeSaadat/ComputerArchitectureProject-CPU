@@ -1,10 +1,10 @@
-// megafunction wizard: %LPM_CLSHIFT%VBB%
+// megafunction wizard: %LPM_CLSHIFT%
 // GENERATION: STANDARD
 // VERSION: WM1.0
 // MODULE: LPM_CLSHIFT 
 
 // ============================================================
-// File Name: SHIFT.v
+// File Name: SHIFT_5BIT.v
 // Megafunction Name(s):
 // 			LPM_CLSHIFT
 //
@@ -16,6 +16,7 @@
 //
 // 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 // ************************************************************
+
 
 //Copyright (C) 1991-2013 Altera Corporation
 //Your use of Altera Corporation's design tools, logic functions 
@@ -31,7 +32,11 @@
 //Altera or its authorized distributors.  Please refer to the 
 //applicable agreement for further details.
 
-module SHIFT (
+
+// synopsys translate_off
+`timescale 1 ps / 1 ps
+// synopsys translate_on
+module SHIFT_5BIT (
 	data,
 	distance,
 	result);
@@ -39,6 +44,31 @@ module SHIFT (
 	input	[31:0]  data;
 	input	[4:0]  distance;
 	output	[31:0]  result;
+
+	wire [31:0] sub_wire0;
+	wire  sub_wire1 = 1'h0;
+	wire [31:0] result = sub_wire0[31:0];
+
+	lpm_clshift	LPM_CLSHIFT_component (
+				.data (data),
+				.direction (sub_wire1),
+				.distance (distance),
+				.result (sub_wire0)
+				// synopsys translate_off
+				,
+				.aclr (),
+				.clken (),
+				.clock (),
+				.overflow (),
+				.underflow ()
+				// synopsys translate_on
+				);
+	defparam
+		LPM_CLSHIFT_component.lpm_shifttype = "LOGICAL",
+		LPM_CLSHIFT_component.lpm_type = "LPM_CLSHIFT",
+		LPM_CLSHIFT_component.lpm_width = 32,
+		LPM_CLSHIFT_component.lpm_widthdist = 5;
+
 
 endmodule
 
@@ -65,9 +95,9 @@ endmodule
 // Retrieval info: CONNECT: @direction 0 0 0 0 GND 0 0 0 0
 // Retrieval info: CONNECT: @distance 0 0 5 0 distance 0 0 5 0
 // Retrieval info: CONNECT: result 0 0 32 0 @result 0 0 32 0
-// Retrieval info: GEN_FILE: TYPE_NORMAL SHIFT.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL SHIFT.inc FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL SHIFT.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL SHIFT.bsf TRUE FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL SHIFT_inst.v FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL SHIFT_bb.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL SHIFT_5BIT.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL SHIFT_5BIT.inc FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL SHIFT_5BIT.cmp FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL SHIFT_5BIT.bsf TRUE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL SHIFT_5BIT_inst.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL SHIFT_5BIT_bb.v TRUE

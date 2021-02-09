@@ -102,4 +102,5 @@ set_global_assignment -name QIP_FILE src/JUMP/CONSTANT/CONSTANT.qip
 set_global_assignment -name QIP_FILE src/JUMP/SHIFT/SHIFT_16BIT.qip
 set_global_assignment -name QIP_FILE src/JUMP/CONSTANT/CONSTANT_18.qip
 set_global_assignment -name QIP_FILE src/JUMP/ADD/ADD.qip
+set_global_assignment -name QIP_FILE src/JUMP/SHIFT/SHIFT_5BIT.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
