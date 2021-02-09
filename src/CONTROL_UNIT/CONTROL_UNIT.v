@@ -14,7 +14,7 @@ module control_unit (
     output reg [1:0]    jump_mux_signal,        // 0 -> pc+4 , 1 -> pc + Address , 2 -> pc = reg1 , 3 -> pc = pc [31:18] | Address | 00 
     output reg          write_back_on_register_mux_signal,
     output reg          alu_input_mux_signal,
-    output              PC_enable,
+    output reg          PC_enable,
     output              memwrite_enable_a,  // WORD    
     output              memwrite_enable_b,  // BYTE  
     output              memread_enable_a,  // WORD    
@@ -22,7 +22,7 @@ module control_unit (
 );
 
     // assign PC_enable = (instruction[31:26] == 0) ? 0 : 1;
-    assign PC_enable = 1;
+    
     assign register_write_byte_enable = (instruction[31:26] == 6'b011010) ? 1 : 0;
     assign register_write_word_enable = (instruction[31:26] == 6'b011000 || 
                                         (instruction[31:26]>=1 && instruction[31:26] <=23) ) ? 1 : 0;
@@ -42,11 +42,11 @@ module control_unit (
             im_data <= 0;
             alu_opcode <= 0;
             jump_mux_signal <= 0;
+            PC_enable <= 1;
         end
         else begin
 
             if (instruction[31:26] == 0) begin
-                //seriously TO fucking DO!
                 //TODO: Stop the whole thing! maybe there's nothing else to do since PC_Enable is assigned but still ...!
             end
             else if (instruction[31:26]>=1 && instruction[31:26] <=15)
