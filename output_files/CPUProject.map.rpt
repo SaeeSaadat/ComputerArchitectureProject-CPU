@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPUProject
-Tue Feb 09 15:17:26 2021
+Tue Feb 09 15:24:25 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Feb 09 15:17:26 2021               ;
+; Analysis & Synthesis Status        ; Failed - Tue Feb 09 15:24:25 2021               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CPUProject                                      ;
 ; Top-level Entity Name              ; CPUProject                                      ;
@@ -183,11 +183,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Feb 09 15:17:18 2021
+    Info: Processing started: Tue Feb 09 15:24:19 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPUProject -c CPUProject
 Warning (125092): Tcl Script File src/JUMP/SHIFT/SHIFT.qip not found
     Info (125063): set_global_assignment -name QIP_FILE src/JUMP/SHIFT/SHIFT.qip
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file src/zero_extender/zero_extender.v
+    Info (12023): Found entity 1: zero_extender
 Info (12021): Found 1 design units, including 1 entities, in source file src/mux/multiplexer.v
     Info (12023): Found entity 1: MULTIPLEXER
 Info (12021): Found 1 design units, including 1 entities, in source file src/shift2/shift2.v
@@ -462,6 +464,7 @@ Info (12133): Instantiated megafunction "JMP:inst4|SHIFT_5BIT:inst1|lpm_clshift:
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_ukb.tdf
     Info (12023): Found entity 1: lpm_clshift_ukb
 Info (12128): Elaborating entity "lpm_clshift_ukb" for hierarchy "JMP:inst4|SHIFT_5BIT:inst1|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_ukb:auto_generated"
+Info (12128): Elaborating entity "zero_extender" for hierarchy "JMP:inst4|zero_extender:inst3"
 Info (12128): Elaborating entity "CONSTANT_18" for hierarchy "JMP:inst4|CONSTANT_18:inst8"
 Info (12128): Elaborating entity "lpm_constant" for hierarchy "JMP:inst4|CONSTANT_18:inst8|lpm_constant:LPM_CONSTANT_component"
 Info (12130): Elaborated megafunction instantiation "JMP:inst4|CONSTANT_18:inst8|lpm_constant:LPM_CONSTANT_component"
@@ -470,6 +473,7 @@ Info (12133): Instantiated megafunction "JMP:inst4|CONSTANT_18:inst8|lpm_constan
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
     Info (12134): Parameter "lpm_width" = "5"
+Info (12128): Elaborating entity "zero_extender" for hierarchy "JMP:inst4|zero_extender:inst4"
 Info (12128): Elaborating entity "CONSTANT" for hierarchy "JMP:inst4|CONSTANT:inst7"
 Info (12128): Elaborating entity "lpm_constant" for hierarchy "JMP:inst4|CONSTANT:inst7|lpm_constant:LPM_CONSTANT_component"
 Info (12130): Elaborated megafunction instantiation "JMP:inst4|CONSTANT:inst7|lpm_constant:LPM_CONSTANT_component"
@@ -480,14 +484,12 @@ Info (12133): Instantiated megafunction "JMP:inst4|CONSTANT:inst7|lpm_constant:L
     Info (12134): Parameter "lpm_width" = "5"
 Error (12006): Node instance "inst1" instantiates undefined entity "ALU"
 Error (12006): Node instance "inst19" instantiates undefined entity "MAIN_MEMORY"
-Error (12006): Node instance "inst" instantiates undefined entity "zero_extender"
-Error (12006): Node instance "16" instantiates undefined entity "zero_extender"
 Info (144001): Generated suppressed messages file C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/output_files/CPUProject.map.smsg
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 4 errors, 20 warnings
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 20 warnings
     Error: Peak virtual memory: 4652 megabytes
-    Error: Processing ended: Tue Feb 09 15:17:27 2021
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:07
+    Error: Processing ended: Tue Feb 09 15:24:25 2021
+    Error: Elapsed time: 00:00:06
+    Error: Total CPU time (on all processors): 00:00:06
 
 
 +------------------------------------------+

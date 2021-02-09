@@ -7,6 +7,6 @@ module zero_extender #(
 );
 
     localparam width_dif = out_width - in_width;
-    assign out = {{width_dif {in[in_width - 1]}}, in[in_width - 1 : 0]};
+    assign out = {{width_dif {0}}, in[in_width - 1 : 0]};
 
 endmodule
