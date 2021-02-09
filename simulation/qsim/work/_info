@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\saee_\Desktop\ComputerArchitectureProject-CPU\simulation\qsim
+vCPUProject
+Z1 I3Z:4>iDDe5fH?_3NzIcmH1
+Z2 VQ<EDc7^]`z^KmhCaYHOCz3
+Z3 dC:\Users\saee_\Desktop\ComputerArchitectureProject-CPU\simulation\qsim
+Z4 w1612888258
+Z5 8CPUProject.vo
+Z6 FCPUProject.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|CPUProject.vo|
+Z9 o-work work -O0
+Z10 n@c@p@u@project
+!i10b 1
+Z11 !s100 OQPXozd>T75Po>gC[gP_G3
+!s85 0
+Z12 !s108 1612888260.136000
+Z13 !s107 CPUProject.vo|
+!s101 -O0
+vCPUProject_vlg_check_tst
+!i10b 1
+!s100 `H4NII2ZY:`^8_W2[:3BQ1
+IWJRa50P0O];C@T5G<[NR^1
+V2EgI8CVS0k^>ZlShbe>BA2
+R3
+Z14 w1612888252
+Z15 8CPUProject.vt
+Z16 FCPUProject.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z17 !s108 1612888261.540000
+Z18 !s107 CPUProject.vt|
+Z19 !s90 -work|work|CPUProject.vt|
+!s101 -O0
+R9
+Z20 n@c@p@u@project_vlg_check_tst
+vCPUProject_vlg_sample_tst
+!i10b 1
+Z21 !s100 ai0lcbSNaeOMcLDDZ`j6C2
+Z22 IfY:J_i]Q6En8V^RWhzImW3
+Z23 V<n0k<>Bzimf4IQ9Ie9M0@0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z24 n@c@p@u@project_vlg_sample_tst
+vCPUProject_vlg_vec_tst
+!i10b 1
+!s100 O5hR910cA_JhlMjm?ZC[P3
+IB4KJ4[YWaP2kBQleR6;H=2
+Z25 Vz=0d[O__T>=U;M3C^2COm2
+R3
+R14
+R15
+R16
+L0 3925
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z26 n@c@p@u@project_vlg_vec_tst

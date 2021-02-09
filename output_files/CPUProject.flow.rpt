@@ -1,5 +1,5 @@
 Flow report for CPUProject
-Tue Feb 09 17:24:23 2021
+Tue Feb 09 20:00:59 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,25 +40,25 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Feb 09 17:24:23 2021           ;
+; Flow Status                        ; Successful - Tue Feb 09 20:00:59 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CPUProject                                      ;
 ; Top-level Entity Name              ; CPUProject                                      ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 0 / 14,400 ( 0 % )                              ;
-;     Total combinational functions  ; 0 / 14,400 ( 0 % )                              ;
-;     Dedicated logic registers      ; 0 / 14,400 ( 0 % )                              ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 2 / 81 ( 2 % )                                  ;
+; Total logic elements               ; 5,640 / 29,440 ( 19 % )                         ;
+;     Total combinational functions  ; 5,394 / 29,440 ( 18 % )                         ;
+;     Dedicated logic registers      ; 1,056 / 29,440 ( 4 % )                          ;
+; Total registers                    ; 1056                                            ;
+; Total pins                         ; 209 / 307 ( 68 % )                              ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 552,960 ( 0 % )                             ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total GXB Receiver Channel PCS     ; 0 / 2 ( 0 % )                                   ;
-; Total GXB Receiver Channel PMA     ; 0 / 2 ( 0 % )                                   ;
-; Total GXB Transmitter Channel PCS  ; 0 / 2 ( 0 % )                                   ;
-; Total GXB Transmitter Channel PMA  ; 0 / 2 ( 0 % )                                   ;
-; Total PLLs                         ; 0 / 3 ( 0 % )                                   ;
-; Device                             ; EP4CGX15BF14C6                                  ;
+; Total memory bits                  ; 16,384 / 1,105,920 ( 1 % )                      ;
+; Embedded Multiplier 9-bit elements ; 0 / 160 ( 0 % )                                 ;
+; Total GXB Receiver Channel PCS     ; 0 / 4 ( 0 % )                                   ;
+; Total GXB Receiver Channel PMA     ; 0 / 4 ( 0 % )                                   ;
+; Total GXB Transmitter Channel PCS  ; 0 / 4 ( 0 % )                                   ;
+; Total GXB Transmitter Channel PMA  ; 0 / 4 ( 0 % )                                   ;
+; Total PLLs                         ; 0 / 6 ( 0 % )                                   ;
+; Device                             ; EP4CGX30CF23C6                                  ;
 ; Timing Models                      ; Final                                           ;
 +------------------------------------+-------------------------------------------------+
 
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/09/2021 17:23:43 ;
+; Start date & time ; 02/09/2021 19:45:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPUProject          ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ applicable agreement for further details.
 +-------------------------------------+-----------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                         ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+-----------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 229521375761563.161287882313444               ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 229521375761563.161288731122508               ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                            ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                     ; <None>        ; --          ; --             ;
@@ -166,12 +166,14 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 4709 MB             ; 00:00:08                           ;
-; Fitter                    ; 00:00:10     ; 1.0                     ; 4919 MB             ; 00:00:09                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 4595 MB             ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 4604 MB             ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4552 MB             ; 00:00:04                           ;
-; Total                     ; 00:00:36     ; --                      ; --                  ; 00:00:32                           ;
+; Analysis & Synthesis      ; 00:00:35     ; 1.0                     ; 4740 MB             ; 00:00:33                           ;
+; Fitter                    ; 00:06:19     ; 1.0                     ; 5079 MB             ; 00:05:55                           ;
+; Assembler                 ; 00:00:16     ; 1.0                     ; 4628 MB             ; 00:00:13                           ;
+; TimeQuest Timing Analyzer ; 00:01:09     ; 1.0                     ; 5023 MB             ; 00:00:57                           ;
+; EDA Netlist Writer        ; 00:00:10     ; 1.0                     ; 4619 MB             ; 00:00:09                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4615 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 4631 MB             ; 00:00:06                           ;
+; Total                     ; 00:08:41     ; --                      ; --                  ; 00:07:57                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -185,6 +187,8 @@ applicable agreement for further details.
 ; Assembler                 ; DESKTOP-RQJU1BN  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; DESKTOP-RQJU1BN  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-RQJU1BN  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-RQJU1BN  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-RQJU1BN  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -196,6 +200,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off CPUProject -c C
 quartus_asm --read_settings_files=off --write_settings_files=off CPUProject -c CPUProject
 quartus_sta CPUProject -c CPUProject
 quartus_eda --read_settings_files=off --write_settings_files=off CPUProject -c CPUProject
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog CPUProject -c CPUProject --vector_source=C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/synthesis/Waveform.vwf --testbench_file=./simulation/qsim/CPUProject.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog CPUProject -c CPUProject
 
 
 
