@@ -7,11 +7,6 @@ WIDTH_EXP=8
 WIDTH_MAN=23
 DEVICE_FAMILY="Cyclone IV GX"
 CBX_AUTO_BLACKBOX=ALL
-aclr
 clock
 data
-division_by_zero
-nan
 result
-underflow
-zero

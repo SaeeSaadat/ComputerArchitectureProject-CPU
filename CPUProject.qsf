@@ -88,6 +88,15 @@ set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/synthesis/Waveform.vwf"
+set_global_assignment -name VERILOG_FILE src/SIGN_EXTENDER/SIGN_EXTENDER.v
+set_global_assignment -name VERILOG_FILE src/FP_COPROCESSOR/MUX/FP_MUX.v
+set_global_assignment -name VERILOG_FILE src/FP_COPROCESSOR/FP_MULT/MUX_5.v
+set_global_assignment -name VERILOG_FILE src/FP_COPROCESSOR/FP_MULT/FP_MULT.v
+set_global_assignment -name VERILOG_FILE src/FP_COPROCESSOR/FP_INVERSE/FP_INVERSE.v
+set_global_assignment -name VERILOG_FILE src/FP_COPROCESSOR/FP_DIV/FP_DIV.v
+set_global_assignment -name VERILOG_FILE src/FP_COPROCESSOR/FP_CONSTANT/A0_CONSTANT.v
+set_global_assignment -name VERILOG_FILE src/FP_COPROCESSOR/FP_ADD_SUB/FP_ADD_SUB.v
 set_global_assignment -name VERILOG_FILE src/INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_2.v
 set_global_assignment -name VERILOG_FILE src/PROGRAM_COUNTER/PC.v
 set_global_assignment -name VERILOG_FILE src/CONTROL_UNIT/CONTROL_UNIT.v
@@ -134,5 +143,5 @@ set_global_assignment -name QIP_FILE src/SHIFT2/lpm_constant2.qip
 set_global_assignment -name MIF_FILE src/MEMORY/mainMemoryInitial.mif
 set_global_assignment -name VECTOR_WAVEFORM_FILE src/synthesis/Waveform.vwf
 set_global_assignment -name QIP_FILE src/INSTRUCTION_MEMORY/INSTRUCTION_MEMORY_2.qip
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/synthesis/Waveform.vwf"
+set_global_assignment -name QIP_FILE src/MEMORY/MAIN_MEMORY_32.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
