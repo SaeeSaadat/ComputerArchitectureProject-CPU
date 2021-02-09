@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPUProject
-Tue Feb 09 15:24:25 2021
+Tue Feb 09 15:51:10 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Feb 09 15:24:25 2021               ;
+; Analysis & Synthesis Status        ; Failed - Tue Feb 09 15:51:10 2021               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CPUProject                                      ;
 ; Top-level Entity Name              ; CPUProject                                      ;
@@ -156,25 +156,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                                        ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------+----------------------------------------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                         ; IP Include File                                                                                    ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------+----------------------------------------------------------------------------------------------------+
-; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |CPUProject|PC_ADDER:inst               ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/PC_ADDER/PC_ADDER.v                     ;
-; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |CPUProject|PC_MUX:inst2                ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/PC_MUX/PC_MUX.v                         ;
-; Altera ; LPM_CLSHIFT  ; 13.0    ; N/A          ; N/A          ; |CPUProject|JMP:inst4|SHIFT_5BIT:inst1  ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/JUMP/SHIFT/SHIFT_5BIT.v                 ;
-; Altera ; LPM_CLSHIFT  ; 13.0    ; N/A          ; N/A          ; |CPUProject|JMP:inst4|SHIFT_5BIT:inst2  ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/JUMP/SHIFT/SHIFT_5BIT.v                 ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |CPUProject|JMP:inst4|CONSTANT:inst7    ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/JUMP/CONSTANT/CONSTANT.v                ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |CPUProject|JMP:inst4|CONSTANT_18:inst8 ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/JUMP/CONSTANT/CONSTANT_18.v             ;
-; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |CPUProject|JMP:inst4|ADD:inst10        ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/JUMP/ADD/ADD.v                          ;
-; Altera ; LPM_MUX      ; N/A     ; N/A          ; N/A          ; |CPUProject|MULTIPLEXER:inst7           ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/MUX/MULTIPLEXER.v                       ;
-; Altera ; ROM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |CPUProject|INSTRUCTION_MEMORY:inst9    ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.v ;
-; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |CPUProject|JUMP_ADDER:inst11           ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/PC_ADDER/JUMP_ADDER.v                   ;
-; Altera ; LPM_CLSHIFT  ; N/A     ; N/A          ; N/A          ; |CPUProject|SHIFT2:inst14               ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/SHIFT2/SHIFT2.v                         ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |CPUProject|lpm_constant2:inst16        ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/SHIFT2/lpm_constant2.v                  ;
-; Altera ; LPM_MUX      ; N/A     ; N/A          ; N/A          ; |CPUProject|MULTIPLEXER:inst17          ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/MUX/MULTIPLEXER.v                       ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------+----------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                     ;
++--------+--------------+---------+--------------+--------------+--------------------------------------+----------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                      ; IP Include File                                                                                    ;
++--------+--------------+---------+--------------+--------------+--------------------------------------+----------------------------------------------------------------------------------------------------+
+; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |CPUProject|PC_ADDER:inst            ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/PC_ADDER/PC_ADDER.v                     ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |CPUProject|PC_MUX:inst2             ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/PC_MUX/PC_MUX.v                         ;
+; Altera ; ROM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |CPUProject|INSTRUCTION_MEMORY:inst9 ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/INSTRUCTION_MEMORY/INSTRUCTION_MEMORY.v ;
+; Altera ; LPM_ADD_SUB  ; N/A     ; N/A          ; N/A          ; |CPUProject|JUMP_ADDER:inst11        ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/PC_ADDER/JUMP_ADDER.v                   ;
+; Altera ; LPM_CLSHIFT  ; N/A     ; N/A          ; N/A          ; |CPUProject|SHIFT2:inst14            ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/SHIFT2/SHIFT2.v                         ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |CPUProject|lpm_constant2:inst16     ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/SHIFT2/lpm_constant2.v                  ;
+; Altera ; LPM_MUX      ; N/A     ; N/A          ; N/A          ; |CPUProject|MULTIPLEXER:inst17       ; C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/src/MUX/MULTIPLEXER.v                       ;
++--------+--------------+---------+--------------+--------------+--------------------------------------+----------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -183,11 +177,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Feb 09 15:24:19 2021
+    Info: Processing started: Tue Feb 09 15:51:05 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPUProject -c CPUProject
 Warning (125092): Tcl Script File src/JUMP/SHIFT/SHIFT.qip not found
     Info (125063): set_global_assignment -name QIP_FILE src/JUMP/SHIFT/SHIFT.qip
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file src/alu_small_mux.v
+    Info (12023): Found entity 1: alu_small_mux
+Info (12021): Found 1 design units, including 1 entities, in source file src/alu_main_mux.v
+    Info (12023): Found entity 1: alu_main_mux
+Info (12021): Found 1 design units, including 1 entities, in source file src/alu.bdf
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 1 design units, including 1 entities, in source file src/memory/main_memory.v
+    Info (12023): Found entity 1: MAIN_MEMORY
 Info (12021): Found 1 design units, including 1 entities, in source file src/zero_extender/zero_extender.v
     Info (12023): Found entity 1: zero_extender
 Info (12021): Found 1 design units, including 1 entities, in source file src/mux/multiplexer.v
@@ -440,54 +442,18 @@ Info (12133): Instantiated megafunction "MULTIPLEXER:inst17|lpm_mux:LPM_MUX_comp
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_l0d.tdf
     Info (12023): Found entity 1: mux_l0d
 Info (12128): Elaborating entity "mux_l0d" for hierarchy "MULTIPLEXER:inst17|lpm_mux:LPM_MUX_component|mux_l0d:auto_generated"
-Info (12128): Elaborating entity "JMP" for hierarchy "JMP:inst4"
-Info (12128): Elaborating entity "ADD" for hierarchy "JMP:inst4|ADD:inst10"
-Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "JMP:inst4|ADD:inst10|lpm_add_sub:LPM_ADD_SUB_component"
-Info (12130): Elaborated megafunction instantiation "JMP:inst4|ADD:inst10|lpm_add_sub:LPM_ADD_SUB_component"
-Info (12133): Instantiated megafunction "JMP:inst4|ADD:inst10|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter:
-    Info (12134): Parameter "lpm_direction" = "ADD"
-    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
-    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
-    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
-    Info (12134): Parameter "lpm_width" = "32"
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_5uh.tdf
-    Info (12023): Found entity 1: add_sub_5uh
-Info (12128): Elaborating entity "add_sub_5uh" for hierarchy "JMP:inst4|ADD:inst10|lpm_add_sub:LPM_ADD_SUB_component|add_sub_5uh:auto_generated"
-Info (12128): Elaborating entity "SHIFT_5BIT" for hierarchy "JMP:inst4|SHIFT_5BIT:inst1"
-Info (12128): Elaborating entity "lpm_clshift" for hierarchy "JMP:inst4|SHIFT_5BIT:inst1|lpm_clshift:LPM_CLSHIFT_component"
-Info (12130): Elaborated megafunction instantiation "JMP:inst4|SHIFT_5BIT:inst1|lpm_clshift:LPM_CLSHIFT_component"
-Info (12133): Instantiated megafunction "JMP:inst4|SHIFT_5BIT:inst1|lpm_clshift:LPM_CLSHIFT_component" with the following parameter:
-    Info (12134): Parameter "lpm_shifttype" = "LOGICAL"
-    Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
-    Info (12134): Parameter "lpm_width" = "32"
-    Info (12134): Parameter "lpm_widthdist" = "5"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_ukb.tdf
-    Info (12023): Found entity 1: lpm_clshift_ukb
-Info (12128): Elaborating entity "lpm_clshift_ukb" for hierarchy "JMP:inst4|SHIFT_5BIT:inst1|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_ukb:auto_generated"
-Info (12128): Elaborating entity "zero_extender" for hierarchy "JMP:inst4|zero_extender:inst3"
-Info (12128): Elaborating entity "CONSTANT_18" for hierarchy "JMP:inst4|CONSTANT_18:inst8"
-Info (12128): Elaborating entity "lpm_constant" for hierarchy "JMP:inst4|CONSTANT_18:inst8|lpm_constant:LPM_CONSTANT_component"
-Info (12130): Elaborated megafunction instantiation "JMP:inst4|CONSTANT_18:inst8|lpm_constant:LPM_CONSTANT_component"
-Info (12133): Instantiated megafunction "JMP:inst4|CONSTANT_18:inst8|lpm_constant:LPM_CONSTANT_component" with the following parameter:
-    Info (12134): Parameter "lpm_cvalue" = "18"
-    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
-    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
-    Info (12134): Parameter "lpm_width" = "5"
-Info (12128): Elaborating entity "zero_extender" for hierarchy "JMP:inst4|zero_extender:inst4"
-Info (12128): Elaborating entity "CONSTANT" for hierarchy "JMP:inst4|CONSTANT:inst7"
-Info (12128): Elaborating entity "lpm_constant" for hierarchy "JMP:inst4|CONSTANT:inst7|lpm_constant:LPM_CONSTANT_component"
-Info (12130): Elaborated megafunction instantiation "JMP:inst4|CONSTANT:inst7|lpm_constant:LPM_CONSTANT_component"
-Info (12133): Instantiated megafunction "JMP:inst4|CONSTANT:inst7|lpm_constant:LPM_CONSTANT_component" with the following parameter:
-    Info (12134): Parameter "lpm_cvalue" = "2"
-    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
-    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
-    Info (12134): Parameter "lpm_width" = "5"
-Error (12006): Node instance "inst1" instantiates undefined entity "ALU"
-Error (12006): Node instance "inst19" instantiates undefined entity "MAIN_MEMORY"
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst1"
+Warning (275002): No superset bus at connection
+Warning (275002): No superset bus at connection
+Warning (275002): No superset bus at connection
+Warning (275002): No superset bus at connection
+Error (275024): Width mismatch in port "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" of instance "inst7" and type LPM_XOR -- source is ""in2[31..0]""
+Error (275024): Width mismatch in port "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" of instance "inst9" and type LPM_AND -- source is ""in2[31..0]""
+Error (12152): Can't elaborate user hierarchy "ALU:inst1"
 Info (144001): Generated suppressed messages file C:/Users/saee_/Desktop/ComputerArchitectureProject-CPU/output_files/CPUProject.map.smsg
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 20 warnings
-    Error: Peak virtual memory: 4652 megabytes
-    Error: Processing ended: Tue Feb 09 15:24:25 2021
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 24 warnings
+    Error: Peak virtual memory: 4650 megabytes
+    Error: Processing ended: Tue Feb 09 15:51:11 2021
     Error: Elapsed time: 00:00:06
     Error: Total CPU time (on all processors): 00:00:06
 

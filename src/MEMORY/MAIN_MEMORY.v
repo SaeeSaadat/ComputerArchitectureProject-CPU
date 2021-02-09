@@ -114,7 +114,7 @@ module MAIN_MEMORY (
 `ifdef NO_PLI
 		altsyncram_component.init_file = "../mainMemory.rif"
 `else
-		altsyncram_component.init_file = "../mainMemory.hex"
+		altsyncram_component.init_file = "mainMemoryInitial.mif"
 `endif
 ,
 		altsyncram_component.init_file_layout = "PORT_A",

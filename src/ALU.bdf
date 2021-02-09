@@ -288,7 +288,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 464 304 584 360)
+	(rect 464 264 584 320)
 	(text "LPM_XOR" (rect 30 0 100 16)(font "Arial" (font_size 10)))
 	(text "inst7" (rect 3 45 30 59)(font "Arial" (font_size 8)))
 	(port
@@ -302,7 +302,7 @@ applicable agreement for further details.
 		(pt 120 32)
 		(output)
 		(text "result[LPM_WIDTH-1..0]" (rect 82 17 215 31)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 82 17 114 31)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 82 17 120 31)(font "Arial" (font_size 8)))
 		(line (pt 80 32)(pt 120 32)(line_width 3))
 	)
 	(parameter
@@ -325,7 +325,7 @@ applicable agreement for further details.
 		(arc (pt 40 44)(pt 40 20)(rect 11 15 46 50))
 		(arc (pt 39 37)(pt 39 27)(rect 18 16 51 49))
 	)
-	(annotation_block (parameter)(rect 40 224 228 266))
+	(annotation_block (parameter)(rect 40 184 228 226))
 )
 (symbol
 	(rect 464 368 584 424)
@@ -342,7 +342,7 @@ applicable agreement for further details.
 		(pt 120 32)
 		(output)
 		(text "result[LPM_WIDTH-1..0]" (rect 83 19 216 33)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 83 19 115 33)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 83 19 121 33)(font "Arial" (font_size 8)))
 		(line (pt 74 32)(pt 120 32)(line_width 3))
 	)
 	(parameter
@@ -363,7 +363,7 @@ applicable agreement for further details.
 		(line (pt 46 44)(pt 46 20))
 		(arc (pt 63 45)(pt 62 20)(rect 50 20 75 45))
 	)
-	(annotation_block (parameter)(rect 56 280 190 322))
+	(annotation_block (parameter)(rect 144 336 278 378))
 )
 (symbol
 	(rect 752 152 896 232)
@@ -805,12 +805,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "in1[31..0]" (rect 266 544 312 556)(font "Arial" ))
-	(pt 256 560)
-	(pt 304 560)
-	(bus)
-)
-(connector
 	(text "in2[31..0]" (rect 266 576 312 588)(font "Arial" ))
 	(pt 256 592)
 	(pt 304 592)
@@ -823,12 +817,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "b1[0][31..0]" (rect 240 502 252 558)(font "Arial" )(vertical))
-	(pt 256 560)
-	(pt 256 512)
-	(bus)
-)
-(connector
 	(text "a1[1][31..0]" (rect 200 582 212 638)(font "Arial" )(vertical))
 	(pt 216 592)
 	(pt 216 640)
@@ -838,18 +826,6 @@ applicable agreement for further details.
 	(text "b1[1][31..0]" (rect 240 582 252 638)(font "Arial" )(vertical))
 	(pt 256 592)
 	(pt 256 640)
-	(bus)
-)
-(connector
-	(text "a1[1..0][31..0]" (rect 410 320 479 332)(font "Arial" ))
-	(pt 464 336)
-	(pt 400 336)
-	(bus)
-)
-(connector
-	(text "b1[1..0][31..0]" (rect 410 384 479 396)(font "Arial" ))
-	(pt 464 400)
-	(pt 400 400)
 	(bus)
 )
 (connector
@@ -885,11 +861,6 @@ applicable agreement for further details.
 	(text "opcode[0]" (rect 400 472 448 484)(font "Arial" ))
 	(pt 440 488)
 	(pt 400 488)
-)
-(connector
-	(text "a_less_than_b" (rect 584 136 654 148)(font "Arial" ))
-	(pt 584 152)
-	(pt 624 152)
 )
 (connector
 	(text "a_less_than_b" (rect 808 202 820 272)(font "Arial" )(vertical))
@@ -932,25 +903,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 592 336)
-	(pt 592 320)
-	(bus)
-)
-(connector
-	(pt 584 336)
-	(pt 592 336)
-	(bus)
-)
-(connector
 	(text "add_sub_res[31..0]" (rect 602 -200 696 -188)(font "Arial" ))
 	(pt 592 -184)
 	(pt 688 -184)
-	(bus)
-)
-(connector
-	(text "mult_res[31..0]" (rect 610 -88 684 -76)(font "Arial" ))
-	(pt 600 -72)
-	(pt 688 -72)
 	(bus)
 )
 (connector
@@ -979,12 +934,6 @@ applicable agreement for further details.
 	(text "max_res[31..0]" (rect 906 184 980 196)(font "Arial" ))
 	(pt 896 200)
 	(pt 960 200)
-	(bus)
-)
-(connector
-	(text "xnor_res[31..0]" (rect 602 304 676 316)(font "Arial" ))
-	(pt 592 320)
-	(pt 704 320)
 	(bus)
 )
 (connector
@@ -1090,7 +1039,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "a_less_than_b32[31..0]" (rect 1024 -16 1138 -4)(font "Arial" ))
+	(text "a_less_than_b32[31..0]" (rect 984 -16 1098 -4)(font "Arial" ))
 	(pt 1088 0)
 	(pt 1024 0)
 	(bus)
@@ -1107,23 +1056,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 184 560)
-	(pt 192 560)
-	(bus)
-)
-(connector
 	(pt 192 560)
 	(pt 216 560)
-	(bus)
-)
-(connector
-	(pt 216 560)
-	(pt 256 560)
-	(bus)
-)
-(connector
-	(pt 184 592)
-	(pt 192 592)
 	(bus)
 )
 (connector
@@ -1147,7 +1081,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "a_less_than_b" (rect 792 -128 862 -116)(font "Arial" ))
+	(text "a_less_than_b" (rect 760 -128 830 -116)(font "Arial" ))
 	(pt 832 -112)
 	(pt 792 -112)
 	(bus)
@@ -1158,11 +1092,90 @@ applicable agreement for further details.
 	(pt 1104 -112)
 	(bus)
 )
+(connector
+	(text "mul_res[31..0]" (rect 610 -88 680 -76)(font "Arial" ))
+	(pt 600 -72)
+	(pt 688 -72)
+	(bus)
+)
+(connector
+	(text "b1[0][31..0]" (rect 240 502 252 558)(font "Arial" )(vertical))
+	(pt 256 560)
+	(pt 256 512)
+	(bus)
+)
+(connector
+	(pt 216 560)
+	(pt 256 560)
+	(bus)
+)
+(connector
+	(text "in1[31..0]" (rect 266 544 312 556)(font "Arial" ))
+	(pt 256 560)
+	(pt 304 560)
+	(bus)
+)
+(connector
+	(text "xnor_res[31..0]" (rect 602 280 676 292)(font "Arial" ))
+	(pt 584 296)
+	(pt 704 296)
+	(bus)
+)
+(connector
+	(text "in1[31..0]" (rect 304 407 316 453)(font "Arial" )(vertical))
+	(pt 320 456)
+	(pt 320 400)
+	(bus)
+)
+(connector
+	(text "in2[31..0]" (rect 344 407 356 453)(font "Arial" )(vertical))
+	(pt 368 456)
+	(pt 368 400)
+	(bus)
+)
+(connector
+	(pt 320 400)
+	(pt 368 400)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS1298>>" (rect 370 376 493 388)(font "Arial" )(invisible))
+	(pt 368 400)
+	(pt 464 400)
+	(bus)
+)
+(connector
+	(text "in2[31..0]" (rect 352 303 364 349)(font "Arial" )(vertical))
+	(pt 376 344)
+	(pt 376 296)
+	(bus)
+)
+(connector
+	(pt 328 296)
+	(pt 376 296)
+	(bus)
+)
+(connector
+	(pt 376 296)
+	(pt 464 296)
+	(bus)
+)
+(connector
+	(text "in1[31..0]" (rect 312 295 324 341)(font "Arial" )(vertical))
+	(pt 328 344)
+	(pt 328 296)
+	(bus)
+)
+(connector
+	(text "a_less_than_b" (rect 592 152 662 164)(font "Arial" ))
+	(pt 584 152)
+	(pt 664 152)
+)
 (junction (pt 216 560))
-(junction (pt 256 560))
 (junction (pt 256 592))
 (junction (pt 216 592))
 (junction (pt 1328 112))
 (junction (pt 184 752))
-(junction (pt 192 560))
-(junction (pt 192 592))
+(junction (pt 256 560))
+(junction (pt 368 400))
+(junction (pt 376 296))
