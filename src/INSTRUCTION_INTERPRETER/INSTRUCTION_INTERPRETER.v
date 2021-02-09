@@ -1,3 +1,9 @@
+/*
+TODO
+
+
+*/
+
 module instruction_interpreter (
     input [31:0] instruction,
 
@@ -6,21 +12,32 @@ module instruction_interpreter (
     output reg [4:0]    reg3,
     output reg [4:0]    s_r_amount,
     output reg [31:0]   im_data,
-    output reg          write_enable,
+    output reg          register_write_word_enable,
+    output reg          register_write_byte_enable,
     output reg [4:0]    alu_opcode,
-    output reg          jump_mux_signal,
+    output reg [1:0]    jump_mux_signal,        // 0 -> pc+4 , 1 -> pc + Address , 2 -> pc = reg1 , 3 -> pc = pc [31:18] | Address | 00 
     output reg          write_back_on_register_mux_signal,
     output reg          alu_input_mux_signal,
     output              PC_enable,
-    output reg          memory_write_enable_signal,
-    output              memory_byte_word_select,
+    output reg          memwrite_enable_a,  // WORD    
+    output reg          memwrite_enable_b,  // BYTE  
+    output reg          memread_enable_a,  // WORD    
+    output reg          memread_enable_b,  // BYTE  
 );
 
     assign PC_enable = (instruction[31:26] == 0) ? 0 : 1;
+    assign register_write_byte_enable = (instruction[31:26] == 5'b011010) ? 1 : 0;
+    assign register_write_word_enable = (instruction[31:26] == 5'b011000 || 
+                                        (instruction[31:26]>=1 && instruction[31:26] <=23) ) ? 1 : 0;
+
+    assign memwrite_enable_a = (instruction[31:26] == 5'b011001) ? 1 : 0; 
+    assign memwrite_enable_b = (instruction[31:26] == 5'b011011) ? 1 : 0; 
+    assign memread_enable_a =  (instruction[31:26] == 5'b011000) ? 1 : 0; 
+    assign memread_enable_b =  (instruction[31:26] == 5'b011010) ? 1 : 0; 
 
     always @(instruction) begin
 
-        if (instruction[31:26] == 5'b0) begin
+        if (instruction[31:26] == 0) begin
             //TODO: Stop the whole thing! maybe there's nothing else to do since PC_Enable is assigned but still ...!
         end
         else if (instruction[31:26]>=1 && instruction[31:26] <=15)
@@ -89,6 +106,7 @@ module instruction_interpreter (
                 memory_byte_word_select = 1;
             else
                 memory_byte_word_select = 0;
+
             im_data = {{16 {instruction[15]}}, instruction[15:0]};
             s_r_amount = 5'bz;
             jump_mux_signal = 0;
@@ -103,7 +121,12 @@ module instruction_interpreter (
             reg3 = 5'bz;
             im_data = {{16 {instruction[15]}}, instruction[15:0]};
             s_r_amount = 5'bz;
-            jump_mux_signal = 1;
+            if (instruction[31:26] == 5'b011101)
+                jump_mux_signal = 2;
+            else if (instruction[31:26] == 5'011100)
+                jump_mux_signal = 3;
+            else 
+                jump_mux_signal = 1;
             write_back_on_register_mux_signal = 1;
             alu_input_mux_signal = 0;
             memory_write_enable_signal = 0;

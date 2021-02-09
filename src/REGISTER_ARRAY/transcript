@@ -12,17 +12,40 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# vsim -gui work.register_array_tb -voptargs="+acc" 
-# Start time: 23:58:26 on Feb 07,2021
+# vsim -gui work.register_array_TB -voptargs="+acc" 
+# Start time: 11:26:51 on Feb 09,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-13130) Failed to find design unit register_array_TB.
+#         Searched libraries:
+#             work
+# Optimization failed
+# Error loading design
+# End time: 11:26:53 on Feb 09,2021, Elapsed time: 0:00:02
+# Errors: 2, Warnings: 0
+vsim -voptargs=+acc work.register_array_tb
+# vsim -voptargs="+acc" work.register_array_tb 
+# Start time: 11:26:59 on Feb 09,2021
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.register_array_tb(fast)
 # Loading work.register_array(fast)
 add wave *
 run
 run
-# ** Note: $stop    : REGISTER_ARRAY_TB.v(98)
-#    Time: 155 ns  Iteration: 0  Instance: /register_array_tb
-# Break in Module register_array_tb at REGISTER_ARRAY_TB.v line 98
+# ** Note: $stop    : REGISTER_ARRAY_TB.v(118)
+#    Time: 185 ns  Iteration: 0  Instance: /register_array_tb
+# Break in Module register_array_tb at REGISTER_ARRAY_TB.v line 118
 run
-# End time: 23:59:09 on Feb 07,2021, Elapsed time: 0:00:43
-# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.register_array_tb
+# End time: 11:30:38 on Feb 09,2021, Elapsed time: 0:03:39
+# Errors: 7, Warnings: 0
+# vsim -voptargs="+acc" work.register_array_tb 
+# Start time: 11:30:38 on Feb 09,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.register_array_tb(fast)
+# Loading work.register_array(fast)
+add wave *
+run
+run
+# ** Note: $stop    : REGISTER_ARRAY_TB.v(118)
+#    Time: 185 ns  Iteration: 0  Instance: /register_array_tb
+# Break in Module register_array_tb at REGISTER_ARRAY_TB.v line 118

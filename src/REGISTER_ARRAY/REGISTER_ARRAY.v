@@ -9,7 +9,8 @@ module register_array #(
     input   [register_num_length - 1 : 0] reg2_address,
     input   [register_num_length - 1 : 0] write_reg_address,
 
-    input                                 write_enable,
+    input                                 write_word_enable,
+    input                                 write_byte_enable,
     input   [register_width - 1 : 0]      write_data,
 
     output  [register_width - 1 : 0]      reg1,
@@ -30,8 +31,11 @@ always @ (posedge clk or posedge rst) begin
         end
     end
     else begin
-        if (write_enable) begin
+        if (write_word_enable) begin
             registers[write_reg_address] <= write_data;
+        end
+        else if (write_byte_enable) begin
+            registers[write_reg_address][7:0] <= write_data[7:0];
         end
     end
 
