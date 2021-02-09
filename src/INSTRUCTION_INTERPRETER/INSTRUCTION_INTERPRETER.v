@@ -13,6 +13,7 @@ module instruction_interpreter (
     output reg          alu_input_mux_signal,
     output              PC_enable,
     output reg          memory_write_enable_signal,
+    output              memory_byte_word_select,
 );
 
     assign PC_enable = (instruction[31:26] == 0) ? 0 : 1;
@@ -76,12 +77,18 @@ module instruction_interpreter (
 
         end
         else if (instruction[31:26] >= 24 && instruction[31:26] <= 27) begin
+            //wrong
             reg1 = instruction[25:21];
             reg3 = instruction[25:21];
             if (instruction[31:26] == 5'b011011)
                 reg2 = instruction[20:16];
             else 
-                reg2 = instru
+                reg2 = instru //to do
+
+            if (instruction[31:26] == 24 || instruction[31:26] == 25)
+                memory_byte_word_select = 1;
+            else
+                memory_byte_word_select = 0;
             im_data = {{16 {instruction[15]}}, instruction[15:0]};
             s_r_amount = 5'bz;
             jump_mux_signal = 0;
