@@ -14,11 +14,18 @@ module control_unit (
     output reg [1:0]    jump_mux_signal,        // 0 -> pc+4 , 1 -> pc + Address , 2 -> pc = reg1 , 3 -> pc = pc [31:18] | Address | 00 
     output reg          write_back_on_register_mux_signal,
     output reg          alu_input_mux_signal,
+    output reg          alu_or_coprocessor_mux_signal,
     output reg          PC_enable,
     output              memwrite_enable_a,  // WORD    
     output              memwrite_enable_b,  // BYTE  
     output              memread_enable_a,  // WORD    
-    output              memread_enable_b  // BYTE  
+    output              memread_enable_b,  // BYTE  
+
+    //co processor flags
+    input               coP_NaN_flag,
+    input               coP_UF_flag,
+    input               coP_OF_flag,
+    input               coP_Division_by_zero_flag
 );
 
     // assign PC_enable = (instruction[31:26] == 0) ? 0 : 1;
@@ -43,6 +50,7 @@ module control_unit (
             alu_opcode <= 0;
             jump_mux_signal <= 0;
             PC_enable <= 1;
+            alu_or_coprocessor_mux_signal <= 0;
         end
         else begin
 
@@ -59,6 +67,7 @@ module control_unit (
                 jump_mux_signal <= 0;
                 write_back_on_register_mux_signal <= 1;
                 alu_input_mux_signal <= 0;
+                alu_or_coprocessor_mux_signal <= 0;
             end
             else if (instruction[31:26] >=16 && instruction[31:26] <=23) begin
                 reg3 <= instruction[25:21];
@@ -70,6 +79,7 @@ module control_unit (
                 jump_mux_signal <= 0;
                 write_back_on_register_mux_signal <= 1;
                 alu_input_mux_signal <= 1;
+                alu_or_coprocessor_mux_signal <= 0;
 
                 case(instruction[29:26])
                     4'b0010: begin
@@ -113,8 +123,9 @@ module control_unit (
                 write_back_on_register_mux_signal <= 0;
                 alu_input_mux_signal <= 1;
                 alu_opcode <= 5'b00001;
+                alu_or_coprocessor_mux_signal <= 0;
             end 
-            else begin
+            else if (instruction[31:26] >= 28 && instruction[31:26] <= 31) begin
                 reg1 <= instruction[25:21];
                 reg2 <= instruction[20:16];
                 reg3 <= 5'bz;
@@ -128,6 +139,7 @@ module control_unit (
                     jump_mux_signal <= 1;
                 write_back_on_register_mux_signal <= 1;
                 alu_input_mux_signal <= 0;
+                alu_or_coprocessor_mux_signal <= 0;
                 case(instruction[29:26])
                     
                     4'b1110: begin
@@ -138,6 +150,21 @@ module control_unit (
                         alu_opcode <= 5'b01111;
                     end
                 endcase
+            end
+            else begin  //coprocessor
+                
+                reg3 <= instruction[25:21];
+                reg1 <= instruction[20:16];
+                reg2 <= instruction[15:11];
+                s_r_amount <= instruction[10:6];
+                alu_opcode <= instruction[29:26];
+                jump_mux_signal <= 0;
+                write_back_on_register_mux_signal <= 1;
+                alu_input_mux_signal <= 0;
+
+                alu_opcode <= instruction[30:26];
+                alu_or_coprocessor_mux_signal <= 1;
+
             end
         end
     end

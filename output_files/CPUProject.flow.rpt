@@ -1,5 +1,5 @@
 Flow report for CPUProject
-Tue Feb 09 21:55:20 2021
+Tue Feb 09 22:38:06 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Feb 09 21:55:20 2021           ;
+; Flow Status                        ; Successful - Tue Feb 09 22:38:06 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CPUProject                                      ;
 ; Top-level Entity Name              ; CPUProject                                      ;
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/09/2021 21:39:57 ;
+; Start date & time ; 02/09/2021 22:29:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPUProject          ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                            ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 229521375761563.161289419710116                  ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 229521375761563.161289719820676                  ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                               ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                        ; <None>        ; --          ; --             ;
@@ -170,14 +170,14 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:38     ; 1.0                     ; 4736 MB             ; 00:00:36                           ;
-; Fitter                    ; 00:04:38     ; 1.0                     ; 5182 MB             ; 00:04:21                           ;
-; Assembler                 ; 00:00:16     ; 1.0                     ; 4646 MB             ; 00:00:16                           ;
-; TimeQuest Timing Analyzer ; 00:00:40     ; 1.0                     ; 5104 MB             ; 00:00:37                           ;
-; EDA Netlist Writer        ; 00:00:11     ; 1.0                     ; 4626 MB             ; 00:00:09                           ;
-; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4637 MB             ; 00:00:04                           ;
-; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4637 MB             ; 00:00:06                           ;
-; Total                     ; 00:06:33     ; --                      ; --                  ; 00:06:09                           ;
+; Analysis & Synthesis      ; 00:00:31     ; 1.0                     ; 4736 MB             ; 00:00:28                           ;
+; Fitter                    ; 00:04:37     ; 1.0                     ; 5181 MB             ; 00:04:20                           ;
+; Assembler                 ; 00:00:16     ; 1.0                     ; 4646 MB             ; 00:00:14                           ;
+; TimeQuest Timing Analyzer ; 00:00:43     ; 1.0                     ; 5095 MB             ; 00:00:38                           ;
+; EDA Netlist Writer        ; 00:00:09     ; 1.0                     ; 4626 MB             ; 00:00:08                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4637 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:09     ; 1.0                     ; 4637 MB             ; 00:00:08                           ;
+; Total                     ; 00:06:31     ; --                      ; --                  ; 00:06:01                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
